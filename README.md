@@ -13,6 +13,18 @@ godot --path /Users/marlon/dev/games/serpent_x
 
 Or open the folder in Godot 4.7+ and press Play.
 
+Play in the browser: https://jmoorer.github.io/serpent_x/
+
+Deploy the web build (needs Godot 4.7.2 web export templates):
+
+```bash
+tools/deploy_web.sh
+```
+
+It exports the `Web` preset to `build/web/` and pushes it to the `gh-pages` branch through a worktree
+in `.worktrees/gh-pages`. The web build uses the Compatibility renderer and has thread support off, so
+GitHub Pages needs no COOP/COEP headers.
+
 ## Flow
 
 Title (live kata showcase) → **Enter Tournament** → choose your school → win 3 rounds → Champion.
