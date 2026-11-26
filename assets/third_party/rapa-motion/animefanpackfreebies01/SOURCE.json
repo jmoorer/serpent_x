@@ -1,0 +1,31 @@
+{
+  "creator": "Rapa Motion",
+  "name": "AnimeFanPackFreebies01",
+  "title": "FREE Mudra Samples - Motion Capture",
+  "source_url": "https://rapamotion.itch.io/mudra-samples",
+  "license": "Free for personal and commercial use",
+  "download_bytes": 40529800,
+  "archive_sha256": "93ff6a966590975d8fe3a225778a2dad5bb39c8bc9c84ba78478821bc235d7e7",
+  "archive_path": "/Users/marlon/game_assets/_archives/Rapa Motion/AnimeFanPackFreebies01.zip",
+  "status": "downloaded",
+  "model_files": 0,
+  "animation_files": 70,
+  "files": 70,
+  "local_path": "/Users/marlon/game_assets/Rapa Motion/AnimeFanPackFreebies01",
+  "extracted_bytes": 270438800,
+  "formats": [
+    "fbx"
+  ],
+  "rigs": {
+    "CC": 10,
+    "Manny": 10,
+    "Metahuman": 10,
+    "Mixamo": 10,
+    "Quin": 10,
+    "UEFN": 10,
+    "Ue4_Mannequin": 10
+  },
+  "provided_by": "user",
+  "imported_on": "2026-11-06",
+  "license_note": "The creator’s release page permits personal and commercial use without attribution. The ZIP contains no separate license file."
+}

@@ -1,0 +1,43 @@
+{
+  "creator": "Vefects",
+  "name": "Easy Shockwaves VFX Godot",
+  "source_url": "https://store.godotengine.org/asset/vefects/easy-shockwaves-vfx/",
+  "license": "Vefects Free EULA (commercial and noncommercial project use; no standalone sharing or redistribution)",
+  "license_evidence": {
+    "status": "verified",
+    "identifier": "restricted",
+    "commercial_use": false,
+    "evidence": [
+      {
+        "location": "LICENSE.txt",
+        "text": "VEFECTS - EASY SHOCKWAVES VFX for GODOT\nEND USER LICENSE AGREEMENT\n\nCopyright (c) 2026 Vefects. All rights reserved.\n\nThis pack is free. By downloading it you receive a non-exclusive, worldwide, perpetual, royalty-free license to use\nit under the following terms.\n\nYOU MAY\n- Use the assets (effects, textures, meshes, sounds, shaders, materials and scenes) in an unlimited number of\n  commercial and non-commercial projects, such as games, apps, films, videos and other interactive or linear media.\n- Modify the assets and combine them with your own work for use inside those projects.\n- Distribute the assets only as an integrated part of your final product (for example, inside a compiled or exported\n  game), in a form that does not allow them to be extracted and used as standalone assets.\n\nYOU MAY NOT\n- Sell, resell, redistribute, share or sublicense the assets, whether as they are, modified, or as transformative or\n  derivative works based on them, on their own or as part of another asset pack, template, tool or library, whether\n  free or paid.\n- Upload the assets, or any part of them or any work derived from them, to marketplaces, asset stores or public\n  repositories.\n- Claim the assets as your own creation.\n\nThe assets are provided \"as is\", without warranty of any kind. In no event shall Vefects be liable for any claim,\ndamages or other liability arising from the use of the assets.\n\nQuestions about licensing: info@vefects.com\n",
+        "observed_at": "2026-11-17T02:31:58.595Z",
+        "sha256": "1950b76c09f7ddd3908aee65e146edba833df002a8c8fc3f6664320412f37a7c"
+      },
+      {
+        "location": "Vefects/Easy Shockwaves VFX/LICENSE.txt",
+        "text": "VEFECTS - EASY SHOCKWAVES VFX for GODOT\nEND USER LICENSE AGREEMENT\n\nCopyright (c) 2026 Vefects. All rights reserved.\n\nThis pack is free. By downloading it you receive a non-exclusive, worldwide, perpetual, royalty-free license to use\nit under the following terms.\n\nYOU MAY\n- Use the assets (effects, textures, meshes, sounds, shaders, materials and scenes) in an unlimited number of\n  commercial and non-commercial projects, such as games, apps, films, videos and other interactive or linear media.\n- Modify the assets and combine them with your own work for use inside those projects.\n- Distribute the assets only as an integrated part of your final product (for example, inside a compiled or exported\n  game), in a form that does not allow them to be extracted and used as standalone assets.\n\nYOU MAY NOT\n- Sell, resell, redistribute, share or sublicense the assets, whether as they are, modified, or as transformative or\n  derivative works based on them, on their own or as part of another asset pack, template, tool or library, whether\n  free or paid.\n- Upload the assets, or any part of them or any work derived from them, to marketplaces, asset stores or public\n  repositories.\n- Claim the assets as your own creation.\n\nThe assets are provided \"as is\", without warranty of any kind. In no event shall Vefects be liable for any claim,\ndamages or other liability arising from the use of the assets.\n\nQuestions about licensing: info@vefects.com\n",
+        "observed_at": "2026-11-17T02:31:58.595Z",
+        "sha256": "1950b76c09f7ddd3908aee65e146edba833df002a8c8fc3f6664320412f37a7c"
+      }
+    ]
+  },
+  "license_override": {
+    "value": "Vefects Free EULA (commercial and noncommercial project use; no standalone sharing or redistribution)",
+    "provided_by": "user"
+  },
+  "source_metadata": null,
+  "archive_sha256": "a5e4de8645d122bf694beb19c50d29fdcbbdbe0fc1aaf608a154d008168508f6",
+  "archive_path": "/Users/marlon/game_assets/_archives/Vefects/a5e4de8645d122bf694beb19c50d29fdcbbdbe0fc1aaf608a154d008168508f6.zip",
+  "status": "imported",
+  "files": 310,
+  "extracted_bytes": 73484478,
+  "formats": [
+    "svg",
+    "wav"
+  ],
+  "local_path": "/Users/marlon/game_assets/Vefects/Easy Shockwaves VFX Godot",
+  "provided_by": "user",
+  "importer_version": "1",
+  "imported_on": "2026-11-17T02:31:58.595Z"
+}

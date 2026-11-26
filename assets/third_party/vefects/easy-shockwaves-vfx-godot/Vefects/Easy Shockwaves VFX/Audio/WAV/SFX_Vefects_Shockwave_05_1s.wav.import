@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dgfw51q7xqr4a"
+path="res://.godot/imported/SFX_Vefects_Shockwave_05_1s.wav-84fd059e56d28f2bfa4906c95e5ec0c4.sample"
+
+[deps]
+
+source_file="res://assets/third_party/vefects/easy-shockwaves-vfx-godot/Vefects/Easy Shockwaves VFX/Audio/WAV/SFX_Vefects_Shockwave_05_1s.wav"
+dest_files=["res://.godot/imported/SFX_Vefects_Shockwave_05_1s.wav-84fd059e56d28f2bfa4906c95e5ec0c4.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

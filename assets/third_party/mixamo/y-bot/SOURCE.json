@@ -1,0 +1,26 @@
+{
+  "creator": "Mixamo",
+  "name": "y-bot",
+  "title": "Y Bot",
+  "source_url": "https://www.mixamo.com/",
+  "license": "Adobe Mixamo terms",
+  "license_url": "https://helpx.adobe.com/creative-cloud/faq/mixamo-faq.html",
+  "status": "downloaded",
+  "local_path": "/Users/marlon/game_assets/Mixamo/y-bot",
+  "model_files": 1,
+  "formats": [
+    "fbx"
+  ],
+  "files": 3,
+  "extracted_bytes": 1985572,
+  "sha256": "b1f838dea1c7095a20dd5b29603abf026f6031330228a559154fe35c04b1ff9f",
+  "original_filename": "Y Bot.fbx",
+  "skeleton": {
+    "type": "Mixamo humanoid",
+    "bone_count": 65,
+    "root": "mixamorig:Hips"
+  },
+  "animation_note": "Contains a two-frame action. Compatible humanoid animations can be applied; other skeletons require retargeting.",
+  "provided_by": "user",
+  "organized_at": "2026-10-31T17:29:24.936948+00:00"
+}

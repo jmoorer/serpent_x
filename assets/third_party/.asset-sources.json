@@ -1,0 +1,2467 @@
+[
+  {
+    "id": "mixamo-library/animations/armada-c9cb9d65b96c11e4a8020aaa78deedf9-inplace",
+    "source_path": "mixamo-library/animations/armada__c9cb9d65b96c11e4a8020aaa78deedf9_inplace.fbx",
+    "hash": "sha256:3f8032f769e9adda9e4ec745a5ef1c6d33bbe11c15b7d101090066f64a300a11",
+    "license": "unknown",
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.155Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/armada__c9cb9d65b96c11e4a8020aaa78deedf9_inplace.fbx",
+        "path": "mixamo-library/animations/armada__c9cb9d65b96c11e4a8020aaa78deedf9_inplace.fbx",
+        "source_hash": "sha256:3f8032f769e9adda9e4ec745a5ef1c6d33bbe11c15b7d101090066f64a300a11",
+        "hash": "sha256:3f8032f769e9adda9e4ec745a5ef1c6d33bbe11c15b7d101090066f64a300a11"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/bencao-c9cba193b96c11e4a8020aaa78deedf9-inplace",
+    "source_path": "mixamo-library/animations/bencao__c9cba193b96c11e4a8020aaa78deedf9_inplace.fbx",
+    "hash": "sha256:a2eefe157a2c2ce0ef2e5e438363f295df8260cb9c2382b304a4929c111ea84c",
+    "license": "unknown",
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.177Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/bencao__c9cba193b96c11e4a8020aaa78deedf9_inplace.fbx",
+        "path": "mixamo-library/animations/bencao__c9cba193b96c11e4a8020aaa78deedf9_inplace.fbx",
+        "source_hash": "sha256:a2eefe157a2c2ce0ef2e5e438363f295df8260cb9c2382b304a4929c111ea84c",
+        "hash": "sha256:a2eefe157a2c2ce0ef2e5e438363f295df8260cb9c2382b304a4929c111ea84c"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/bouncing-fight-idle-c9ca582cb96c11e4a8020aaa78deedf9-inplace",
+    "source_path": "mixamo-library/animations/bouncing_fight_idle__c9ca582cb96c11e4a8020aaa78deedf9_inplace.fbx",
+    "hash": "sha256:b0d82258b5e1fa6b3c207d60cdf4002e7fdb3cadee60af44cbd9d078d9086b3e",
+    "license": "unknown",
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.185Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/bouncing_fight_idle__c9ca582cb96c11e4a8020aaa78deedf9_inplace.fbx",
+        "path": "mixamo-library/animations/bouncing_fight_idle__c9ca582cb96c11e4a8020aaa78deedf9_inplace.fbx",
+        "source_hash": "sha256:b0d82258b5e1fa6b3c207d60cdf4002e7fdb3cadee60af44cbd9d078d9086b3e",
+        "hash": "sha256:b0d82258b5e1fa6b3c207d60cdf4002e7fdb3cadee60af44cbd9d078d9086b3e"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/boxing-c9c70319b96c11e4a8020aaa78deedf9-inplace",
+    "source_path": "mixamo-library/animations/boxing__c9c70319b96c11e4a8020aaa78deedf9_inplace.fbx",
+    "hash": "sha256:8e38ef210cfc153c9bc6b0e15fd89f89d65a1af8a8e4a0d425b000112fa62454",
+    "license": "unknown",
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.192Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/boxing__c9c70319b96c11e4a8020aaa78deedf9_inplace.fbx",
+        "path": "mixamo-library/animations/boxing__c9c70319b96c11e4a8020aaa78deedf9_inplace.fbx",
+        "source_hash": "sha256:8e38ef210cfc153c9bc6b0e15fd89f89d65a1af8a8e4a0d425b000112fa62454",
+        "hash": "sha256:8e38ef210cfc153c9bc6b0e15fd89f89d65a1af8a8e4a0d425b000112fa62454"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/capoeira-c9c6f2d7b96c11e4a8020aaa78deedf9-inplace",
+    "source_path": "mixamo-library/animations/capoeira__c9c6f2d7b96c11e4a8020aaa78deedf9_inplace.fbx",
+    "hash": "sha256:3a37c32865eb4c9a7a024b6724bac3a25e52fa7bad1f64413fee08f344f68f29",
+    "license": "unknown",
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.202Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/capoeira__c9c6f2d7b96c11e4a8020aaa78deedf9_inplace.fbx",
+        "path": "mixamo-library/animations/capoeira__c9c6f2d7b96c11e4a8020aaa78deedf9_inplace.fbx",
+        "source_hash": "sha256:3a37c32865eb4c9a7a024b6724bac3a25e52fa7bad1f64413fee08f344f68f29",
+        "hash": "sha256:3a37c32865eb4c9a7a024b6724bac3a25e52fa7bad1f64413fee08f344f68f29"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/center-block-c9caf317b96c11e4a8020aaa78deedf9-inplace",
+    "source_path": "mixamo-library/animations/center_block__c9caf317b96c11e4a8020aaa78deedf9_inplace.fbx",
+    "hash": "sha256:9de433004f826bbe4d4c5bdbff778750a53e38bacc50c44f5b65b44374e5d1d4",
+    "license": "unknown",
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.208Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/center_block__c9caf317b96c11e4a8020aaa78deedf9_inplace.fbx",
+        "path": "mixamo-library/animations/center_block__c9caf317b96c11e4a8020aaa78deedf9_inplace.fbx",
+        "source_hash": "sha256:9de433004f826bbe4d4c5bdbff778750a53e38bacc50c44f5b65b44374e5d1d4",
+        "hash": "sha256:9de433004f826bbe4d4c5bdbff778750a53e38bacc50c44f5b65b44374e5d1d4"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/chapa-2-c9cba31ab96c11e4a8020aaa78deedf9-inplace",
+    "source_path": "mixamo-library/animations/chapa_2__c9cba31ab96c11e4a8020aaa78deedf9_inplace.fbx",
+    "hash": "sha256:d50261ff8448d2957d858b450570e34082d13f2e2f2a2a73a4bbfd5b5b981034",
+    "license": "unknown",
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.220Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/chapa_2__c9cba31ab96c11e4a8020aaa78deedf9_inplace.fbx",
+        "path": "mixamo-library/animations/chapa_2__c9cba31ab96c11e4a8020aaa78deedf9_inplace.fbx",
+        "source_hash": "sha256:d50261ff8448d2957d858b450570e34082d13f2e2f2a2a73a4bbfd5b5b981034",
+        "hash": "sha256:d50261ff8448d2957d858b450570e34082d13f2e2f2a2a73a4bbfd5b5b981034"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/chapa-giratoria-2-c9cba4b1b96c11e4a8020aaa78deedf9-inplace",
+    "source_path": "mixamo-library/animations/chapa_giratoria_2__c9cba4b1b96c11e4a8020aaa78deedf9_inplace.fbx",
+    "hash": "sha256:c91c217e0ce88a3c851fb9a8397daebac2f28961d823fa3a35cf209c22ee30d4",
+    "license": "unknown",
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.232Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/chapa_giratoria_2__c9cba4b1b96c11e4a8020aaa78deedf9_inplace.fbx",
+        "path": "mixamo-library/animations/chapa_giratoria_2__c9cba4b1b96c11e4a8020aaa78deedf9_inplace.fbx",
+        "source_hash": "sha256:c91c217e0ce88a3c851fb9a8397daebac2f28961d823fa3a35cf209c22ee30d4",
+        "hash": "sha256:c91c217e0ce88a3c851fb9a8397daebac2f28961d823fa3a35cf209c22ee30d4"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/cross-punch-c9c7f89ab96c11e4a8020aaa78deedf9-inplace",
+    "source_path": "mixamo-library/animations/cross_punch__c9c7f89ab96c11e4a8020aaa78deedf9_inplace.fbx",
+    "hash": "sha256:62e310ebb4a81bbd1b66569c9bb5053136408fd7858818ef8069efa7224a49ad",
+    "license": "unknown",
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.239Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/cross_punch__c9c7f89ab96c11e4a8020aaa78deedf9_inplace.fbx",
+        "path": "mixamo-library/animations/cross_punch__c9c7f89ab96c11e4a8020aaa78deedf9_inplace.fbx",
+        "source_hash": "sha256:62e310ebb4a81bbd1b66569c9bb5053136408fd7858818ef8069efa7224a49ad",
+        "hash": "sha256:62e310ebb4a81bbd1b66569c9bb5053136408fd7858818ef8069efa7224a49ad"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/death-b470b32bae69b0ac8cdb-8d5977af883f-a74ddc14ae2e",
+    "source_path": "mixamo-library/animations/death__b470b32bae69b0ac8cdb_8d5977af883f_a74ddc14ae2e.fbx",
+    "hash": "sha256:3577b04ad8218e075d129522e55a9f74665ccd1683062c453bc6a5d77fbc985f",
+    "license": "Adobe/Mixamo terms",
+    "provider": {
+      "product_id": "c9c899a0-b96c-11e4-a802-0aaa78deedf9",
+      "character_id": "4f5d21e1-4ccc-41f1-b35b-fb2547bd8493",
+      "variant": "default",
+      "export_settings_hash": "a74ddc14ae2e133f2264eb8c4af80d851a00664a34de4ba9712a683384520d27",
+      "relative_path": "mixamo-library/animations/death__b470b32bae69b0ac8cdb_8d5977af883f_a74ddc14ae2e.fbx",
+      "hash": "3577b04ad8218e075d129522e55a9f74665ccd1683062c453bc6a5d77fbc985f",
+      "bytes": 602928,
+      "export_settings": {
+        "format": "fbx7",
+        "fps": 30,
+        "skin": false
+      },
+      "downloaded_at": "2026-11-24T13:09:58.704Z",
+      "product_url": "https://www.mixamo.com/#/?page=1&query=Death",
+      "terms": "Adobe/Mixamo terms",
+      "terms_url": "https://helpx.adobe.com/creative-cloud/faq/mixamo-faq.html",
+      "asset_id": "mixamo-library/animations/death-b470b32bae69b0ac8cdb-8d5977af883f-a74ddc14ae2e"
+    },
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.253Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/death__b470b32bae69b0ac8cdb_8d5977af883f_a74ddc14ae2e.fbx",
+        "path": "mixamo-library/animations/death__b470b32bae69b0ac8cdb_8d5977af883f_a74ddc14ae2e.fbx",
+        "source_hash": "sha256:3577b04ad8218e075d129522e55a9f74665ccd1683062c453bc6a5d77fbc985f",
+        "hash": "sha256:3577b04ad8218e075d129522e55a9f74665ccd1683062c453bc6a5d77fbc985f"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/dizzy-idle-cad52d7a3c8cdc92913e-8d5977af883f-a74ddc14ae2e",
+    "source_path": "mixamo-library/animations/dizzy-idle__cad52d7a3c8cdc92913e_8d5977af883f_a74ddc14ae2e.fbx",
+    "hash": "sha256:a6d4f7538d9e906200bde6ccc5bace0107aff6cb10f071f7a99f33be41318565",
+    "license": "Adobe/Mixamo terms",
+    "provider": {
+      "product_id": "c9c69efe-b96c-11e4-a802-0aaa78deedf9",
+      "character_id": "4f5d21e1-4ccc-41f1-b35b-fb2547bd8493",
+      "variant": "default",
+      "export_settings_hash": "a74ddc14ae2e133f2264eb8c4af80d851a00664a34de4ba9712a683384520d27",
+      "relative_path": "mixamo-library/animations/dizzy-idle__cad52d7a3c8cdc92913e_8d5977af883f_a74ddc14ae2e.fbx",
+      "hash": "a6d4f7538d9e906200bde6ccc5bace0107aff6cb10f071f7a99f33be41318565",
+      "bytes": 530064,
+      "export_settings": {
+        "format": "fbx7",
+        "fps": 30,
+        "skin": false
+      },
+      "downloaded_at": "2026-11-24T15:02:50.523Z",
+      "product_url": "https://www.mixamo.com/#/?page=1&query=Dizzy%20Idle",
+      "terms": "Adobe/Mixamo terms",
+      "terms_url": "https://helpx.adobe.com/creative-cloud/faq/mixamo-faq.html",
+      "asset_id": "mixamo-library/animations/dizzy-idle-cad52d7a3c8cdc92913e-8d5977af883f-a74ddc14ae2e"
+    },
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.264Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/dizzy-idle__cad52d7a3c8cdc92913e_8d5977af883f_a74ddc14ae2e.fbx",
+        "path": "mixamo-library/animations/dizzy-idle__cad52d7a3c8cdc92913e_8d5977af883f_a74ddc14ae2e.fbx",
+        "source_hash": "sha256:a6d4f7538d9e906200bde6ccc5bace0107aff6cb10f071f7a99f33be41318565",
+        "hash": "sha256:a6d4f7538d9e906200bde6ccc5bace0107aff6cb10f071f7a99f33be41318565"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/dodging-back-c9c8f3f4b96c11e4a8020aaa78deedf9-inplace",
+    "source_path": "mixamo-library/animations/dodging_back__c9c8f3f4b96c11e4a8020aaa78deedf9_inplace.fbx",
+    "hash": "sha256:17335213643fab7a766e2ee6f7d57952bfd87aea6d74b66ec96e0f0aca713dde",
+    "license": "unknown",
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.273Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/dodging_back__c9c8f3f4b96c11e4a8020aaa78deedf9_inplace.fbx",
+        "path": "mixamo-library/animations/dodging_back__c9c8f3f4b96c11e4a8020aaa78deedf9_inplace.fbx",
+        "source_hash": "sha256:17335213643fab7a766e2ee6f7d57952bfd87aea6d74b66ec96e0f0aca713dde",
+        "hash": "sha256:17335213643fab7a766e2ee6f7d57952bfd87aea6d74b66ec96e0f0aca713dde"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/elbow-punch-c9c71ff7b96c11e4a8020aaa78deedf9-inplace",
+    "source_path": "mixamo-library/animations/elbow_punch__c9c71ff7b96c11e4a8020aaa78deedf9_inplace.fbx",
+    "hash": "sha256:ff105077f7b08ab5543a6db289abad805edbc155c069bfe26dd270e1637c6018",
+    "license": "unknown",
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.281Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/elbow_punch__c9c71ff7b96c11e4a8020aaa78deedf9_inplace.fbx",
+        "path": "mixamo-library/animations/elbow_punch__c9c71ff7b96c11e4a8020aaa78deedf9_inplace.fbx",
+        "source_hash": "sha256:ff105077f7b08ab5543a6db289abad805edbc155c069bfe26dd270e1637c6018",
+        "hash": "sha256:ff105077f7b08ab5543a6db289abad805edbc155c069bfe26dd270e1637c6018"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/falling-back-death-c7ca0a42539a596827e3-8d5977af883f-a74ddc14ae2e",
+    "source_path": "mixamo-library/animations/falling-back-death__c7ca0a42539a596827e3_8d5977af883f_a74ddc14ae2e.fbx",
+    "hash": "sha256:2aa28bbd8f43af4b541897295bc75ce4a9ad03dff4f8ded9db701795cc45d73e",
+    "license": "Adobe/Mixamo terms",
+    "provider": {
+      "product_id": "c9cdb348-b96c-11e4-a802-0aaa78deedf9",
+      "character_id": "4f5d21e1-4ccc-41f1-b35b-fb2547bd8493",
+      "variant": "default",
+      "export_settings_hash": "a74ddc14ae2e133f2264eb8c4af80d851a00664a34de4ba9712a683384520d27",
+      "relative_path": "mixamo-library/animations/falling-back-death__c7ca0a42539a596827e3_8d5977af883f_a74ddc14ae2e.fbx",
+      "hash": "2aa28bbd8f43af4b541897295bc75ce4a9ad03dff4f8ded9db701795cc45d73e",
+      "bytes": 477360,
+      "export_settings": {
+        "format": "fbx7",
+        "fps": 30,
+        "skin": false
+      },
+      "downloaded_at": "2026-11-25T02:17:50.883Z",
+      "product_url": "https://www.mixamo.com/#/?page=1&query=Falling%20Back%20Death",
+      "terms": "Adobe/Mixamo terms",
+      "terms_url": "https://helpx.adobe.com/creative-cloud/faq/mixamo-faq.html",
+      "asset_id": "mixamo-library/animations/falling-back-death-c7ca0a42539a596827e3-8d5977af883f-a74ddc14ae2e"
+    },
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.289Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/falling-back-death__c7ca0a42539a596827e3_8d5977af883f_a74ddc14ae2e.fbx",
+        "path": "mixamo-library/animations/falling-back-death__c7ca0a42539a596827e3_8d5977af883f_a74ddc14ae2e.fbx",
+        "source_hash": "sha256:2aa28bbd8f43af4b541897295bc75ce4a9ad03dff4f8ded9db701795cc45d73e",
+        "hash": "sha256:2aa28bbd8f43af4b541897295bc75ce4a9ad03dff4f8ded9db701795cc45d73e"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/falling-idle-c9c991b1b96c11e4a8020aaa78deedf9-inplace",
+    "source_path": "mixamo-library/animations/falling_idle__c9c991b1b96c11e4a8020aaa78deedf9_inplace.fbx",
+    "hash": "sha256:4aa279d9494a718b562fa20c6d1f37aebfe9e137ea964c8213b016607f205b67",
+    "license": "unknown",
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.296Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/falling_idle__c9c991b1b96c11e4a8020aaa78deedf9_inplace.fbx",
+        "path": "mixamo-library/animations/falling_idle__c9c991b1b96c11e4a8020aaa78deedf9_inplace.fbx",
+        "source_hash": "sha256:4aa279d9494a718b562fa20c6d1f37aebfe9e137ea964c8213b016607f205b67",
+        "hash": "sha256:4aa279d9494a718b562fa20c6d1f37aebfe9e137ea964c8213b016607f205b67"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/fight-idle-c9c63c12b96c11e4a8020aaa78deedf9-inplace",
+    "source_path": "mixamo-library/animations/fight_idle__c9c63c12b96c11e4a8020aaa78deedf9_inplace.fbx",
+    "hash": "sha256:933018a4ef5c0c420aa2cdf0427f9d4ff85865a1ee99a34a0d246117596b85da",
+    "license": "unknown",
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.304Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/fight_idle__c9c63c12b96c11e4a8020aaa78deedf9_inplace.fbx",
+        "path": "mixamo-library/animations/fight_idle__c9c63c12b96c11e4a8020aaa78deedf9_inplace.fbx",
+        "source_hash": "sha256:933018a4ef5c0c420aa2cdf0427f9d4ff85865a1ee99a34a0d246117596b85da",
+        "hash": "sha256:933018a4ef5c0c420aa2cdf0427f9d4ff85865a1ee99a34a0d246117596b85da"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/fighting-idle-c9c63ce7b96c11e4a8020aaa78deedf9-inplace",
+    "source_path": "mixamo-library/animations/fighting_idle__c9c63ce7b96c11e4a8020aaa78deedf9_inplace.fbx",
+    "hash": "sha256:bc7884dfc8a8531bcd26542dfa75b09773226d47869dfe9108d4e74fdc7eca93",
+    "license": "unknown",
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.311Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/fighting_idle__c9c63ce7b96c11e4a8020aaa78deedf9_inplace.fbx",
+        "path": "mixamo-library/animations/fighting_idle__c9c63ce7b96c11e4a8020aaa78deedf9_inplace.fbx",
+        "source_hash": "sha256:bc7884dfc8a8531bcd26542dfa75b09773226d47869dfe9108d4e74fdc7eca93",
+        "hash": "sha256:bc7884dfc8a8531bcd26542dfa75b09773226d47869dfe9108d4e74fdc7eca93"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/fist-pump-6c07d602efa93600e1e0-8d5977af883f-a74ddc14ae2e",
+    "source_path": "mixamo-library/animations/fist-pump__6c07d602efa93600e1e0_8d5977af883f_a74ddc14ae2e.fbx",
+    "hash": "sha256:0879c0657aefb8adde0ede21f6668ea0120eac4dc20b256775cd9758d7f5f0ee",
+    "license": "Adobe/Mixamo terms",
+    "provider": {
+      "product_id": "c9c91378-b96c-11e4-a802-0aaa78deedf9",
+      "character_id": "4f5d21e1-4ccc-41f1-b35b-fb2547bd8493",
+      "variant": "default",
+      "export_settings_hash": "a74ddc14ae2e133f2264eb8c4af80d851a00664a34de4ba9712a683384520d27",
+      "relative_path": "mixamo-library/animations/fist-pump__6c07d602efa93600e1e0_8d5977af883f_a74ddc14ae2e.fbx",
+      "hash": "0879c0657aefb8adde0ede21f6668ea0120eac4dc20b256775cd9758d7f5f0ee",
+      "bytes": 692048,
+      "export_settings": {
+        "format": "fbx7",
+        "fps": 30,
+        "skin": false
+      },
+      "downloaded_at": "2026-11-24T15:01:48.949Z",
+      "product_url": "https://www.mixamo.com/#/?page=1&query=Fist%20Pump",
+      "terms": "Adobe/Mixamo terms",
+      "terms_url": "https://helpx.adobe.com/creative-cloud/faq/mixamo-faq.html",
+      "asset_id": "mixamo-library/animations/fist-pump-6c07d602efa93600e1e0-8d5977af883f-a74ddc14ae2e"
+    },
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.320Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/fist-pump__6c07d602efa93600e1e0_8d5977af883f_a74ddc14ae2e.fbx",
+        "path": "mixamo-library/animations/fist-pump__6c07d602efa93600e1e0_8d5977af883f_a74ddc14ae2e.fbx",
+        "source_hash": "sha256:0879c0657aefb8adde0ede21f6668ea0120eac4dc20b256775cd9758d7f5f0ee",
+        "hash": "sha256:0879c0657aefb8adde0ede21f6668ea0120eac4dc20b256775cd9758d7f5f0ee"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/flying-kick-c9cd423bb96c11e4a8020aaa78deedf9-inplace",
+    "source_path": "mixamo-library/animations/flying_kick__c9cd423bb96c11e4a8020aaa78deedf9_inplace.fbx",
+    "hash": "sha256:073cef207a3e5ef93bf7cb6217d9e3cf6832a8f89edea4d7c34dfcf1b70feeaf",
+    "license": "unknown",
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.326Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/flying_kick__c9cd423bb96c11e4a8020aaa78deedf9_inplace.fbx",
+        "path": "mixamo-library/animations/flying_kick__c9cd423bb96c11e4a8020aaa78deedf9_inplace.fbx",
+        "source_hash": "sha256:073cef207a3e5ef93bf7cb6217d9e3cf6832a8f89edea4d7c34dfcf1b70feeaf",
+        "hash": "sha256:073cef207a3e5ef93bf7cb6217d9e3cf6832a8f89edea4d7c34dfcf1b70feeaf"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/forward-jump-c9c7282bb96c11e4a8020aaa78deedf9-inplace",
+    "source_path": "mixamo-library/animations/forward_jump__c9c7282bb96c11e4a8020aaa78deedf9_inplace.fbx",
+    "hash": "sha256:68aca1962311bdcc8ed7a4e2ec09b6cf8ff255c87bd89bffeb397c08493edc9b",
+    "license": "unknown",
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.333Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/forward_jump__c9c7282bb96c11e4a8020aaa78deedf9_inplace.fbx",
+        "path": "mixamo-library/animations/forward_jump__c9c7282bb96c11e4a8020aaa78deedf9_inplace.fbx",
+        "source_hash": "sha256:68aca1962311bdcc8ed7a4e2ec09b6cf8ff255c87bd89bffeb397c08493edc9b",
+        "hash": "sha256:68aca1962311bdcc8ed7a4e2ec09b6cf8ff255c87bd89bffeb397c08493edc9b"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/getting-up-2cac875aa3f55632b4e4-8d5977af883f-a74ddc14ae2e",
+    "source_path": "mixamo-library/animations/getting-up__2cac875aa3f55632b4e4_8d5977af883f_a74ddc14ae2e.fbx",
+    "hash": "sha256:578dc5feba69df5169f56f4c2ad1e6f3dfcbbe74e4c7ab9938bc8bdb9b5ce782",
+    "license": "Adobe/Mixamo terms",
+    "provider": {
+      "product_id": "c9c7276e-b96c-11e4-a802-0aaa78deedf9",
+      "character_id": "4f5d21e1-4ccc-41f1-b35b-fb2547bd8493",
+      "variant": "default",
+      "export_settings_hash": "a74ddc14ae2e133f2264eb8c4af80d851a00664a34de4ba9712a683384520d27",
+      "relative_path": "mixamo-library/animations/getting-up__2cac875aa3f55632b4e4_8d5977af883f_a74ddc14ae2e.fbx",
+      "hash": "578dc5feba69df5169f56f4c2ad1e6f3dfcbbe74e4c7ab9938bc8bdb9b5ce782",
+      "bytes": 997600,
+      "export_settings": {
+        "format": "fbx7",
+        "fps": 30,
+        "skin": false
+      },
+      "downloaded_at": "2026-11-24T13:10:15.385Z",
+      "product_url": "https://www.mixamo.com/#/?page=1&query=Getting%20Up",
+      "terms": "Adobe/Mixamo terms",
+      "terms_url": "https://helpx.adobe.com/creative-cloud/faq/mixamo-faq.html",
+      "asset_id": "mixamo-library/animations/getting-up-2cac875aa3f55632b4e4-8d5977af883f-a74ddc14ae2e"
+    },
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.342Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/getting-up__2cac875aa3f55632b4e4_8d5977af883f_a74ddc14ae2e.fbx",
+        "path": "mixamo-library/animations/getting-up__2cac875aa3f55632b4e4_8d5977af883f_a74ddc14ae2e.fbx",
+        "source_hash": "sha256:578dc5feba69df5169f56f4c2ad1e6f3dfcbbe74e4c7ab9938bc8bdb9b5ce782",
+        "hash": "sha256:578dc5feba69df5169f56f4c2ad1e6f3dfcbbe74e4c7ab9938bc8bdb9b5ce782"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/head-hit-c9cb57a9b96c11e4a8020aaa78deedf9-inplace",
+    "source_path": "mixamo-library/animations/head_hit__c9cb57a9b96c11e4a8020aaa78deedf9_inplace.fbx",
+    "hash": "sha256:24503532fd33b0119d73de05f204c3f70756f2b50928bbff0c8b4874359ecca7",
+    "license": "unknown",
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.356Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/head_hit__c9cb57a9b96c11e4a8020aaa78deedf9_inplace.fbx",
+        "path": "mixamo-library/animations/head_hit__c9cb57a9b96c11e4a8020aaa78deedf9_inplace.fbx",
+        "source_hash": "sha256:24503532fd33b0119d73de05f204c3f70756f2b50928bbff0c8b4874359ecca7",
+        "hash": "sha256:24503532fd33b0119d73de05f204c3f70756f2b50928bbff0c8b4874359ecca7"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/hit-reaction-c9c89ed9b96c11e4a8020aaa78deedf9-inplace",
+    "source_path": "mixamo-library/animations/hit_reaction__c9c89ed9b96c11e4a8020aaa78deedf9_inplace.fbx",
+    "hash": "sha256:c35df3ae28ce24d49f2080c480bce21ee93eaf5fcea49aecbfb136146fdbd965",
+    "license": "unknown",
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.369Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/hit_reaction__c9c89ed9b96c11e4a8020aaa78deedf9_inplace.fbx",
+        "path": "mixamo-library/animations/hit_reaction__c9c89ed9b96c11e4a8020aaa78deedf9_inplace.fbx",
+        "source_hash": "sha256:c35df3ae28ce24d49f2080c480bce21ee93eaf5fcea49aecbfb136146fdbd965",
+        "hash": "sha256:c35df3ae28ce24d49f2080c480bce21ee93eaf5fcea49aecbfb136146fdbd965"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/hook-c9cb0f38b96c11e4a8020aaa78deedf9-inplace",
+    "source_path": "mixamo-library/animations/hook__c9cb0f38b96c11e4a8020aaa78deedf9_inplace.fbx",
+    "hash": "sha256:f95dbcd17bf527748b70fbc0054683473ac00fe00d6864e352bbdf0171460fc4",
+    "license": "unknown",
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.377Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/hook__c9cb0f38b96c11e4a8020aaa78deedf9_inplace.fbx",
+        "path": "mixamo-library/animations/hook__c9cb0f38b96c11e4a8020aaa78deedf9_inplace.fbx",
+        "source_hash": "sha256:f95dbcd17bf527748b70fbc0054683473ac00fe00d6864e352bbdf0171460fc4",
+        "hash": "sha256:f95dbcd17bf527748b70fbc0054683473ac00fe00d6864e352bbdf0171460fc4"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/hook-c9cb1308b96c11e4a8020aaa78deedf9-inplace",
+    "source_path": "mixamo-library/animations/hook__c9cb1308b96c11e4a8020aaa78deedf9_inplace.fbx",
+    "hash": "sha256:b8d24bab235a681408a3b6afeca6b968d81828def85ee6e25f1eab1ed2345624",
+    "license": "unknown",
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.383Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/hook__c9cb1308b96c11e4a8020aaa78deedf9_inplace.fbx",
+        "path": "mixamo-library/animations/hook__c9cb1308b96c11e4a8020aaa78deedf9_inplace.fbx",
+        "source_hash": "sha256:b8d24bab235a681408a3b6afeca6b968d81828def85ee6e25f1eab1ed2345624",
+        "hash": "sha256:b8d24bab235a681408a3b6afeca6b968d81828def85ee6e25f1eab1ed2345624"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/illegal-elbow-punch-4963e5bc869312b1c15a-8d5977af883f-a74ddc14ae2e",
+    "source_path": "mixamo-library/animations/illegal-elbow-punch__4963e5bc869312b1c15a_8d5977af883f_a74ddc14ae2e.fbx",
+    "hash": "sha256:fecb72c3680ed1bbcfb2d0e0b3bc3e5e3caa6f2e0155cf1912f25841795ce88c",
+    "license": "Adobe/Mixamo terms",
+    "provider": {
+      "product_id": "c9cadea3-b96c-11e4-a802-0aaa78deedf9",
+      "character_id": "4f5d21e1-4ccc-41f1-b35b-fb2547bd8493",
+      "variant": "default",
+      "export_settings_hash": "a74ddc14ae2e133f2264eb8c4af80d851a00664a34de4ba9712a683384520d27",
+      "relative_path": "mixamo-library/animations/illegal-elbow-punch__4963e5bc869312b1c15a_8d5977af883f_a74ddc14ae2e.fbx",
+      "hash": "fecb72c3680ed1bbcfb2d0e0b3bc3e5e3caa6f2e0155cf1912f25841795ce88c",
+      "bytes": 425840,
+      "export_settings": {
+        "format": "fbx7",
+        "fps": 30,
+        "skin": false
+      },
+      "downloaded_at": "2026-11-24T13:48:12.833Z",
+      "product_url": "https://www.mixamo.com/#/?page=1&query=Illegal%20Elbow%20Punch",
+      "terms": "Adobe/Mixamo terms",
+      "terms_url": "https://helpx.adobe.com/creative-cloud/faq/mixamo-faq.html",
+      "asset_id": "mixamo-library/animations/illegal-elbow-punch-4963e5bc869312b1c15a-8d5977af883f-a74ddc14ae2e"
+    },
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.389Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/illegal-elbow-punch__4963e5bc869312b1c15a_8d5977af883f_a74ddc14ae2e.fbx",
+        "path": "mixamo-library/animations/illegal-elbow-punch__4963e5bc869312b1c15a_8d5977af883f_a74ddc14ae2e.fbx",
+        "source_hash": "sha256:fecb72c3680ed1bbcfb2d0e0b3bc3e5e3caa6f2e0155cf1912f25841795ce88c",
+        "hash": "sha256:fecb72c3680ed1bbcfb2d0e0b3bc3e5e3caa6f2e0155cf1912f25841795ce88c"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/illegal-knee-c9cae0e3b96c11e4a8020aaa78deedf9-inplace",
+    "source_path": "mixamo-library/animations/illegal_knee__c9cae0e3b96c11e4a8020aaa78deedf9_inplace.fbx",
+    "hash": "sha256:b038335dc06f8086d6f9947447bf5bd21d3c66e31cba20ee0fc0f1094f692265",
+    "license": "unknown",
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.397Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/illegal_knee__c9cae0e3b96c11e4a8020aaa78deedf9_inplace.fbx",
+        "path": "mixamo-library/animations/illegal_knee__c9cae0e3b96c11e4a8020aaa78deedf9_inplace.fbx",
+        "source_hash": "sha256:b038335dc06f8086d6f9947447bf5bd21d3c66e31cba20ee0fc0f1094f692265",
+        "hash": "sha256:b038335dc06f8086d6f9947447bf5bd21d3c66e31cba20ee0fc0f1094f692265"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/inside-crescent-kick-c9c626e0b96c11e4a8020aaa78deedf9-inplace",
+    "source_path": "mixamo-library/animations/inside_crescent_kick__c9c626e0b96c11e4a8020aaa78deedf9_inplace.fbx",
+    "hash": "sha256:b6e8ee771243f3fb2fa0b8096ab717c27a8aae4d8cbdc8c88d331559a69f82d2",
+    "license": "unknown",
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.402Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/inside_crescent_kick__c9c626e0b96c11e4a8020aaa78deedf9_inplace.fbx",
+        "path": "mixamo-library/animations/inside_crescent_kick__c9c626e0b96c11e4a8020aaa78deedf9_inplace.fbx",
+        "source_hash": "sha256:b6e8ee771243f3fb2fa0b8096ab717c27a8aae4d8cbdc8c88d331559a69f82d2",
+        "hash": "sha256:b6e8ee771243f3fb2fa0b8096ab717c27a8aae4d8cbdc8c88d331559a69f82d2"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/jab-to-elbow-punch-c9c7eedeb96c11e4a8020aaa78deedf9-inplace",
+    "source_path": "mixamo-library/animations/jab_to_elbow_punch__c9c7eedeb96c11e4a8020aaa78deedf9_inplace.fbx",
+    "hash": "sha256:f57c33b5b521cd9df71c14ec91086f1765caef264d47ad30d692a2d8e4acb7c9",
+    "license": "unknown",
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.409Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/jab_to_elbow_punch__c9c7eedeb96c11e4a8020aaa78deedf9_inplace.fbx",
+        "path": "mixamo-library/animations/jab_to_elbow_punch__c9c7eedeb96c11e4a8020aaa78deedf9_inplace.fbx",
+        "source_hash": "sha256:f57c33b5b521cd9df71c14ec91086f1765caef264d47ad30d692a2d8e4acb7c9",
+        "hash": "sha256:f57c33b5b521cd9df71c14ec91086f1765caef264d47ad30d692a2d8e4acb7c9"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/knee-kick-lead-c9c60c4fb96c11e4a8020aaa78deedf9-inplace",
+    "source_path": "mixamo-library/animations/knee_kick_lead__c9c60c4fb96c11e4a8020aaa78deedf9_inplace.fbx",
+    "hash": "sha256:12b51edd152a9450beed67c3eccb790b82aa8dc396361d05358ce9bdfbdb0448",
+    "license": "unknown",
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.416Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/knee_kick_lead__c9c60c4fb96c11e4a8020aaa78deedf9_inplace.fbx",
+        "path": "mixamo-library/animations/knee_kick_lead__c9c60c4fb96c11e4a8020aaa78deedf9_inplace.fbx",
+        "source_hash": "sha256:12b51edd152a9450beed67c3eccb790b82aa8dc396361d05358ce9bdfbdb0448",
+        "hash": "sha256:12b51edd152a9450beed67c3eccb790b82aa8dc396361d05358ce9bdfbdb0448"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/left-strafe-walking-bb39dc60e4bcd0d4c592-8d5977af883f-a74ddc14ae2e-inplace",
+    "source_path": "mixamo-library/animations/left-strafe-walking__bb39dc60e4bcd0d4c592_8d5977af883f_a74ddc14ae2e_inplace.fbx",
+    "hash": "sha256:09d0b6f6c2f6c2744964628b5fd27c377671836ac9c654a5a50ab16784dda72a",
+    "license": "Adobe/Mixamo terms",
+    "provider": {
+      "product_id": "c9c96857-b96c-11e4-a802-0aaa78deedf9",
+      "character_id": "4f5d21e1-4ccc-41f1-b35b-fb2547bd8493",
+      "variant": "inplace",
+      "export_settings_hash": "a74ddc14ae2e133f2264eb8c4af80d851a00664a34de4ba9712a683384520d27",
+      "relative_path": "mixamo-library/animations/left-strafe-walking__bb39dc60e4bcd0d4c592_8d5977af883f_a74ddc14ae2e_inplace.fbx",
+      "hash": "09d0b6f6c2f6c2744964628b5fd27c377671836ac9c654a5a50ab16784dda72a",
+      "bytes": 376080,
+      "export_settings": {
+        "format": "fbx7",
+        "fps": 30,
+        "skin": false
+      },
+      "downloaded_at": "2026-11-24T23:53:31.795Z",
+      "product_url": "https://www.mixamo.com/#/?page=1&query=Left%20Strafe%20Walking",
+      "terms": "Adobe/Mixamo terms",
+      "terms_url": "https://helpx.adobe.com/creative-cloud/faq/mixamo-faq.html",
+      "asset_id": "mixamo-library/animations/left-strafe-walking-bb39dc60e4bcd0d4c592-8d5977af883f-a74ddc14ae2e-inplace"
+    },
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.425Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/left-strafe-walking__bb39dc60e4bcd0d4c592_8d5977af883f_a74ddc14ae2e_inplace.fbx",
+        "path": "mixamo-library/animations/left-strafe-walking__bb39dc60e4bcd0d4c592_8d5977af883f_a74ddc14ae2e_inplace.fbx",
+        "source_hash": "sha256:09d0b6f6c2f6c2744964628b5fd27c377671836ac9c654a5a50ab16784dda72a",
+        "hash": "sha256:09d0b6f6c2f6c2744964628b5fd27c377671836ac9c654a5a50ab16784dda72a"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/martelo-3-c9cbb918b96c11e4a8020aaa78deedf9-inplace",
+    "source_path": "mixamo-library/animations/martelo_3__c9cbb918b96c11e4a8020aaa78deedf9_inplace.fbx",
+    "hash": "sha256:089182f291413339c2b8cee03f782c5a3fe2f936251ef16590b990818fb06fb6",
+    "license": "unknown",
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.437Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/martelo_3__c9cbb918b96c11e4a8020aaa78deedf9_inplace.fbx",
+        "path": "mixamo-library/animations/martelo_3__c9cbb918b96c11e4a8020aaa78deedf9_inplace.fbx",
+        "source_hash": "sha256:089182f291413339c2b8cee03f782c5a3fe2f936251ef16590b990818fb06fb6",
+        "hash": "sha256:089182f291413339c2b8cee03f782c5a3fe2f936251ef16590b990818fb06fb6"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/meia-lua-de-compasso-c9cbc42ab96c11e4a8020aaa78deedf9-inplace",
+    "source_path": "mixamo-library/animations/meia_lua_de_compasso__c9cbc42ab96c11e4a8020aaa78deedf9_inplace.fbx",
+    "hash": "sha256:ef5766609574f23eba94349a569091ec5700a64900803411af2a513fd383e48d",
+    "license": "unknown",
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.447Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/meia_lua_de_compasso__c9cbc42ab96c11e4a8020aaa78deedf9_inplace.fbx",
+        "path": "mixamo-library/animations/meia_lua_de_compasso__c9cbc42ab96c11e4a8020aaa78deedf9_inplace.fbx",
+        "source_hash": "sha256:ef5766609574f23eba94349a569091ec5700a64900803411af2a513fd383e48d",
+        "hash": "sha256:ef5766609574f23eba94349a569091ec5700a64900803411af2a513fd383e48d"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/meia-lua-de-frente-c9cbc81cb96c11e4a8020aaa78deedf9-inplace",
+    "source_path": "mixamo-library/animations/meia_lua_de_frente__c9cbc81cb96c11e4a8020aaa78deedf9_inplace.fbx",
+    "hash": "sha256:1710859663d5a1465e13cf038c9c1ae98e5dde969f2a37a6873242d77de6344e",
+    "license": "unknown",
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.457Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/meia_lua_de_frente__c9cbc81cb96c11e4a8020aaa78deedf9_inplace.fbx",
+        "path": "mixamo-library/animations/meia_lua_de_frente__c9cbc81cb96c11e4a8020aaa78deedf9_inplace.fbx",
+        "source_hash": "sha256:1710859663d5a1465e13cf038c9c1ae98e5dde969f2a37a6873242d77de6344e",
+        "hash": "sha256:1710859663d5a1465e13cf038c9c1ae98e5dde969f2a37a6873242d77de6344e"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/mma-kick-c9cd28fcb96c11e4a8020aaa78deedf9-inplace",
+    "source_path": "mixamo-library/animations/mma_kick__c9cd28fcb96c11e4a8020aaa78deedf9_inplace.fbx",
+    "hash": "sha256:e4c5b760d80300146ee5ed465ede3dd4466f57646865b8296289b91b47b06d8a",
+    "license": "unknown",
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.465Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/mma_kick__c9cd28fcb96c11e4a8020aaa78deedf9_inplace.fbx",
+        "path": "mixamo-library/animations/mma_kick__c9cd28fcb96c11e4a8020aaa78deedf9_inplace.fbx",
+        "source_hash": "sha256:e4c5b760d80300146ee5ed465ede3dd4466f57646865b8296289b91b47b06d8a",
+        "hash": "sha256:e4c5b760d80300146ee5ed465ede3dd4466f57646865b8296289b91b47b06d8a"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/mma-kick-c9cd385bb96c11e4a8020aaa78deedf9-inplace",
+    "source_path": "mixamo-library/animations/mma_kick__c9cd385bb96c11e4a8020aaa78deedf9_inplace.fbx",
+    "hash": "sha256:da7c418cbf2b65a73a1ee37fcd48bbc826825e0d1856205ad1e62fc1c35d7f0c",
+    "license": "unknown",
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.471Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/mma_kick__c9cd385bb96c11e4a8020aaa78deedf9_inplace.fbx",
+        "path": "mixamo-library/animations/mma_kick__c9cd385bb96c11e4a8020aaa78deedf9_inplace.fbx",
+        "source_hash": "sha256:da7c418cbf2b65a73a1ee37fcd48bbc826825e0d1856205ad1e62fc1c35d7f0c",
+        "hash": "sha256:da7c418cbf2b65a73a1ee37fcd48bbc826825e0d1856205ad1e62fc1c35d7f0c"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/punching-c9c5f7e1b96c11e4a8020aaa78deedf9-inplace",
+    "source_path": "mixamo-library/animations/punching__c9c5f7e1b96c11e4a8020aaa78deedf9_inplace.fbx",
+    "hash": "sha256:69ae2fccd64e5f02e6be6ea35e3c05a62d28952d6c5029b2a7543bceec3ffd19",
+    "license": "unknown",
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.477Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/punching__c9c5f7e1b96c11e4a8020aaa78deedf9_inplace.fbx",
+        "path": "mixamo-library/animations/punching__c9c5f7e1b96c11e4a8020aaa78deedf9_inplace.fbx",
+        "source_hash": "sha256:69ae2fccd64e5f02e6be6ea35e3c05a62d28952d6c5029b2a7543bceec3ffd19",
+        "hash": "sha256:69ae2fccd64e5f02e6be6ea35e3c05a62d28952d6c5029b2a7543bceec3ffd19"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/punching-c9c5fab8b96c11e4a8020aaa78deedf9-inplace",
+    "source_path": "mixamo-library/animations/punching__c9c5fab8b96c11e4a8020aaa78deedf9_inplace.fbx",
+    "hash": "sha256:17f8029b094e6884efdbd5566eb1b33785acb0100b51ba8fed32c7db20bf5be5",
+    "license": "unknown",
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.485Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/punching__c9c5fab8b96c11e4a8020aaa78deedf9_inplace.fbx",
+        "path": "mixamo-library/animations/punching__c9c5fab8b96c11e4a8020aaa78deedf9_inplace.fbx",
+        "source_hash": "sha256:17f8029b094e6884efdbd5566eb1b33785acb0100b51ba8fed32c7db20bf5be5",
+        "hash": "sha256:17f8029b094e6884efdbd5566eb1b33785acb0100b51ba8fed32c7db20bf5be5"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/right-hook-c9c9b7c5b96c11e4a8020aaa78deedf9-inplace",
+    "source_path": "mixamo-library/animations/right_hook__c9c9b7c5b96c11e4a8020aaa78deedf9_inplace.fbx",
+    "hash": "sha256:86b505995dd330e9e5871c01409c8c8950671d98331940c1ba2ba599bacde87f",
+    "license": "unknown",
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.492Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/right_hook__c9c9b7c5b96c11e4a8020aaa78deedf9_inplace.fbx",
+        "path": "mixamo-library/animations/right_hook__c9c9b7c5b96c11e4a8020aaa78deedf9_inplace.fbx",
+        "source_hash": "sha256:86b505995dd330e9e5871c01409c8c8950671d98331940c1ba2ba599bacde87f",
+        "hash": "sha256:86b505995dd330e9e5871c01409c8c8950671d98331940c1ba2ba599bacde87f"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/right-strafe-walking-e7125fb49d6ed05a841e-8d5977af883f-a74ddc14ae2e-inplace",
+    "source_path": "mixamo-library/animations/right-strafe-walking__e7125fb49d6ed05a841e_8d5977af883f_a74ddc14ae2e_inplace.fbx",
+    "hash": "sha256:76746986265f35a02c1c9b6051cbffe2de46f59f6c326df0d17000656c4968df",
+    "license": "Adobe/Mixamo terms",
+    "provider": {
+      "product_id": "c9c96924-b96c-11e4-a802-0aaa78deedf9",
+      "character_id": "4f5d21e1-4ccc-41f1-b35b-fb2547bd8493",
+      "variant": "inplace",
+      "export_settings_hash": "a74ddc14ae2e133f2264eb8c4af80d851a00664a34de4ba9712a683384520d27",
+      "relative_path": "mixamo-library/animations/right-strafe-walking__e7125fb49d6ed05a841e_8d5977af883f_a74ddc14ae2e_inplace.fbx",
+      "hash": "76746986265f35a02c1c9b6051cbffe2de46f59f6c326df0d17000656c4968df",
+      "bytes": 376080,
+      "export_settings": {
+        "format": "fbx7",
+        "fps": 30,
+        "skin": false
+      },
+      "downloaded_at": "2026-11-24T23:54:34.195Z",
+      "product_url": "https://www.mixamo.com/#/?page=1&query=Right%20Strafe%20Walking",
+      "terms": "Adobe/Mixamo terms",
+      "terms_url": "https://helpx.adobe.com/creative-cloud/faq/mixamo-faq.html",
+      "asset_id": "mixamo-library/animations/right-strafe-walking-e7125fb49d6ed05a841e-8d5977af883f-a74ddc14ae2e-inplace"
+    },
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.498Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/right-strafe-walking__e7125fb49d6ed05a841e_8d5977af883f_a74ddc14ae2e_inplace.fbx",
+        "path": "mixamo-library/animations/right-strafe-walking__e7125fb49d6ed05a841e_8d5977af883f_a74ddc14ae2e_inplace.fbx",
+        "source_hash": "sha256:76746986265f35a02c1c9b6051cbffe2de46f59f6c326df0d17000656c4968df",
+        "hash": "sha256:76746986265f35a02c1c9b6051cbffe2de46f59f6c326df0d17000656c4968df"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/roundhouse-kick-c9c63db2b96c11e4a8020aaa78deedf9-inplace",
+    "source_path": "mixamo-library/animations/roundhouse_kick__c9c63db2b96c11e4a8020aaa78deedf9_inplace.fbx",
+    "hash": "sha256:59b9833f39c9b2d2d78a3936edc69cbfd776b5ab7b6da7802ca5aa2b43adb04d",
+    "license": "unknown",
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.505Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/roundhouse_kick__c9c63db2b96c11e4a8020aaa78deedf9_inplace.fbx",
+        "path": "mixamo-library/animations/roundhouse_kick__c9c63db2b96c11e4a8020aaa78deedf9_inplace.fbx",
+        "source_hash": "sha256:59b9833f39c9b2d2d78a3936edc69cbfd776b5ab7b6da7802ca5aa2b43adb04d",
+        "hash": "sha256:59b9833f39c9b2d2d78a3936edc69cbfd776b5ab7b6da7802ca5aa2b43adb04d"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/roundhouse-kick-c9c7fc2eb96c11e4a8020aaa78deedf9-inplace",
+    "source_path": "mixamo-library/animations/roundhouse_kick__c9c7fc2eb96c11e4a8020aaa78deedf9_inplace.fbx",
+    "hash": "sha256:50059f2f96bdddc18738793dd13d3d3e92471441b762c8e85256170005fdf1fc",
+    "license": "unknown",
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.512Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/roundhouse_kick__c9c7fc2eb96c11e4a8020aaa78deedf9_inplace.fbx",
+        "path": "mixamo-library/animations/roundhouse_kick__c9c7fc2eb96c11e4a8020aaa78deedf9_inplace.fbx",
+        "source_hash": "sha256:50059f2f96bdddc18738793dd13d3d3e92471441b762c8e85256170005fdf1fc",
+        "hash": "sha256:50059f2f96bdddc18738793dd13d3d3e92471441b762c8e85256170005fdf1fc"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/spin-flip-kick-52bdc1f24f2c83d2fab5-8d5977af883f-a74ddc14ae2e",
+    "source_path": "mixamo-library/animations/spin-flip-kick__52bdc1f24f2c83d2fab5_8d5977af883f_a74ddc14ae2e.fbx",
+    "hash": "sha256:85d859c3f625ccd2332e25847d499448d7b72af493482f580a2fc6b5a243e3a9",
+    "license": "Adobe/Mixamo terms",
+    "provider": {
+      "product_id": "c9caafaa-b96c-11e4-a802-0aaa78deedf9",
+      "character_id": "4f5d21e1-4ccc-41f1-b35b-fb2547bd8493",
+      "variant": "default",
+      "export_settings_hash": "a74ddc14ae2e133f2264eb8c4af80d851a00664a34de4ba9712a683384520d27",
+      "relative_path": "mixamo-library/animations/spin-flip-kick__52bdc1f24f2c83d2fab5_8d5977af883f_a74ddc14ae2e.fbx",
+      "hash": "85d859c3f625ccd2332e25847d499448d7b72af493482f580a2fc6b5a243e3a9",
+      "bytes": 683616,
+      "export_settings": {
+        "format": "fbx7",
+        "fps": 30,
+        "skin": false
+      },
+      "downloaded_at": "2026-11-25T02:39:51.641Z",
+      "product_url": "https://www.mixamo.com/#/?page=1&query=Spin%20Flip%20Kick",
+      "terms": "Adobe/Mixamo terms",
+      "terms_url": "https://helpx.adobe.com/creative-cloud/faq/mixamo-faq.html",
+      "asset_id": "mixamo-library/animations/spin-flip-kick-52bdc1f24f2c83d2fab5-8d5977af883f-a74ddc14ae2e"
+    },
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.519Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/spin-flip-kick__52bdc1f24f2c83d2fab5_8d5977af883f_a74ddc14ae2e.fbx",
+        "path": "mixamo-library/animations/spin-flip-kick__52bdc1f24f2c83d2fab5_8d5977af883f_a74ddc14ae2e.fbx",
+        "source_hash": "sha256:85d859c3f625ccd2332e25847d499448d7b72af493482f580a2fc6b5a243e3a9",
+        "hash": "sha256:85d859c3f625ccd2332e25847d499448d7b72af493482f580a2fc6b5a243e3a9"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/spin-flip-kick-c9caafaab96c11e4a8020aaa78deedf9",
+    "source_path": "mixamo-library/animations/spin_flip_kick__c9caafaab96c11e4a8020aaa78deedf9.fbx",
+    "hash": "sha256:dd6ce965881fffb1cb3c8cdb0b03647c5497f862846ae0f1f6435ac88032431c",
+    "license": "unknown",
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.528Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/spin_flip_kick__c9caafaab96c11e4a8020aaa78deedf9.fbx",
+        "path": "mixamo-library/animations/spin_flip_kick__c9caafaab96c11e4a8020aaa78deedf9.fbx",
+        "source_hash": "sha256:dd6ce965881fffb1cb3c8cdb0b03647c5497f862846ae0f1f6435ac88032431c",
+        "hash": "sha256:dd6ce965881fffb1cb3c8cdb0b03647c5497f862846ae0f1f6435ac88032431c"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/standing-1h-magic-attack-01-a3d120fdc26a46c7a4a059c1c5d8157c-inplace",
+    "source_path": "mixamo-library/animations/standing_1h_magic_attack_01__a3d120fdc26a46c7a4a059c1c5d8157c_inplace.fbx",
+    "hash": "sha256:ca688777e1f9a29595c9fb455e14d57d5907fca87cc92945cfe3cd7f0d1e176b",
+    "license": "unknown",
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.537Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/standing_1h_magic_attack_01__a3d120fdc26a46c7a4a059c1c5d8157c_inplace.fbx",
+        "path": "mixamo-library/animations/standing_1h_magic_attack_01__a3d120fdc26a46c7a4a059c1c5d8157c_inplace.fbx",
+        "source_hash": "sha256:ca688777e1f9a29595c9fb455e14d57d5907fca87cc92945cfe3cd7f0d1e176b",
+        "hash": "sha256:ca688777e1f9a29595c9fb455e14d57d5907fca87cc92945cfe3cd7f0d1e176b"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/standing-2h-magic-area-attack-01-4234aaa1d531b98ef0f8-8d5977af883f-a74ddc14ae2e",
+    "source_path": "mixamo-library/animations/standing-2h-magic-area-attack-01__4234aaa1d531b98ef0f8_8d5977af883f_a74ddc14ae2e.fbx",
+    "hash": "sha256:d686da3e65979cffb1db7f1919bc351d9df574c0053402ba9e00f07866538bbe",
+    "license": "Adobe/Mixamo terms",
+    "provider": {
+      "product_id": "3a2c5c31-fe8a-4eb1-98c7-ad6cbb95b547",
+      "character_id": "4f5d21e1-4ccc-41f1-b35b-fb2547bd8493",
+      "variant": "default",
+      "export_settings_hash": "a74ddc14ae2e133f2264eb8c4af80d851a00664a34de4ba9712a683384520d27",
+      "relative_path": "mixamo-library/animations/standing-2h-magic-area-attack-01__4234aaa1d531b98ef0f8_8d5977af883f_a74ddc14ae2e.fbx",
+      "hash": "d686da3e65979cffb1db7f1919bc351d9df574c0053402ba9e00f07866538bbe",
+      "bytes": 598640,
+      "export_settings": {
+        "format": "fbx7",
+        "fps": 30,
+        "skin": false
+      },
+      "downloaded_at": "2026-11-24T23:54:12.113Z",
+      "product_url": "https://www.mixamo.com/#/?page=1&query=Standing%202H%20Magic%20Area%20Attack%2001",
+      "terms": "Adobe/Mixamo terms",
+      "terms_url": "https://helpx.adobe.com/creative-cloud/faq/mixamo-faq.html",
+      "asset_id": "mixamo-library/animations/standing-2h-magic-area-attack-01-4234aaa1d531b98ef0f8-8d5977af883f-a74ddc14ae2e"
+    },
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.546Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/standing-2h-magic-area-attack-01__4234aaa1d531b98ef0f8_8d5977af883f_a74ddc14ae2e.fbx",
+        "path": "mixamo-library/animations/standing-2h-magic-area-attack-01__4234aaa1d531b98ef0f8_8d5977af883f_a74ddc14ae2e.fbx",
+        "source_hash": "sha256:d686da3e65979cffb1db7f1919bc351d9df574c0053402ba9e00f07866538bbe",
+        "hash": "sha256:d686da3e65979cffb1db7f1919bc351d9df574c0053402ba9e00f07866538bbe"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/standing-2h-magic-attack-02-6e2dad1a27254df2adb920dd3007ca8c",
+    "source_path": "mixamo-library/animations/standing_2h_magic_attack_02__6e2dad1a27254df2adb920dd3007ca8c.fbx",
+    "hash": "sha256:35302f4605f8a4de2a838fa3f0bdb8fa073c1ed2925410742395b01651be1b1a",
+    "license": "unknown",
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.556Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/standing_2h_magic_attack_02__6e2dad1a27254df2adb920dd3007ca8c.fbx",
+        "path": "mixamo-library/animations/standing_2h_magic_attack_02__6e2dad1a27254df2adb920dd3007ca8c.fbx",
+        "source_hash": "sha256:35302f4605f8a4de2a838fa3f0bdb8fa073c1ed2925410742395b01651be1b1a",
+        "hash": "sha256:35302f4605f8a4de2a838fa3f0bdb8fa073c1ed2925410742395b01651be1b1a"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/standing-2h-magic-attack-03-e21d35a0508c4ed3af3ddac75080d944",
+    "source_path": "mixamo-library/animations/standing_2h_magic_attack_03__e21d35a0508c4ed3af3ddac75080d944.fbx",
+    "hash": "sha256:c68f613fc98eaf31b2148d7d86716089a2e7b2c89c0823d35373cf16053e7365",
+    "license": "unknown",
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.564Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/standing_2h_magic_attack_03__e21d35a0508c4ed3af3ddac75080d944.fbx",
+        "path": "mixamo-library/animations/standing_2h_magic_attack_03__e21d35a0508c4ed3af3ddac75080d944.fbx",
+        "source_hash": "sha256:c68f613fc98eaf31b2148d7d86716089a2e7b2c89c0823d35373cf16053e7365",
+        "hash": "sha256:c68f613fc98eaf31b2148d7d86716089a2e7b2c89c0823d35373cf16053e7365"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/standing-2h-magic-attack-05-2779e73dcd1a40f7bc6922421dba1960-inplace",
+    "source_path": "mixamo-library/animations/standing_2h_magic_attack_05__2779e73dcd1a40f7bc6922421dba1960_inplace.fbx",
+    "hash": "sha256:8829e94388b1a9605a3a311ee6898e7fe57efb5d0c98964261aa9976d0187dbd",
+    "license": "unknown",
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.572Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/standing_2h_magic_attack_05__2779e73dcd1a40f7bc6922421dba1960_inplace.fbx",
+        "path": "mixamo-library/animations/standing_2h_magic_attack_05__2779e73dcd1a40f7bc6922421dba1960_inplace.fbx",
+        "source_hash": "sha256:8829e94388b1a9605a3a311ee6898e7fe57efb5d0c98964261aa9976d0187dbd",
+        "hash": "sha256:8829e94388b1a9605a3a311ee6898e7fe57efb5d0c98964261aa9976d0187dbd"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/standing-block-idle-fc911a109a84d5601eab-8d5977af883f-a74ddc14ae2e",
+    "source_path": "mixamo-library/animations/standing-block-idle__fc911a109a84d5601eab_8d5977af883f_a74ddc14ae2e.fbx",
+    "hash": "sha256:72b676901bb4b488f9d43001c0d32af4a09e848e1e09fdff8f1c129afe0cebae",
+    "license": "Adobe/Mixamo terms",
+    "provider": {
+      "product_id": "460d707b-f0f0-4cea-9db1-c2eda13d8c1f",
+      "character_id": "4f5d21e1-4ccc-41f1-b35b-fb2547bd8493",
+      "variant": "default",
+      "export_settings_hash": "a74ddc14ae2e133f2264eb8c4af80d851a00664a34de4ba9712a683384520d27",
+      "relative_path": "mixamo-library/animations/standing-block-idle__fc911a109a84d5601eab_8d5977af883f_a74ddc14ae2e.fbx",
+      "hash": "72b676901bb4b488f9d43001c0d32af4a09e848e1e09fdff8f1c129afe0cebae",
+      "bytes": 533040,
+      "export_settings": {
+        "format": "fbx7",
+        "fps": 30,
+        "skin": false
+      },
+      "downloaded_at": "2026-11-24T14:58:11.827Z",
+      "product_url": "https://www.mixamo.com/#/?page=1&query=Standing%20Block%20Idle",
+      "terms": "Adobe/Mixamo terms",
+      "terms_url": "https://helpx.adobe.com/creative-cloud/faq/mixamo-faq.html",
+      "asset_id": "mixamo-library/animations/standing-block-idle-fc911a109a84d5601eab-8d5977af883f-a74ddc14ae2e"
+    },
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.578Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/standing-block-idle__fc911a109a84d5601eab_8d5977af883f_a74ddc14ae2e.fbx",
+        "path": "mixamo-library/animations/standing-block-idle__fc911a109a84d5601eab_8d5977af883f_a74ddc14ae2e.fbx",
+        "source_hash": "sha256:72b676901bb4b488f9d43001c0d32af4a09e848e1e09fdff8f1c129afe0cebae",
+        "hash": "sha256:72b676901bb4b488f9d43001c0d32af4a09e848e1e09fdff8f1c129afe0cebae"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/standing-block-react-large-743e66a18c3cdf720613-8d5977af883f-a74ddc14ae2e",
+    "source_path": "mixamo-library/animations/standing-block-react-large__743e66a18c3cdf720613_8d5977af883f_a74ddc14ae2e.fbx",
+    "hash": "sha256:0e66e86f8d6ca4082feb981f51c360a5466e142bd7df362ae3a97b723372ec5e",
+    "license": "Adobe/Mixamo terms",
+    "provider": {
+      "product_id": "03aca155-0078-40a3-a52b-04d3eaa7287d",
+      "character_id": "4f5d21e1-4ccc-41f1-b35b-fb2547bd8493",
+      "variant": "default",
+      "export_settings_hash": "a74ddc14ae2e133f2264eb8c4af80d851a00664a34de4ba9712a683384520d27",
+      "relative_path": "mixamo-library/animations/standing-block-react-large__743e66a18c3cdf720613_8d5977af883f_a74ddc14ae2e.fbx",
+      "hash": "0e66e86f8d6ca4082feb981f51c360a5466e142bd7df362ae3a97b723372ec5e",
+      "bytes": 412336,
+      "export_settings": {
+        "format": "fbx7",
+        "fps": 30,
+        "skin": false
+      },
+      "downloaded_at": "2026-11-25T02:16:09.037Z",
+      "product_url": "https://www.mixamo.com/#/?page=1&query=Standing%20Block%20React%20Large",
+      "terms": "Adobe/Mixamo terms",
+      "terms_url": "https://helpx.adobe.com/creative-cloud/faq/mixamo-faq.html",
+      "asset_id": "mixamo-library/animations/standing-block-react-large-743e66a18c3cdf720613-8d5977af883f-a74ddc14ae2e"
+    },
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.585Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/standing-block-react-large__743e66a18c3cdf720613_8d5977af883f_a74ddc14ae2e.fbx",
+        "path": "mixamo-library/animations/standing-block-react-large__743e66a18c3cdf720613_8d5977af883f_a74ddc14ae2e.fbx",
+        "source_hash": "sha256:0e66e86f8d6ca4082feb981f51c360a5466e142bd7df362ae3a97b723372ec5e",
+        "hash": "sha256:0e66e86f8d6ca4082feb981f51c360a5466e142bd7df362ae3a97b723372ec5e"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/standing-dodge-forward-c9ceb892b96c11e4a8020aaa78deedf9-inplace",
+    "source_path": "mixamo-library/animations/standing_dodge_forward__c9ceb892b96c11e4a8020aaa78deedf9_inplace.fbx",
+    "hash": "sha256:8aaa5ababe9b93570ebbd18b719bac97fdee862ddfc399ce0cbe5508049c7220",
+    "license": "unknown",
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.590Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/standing_dodge_forward__c9ceb892b96c11e4a8020aaa78deedf9_inplace.fbx",
+        "path": "mixamo-library/animations/standing_dodge_forward__c9ceb892b96c11e4a8020aaa78deedf9_inplace.fbx",
+        "source_hash": "sha256:8aaa5ababe9b93570ebbd18b719bac97fdee862ddfc399ce0cbe5508049c7220",
+        "hash": "sha256:8aaa5ababe9b93570ebbd18b719bac97fdee862ddfc399ce0cbe5508049c7220"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/standing-dodge-left-c9ceb95bb96c11e4a8020aaa78deedf9-inplace",
+    "source_path": "mixamo-library/animations/standing_dodge_left__c9ceb95bb96c11e4a8020aaa78deedf9_inplace.fbx",
+    "hash": "sha256:53a2a8d28ef27781fcdf99223662f87aa2d9ee39a1945a92b97639d7202df716",
+    "license": "unknown",
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.597Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/standing_dodge_left__c9ceb95bb96c11e4a8020aaa78deedf9_inplace.fbx",
+        "path": "mixamo-library/animations/standing_dodge_left__c9ceb95bb96c11e4a8020aaa78deedf9_inplace.fbx",
+        "source_hash": "sha256:53a2a8d28ef27781fcdf99223662f87aa2d9ee39a1945a92b97639d7202df716",
+        "hash": "sha256:53a2a8d28ef27781fcdf99223662f87aa2d9ee39a1945a92b97639d7202df716"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/standing-dodge-right-c9ceba20b96c11e4a8020aaa78deedf9-inplace",
+    "source_path": "mixamo-library/animations/standing_dodge_right__c9ceba20b96c11e4a8020aaa78deedf9_inplace.fbx",
+    "hash": "sha256:6ba9c7a826811f5d093f48b293ecef7b2aa3974ec310cde713436febe45f0777",
+    "license": "unknown",
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.603Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/standing_dodge_right__c9ceba20b96c11e4a8020aaa78deedf9_inplace.fbx",
+        "path": "mixamo-library/animations/standing_dodge_right__c9ceba20b96c11e4a8020aaa78deedf9_inplace.fbx",
+        "source_hash": "sha256:6ba9c7a826811f5d093f48b293ecef7b2aa3974ec310cde713436febe45f0777",
+        "hash": "sha256:6ba9c7a826811f5d093f48b293ecef7b2aa3974ec310cde713436febe45f0777"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/standing-run-back-b316e6e7b456bf15bd1d-8d5977af883f-a74ddc14ae2e-inplace",
+    "source_path": "mixamo-library/animations/standing-run-back__b316e6e7b456bf15bd1d_8d5977af883f_a74ddc14ae2e_inplace.fbx",
+    "hash": "sha256:d5a2e4f4bfb58862aa34422c5dc16ec0a9df21ab1056d23d1991cbdd8fcf3201",
+    "license": "Adobe/Mixamo terms",
+    "provider": {
+      "product_id": "c1b55370-430a-42fb-a858-2b466e7245cf",
+      "character_id": "4f5d21e1-4ccc-41f1-b35b-fb2547bd8493",
+      "variant": "inplace",
+      "export_settings_hash": "a74ddc14ae2e133f2264eb8c4af80d851a00664a34de4ba9712a683384520d27",
+      "relative_path": "mixamo-library/animations/standing-run-back__b316e6e7b456bf15bd1d_8d5977af883f_a74ddc14ae2e_inplace.fbx",
+      "hash": "d5a2e4f4bfb58862aa34422c5dc16ec0a9df21ab1056d23d1991cbdd8fcf3201",
+      "bytes": 332960,
+      "export_settings": {
+        "format": "fbx7",
+        "fps": 30,
+        "skin": false
+      },
+      "downloaded_at": "2026-11-25T02:18:07.327Z",
+      "product_url": "https://www.mixamo.com/#/?page=1&query=Standing%20Run%20Back",
+      "terms": "Adobe/Mixamo terms",
+      "terms_url": "https://helpx.adobe.com/creative-cloud/faq/mixamo-faq.html",
+      "asset_id": "mixamo-library/animations/standing-run-back-b316e6e7b456bf15bd1d-8d5977af883f-a74ddc14ae2e-inplace"
+    },
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.610Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/standing-run-back__b316e6e7b456bf15bd1d_8d5977af883f_a74ddc14ae2e_inplace.fbx",
+        "path": "mixamo-library/animations/standing-run-back__b316e6e7b456bf15bd1d_8d5977af883f_a74ddc14ae2e_inplace.fbx",
+        "source_hash": "sha256:d5a2e4f4bfb58862aa34422c5dc16ec0a9df21ab1056d23d1991cbdd8fcf3201",
+        "hash": "sha256:d5a2e4f4bfb58862aa34422c5dc16ec0a9df21ab1056d23d1991cbdd8fcf3201"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/uppercut-c9c9c626b96c11e4a8020aaa78deedf9-inplace",
+    "source_path": "mixamo-library/animations/uppercut__c9c9c626b96c11e4a8020aaa78deedf9_inplace.fbx",
+    "hash": "sha256:6007bcfec016927eeb445c1d8f658aab34aba1f6b427cddad94cd1e66a964860",
+    "license": "unknown",
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.616Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/uppercut__c9c9c626b96c11e4a8020aaa78deedf9_inplace.fbx",
+        "path": "mixamo-library/animations/uppercut__c9c9c626b96c11e4a8020aaa78deedf9_inplace.fbx",
+        "source_hash": "sha256:6007bcfec016927eeb445c1d8f658aab34aba1f6b427cddad94cd1e66a964860",
+        "hash": "sha256:6007bcfec016927eeb445c1d8f658aab34aba1f6b427cddad94cd1e66a964860"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/uppercut-jab-610a40f3a8d96c7157f8-8d5977af883f-a74ddc14ae2e",
+    "source_path": "mixamo-library/animations/uppercut-jab__610a40f3a8d96c7157f8_8d5977af883f_a74ddc14ae2e.fbx",
+    "hash": "sha256:3f952711b1518339885f61f406b7a37e8c7800b1787ba0249f52427f37cae432",
+    "license": "Adobe/Mixamo terms",
+    "provider": {
+      "product_id": "c9c7aa9c-b96c-11e4-a802-0aaa78deedf9",
+      "character_id": "4f5d21e1-4ccc-41f1-b35b-fb2547bd8493",
+      "variant": "default",
+      "export_settings_hash": "a74ddc14ae2e133f2264eb8c4af80d851a00664a34de4ba9712a683384520d27",
+      "relative_path": "mixamo-library/animations/uppercut-jab__610a40f3a8d96c7157f8_8d5977af883f_a74ddc14ae2e.fbx",
+      "hash": "3f952711b1518339885f61f406b7a37e8c7800b1787ba0249f52427f37cae432",
+      "bytes": 607168,
+      "export_settings": {
+        "format": "fbx7",
+        "fps": 30,
+        "skin": false
+      },
+      "downloaded_at": "2026-11-25T02:42:39.475Z",
+      "product_url": "https://www.mixamo.com/#/?page=1&query=Uppercut%20Jab",
+      "terms": "Adobe/Mixamo terms",
+      "terms_url": "https://helpx.adobe.com/creative-cloud/faq/mixamo-faq.html",
+      "asset_id": "mixamo-library/animations/uppercut-jab-610a40f3a8d96c7157f8-8d5977af883f-a74ddc14ae2e"
+    },
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.623Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/uppercut-jab__610a40f3a8d96c7157f8_8d5977af883f_a74ddc14ae2e.fbx",
+        "path": "mixamo-library/animations/uppercut-jab__610a40f3a8d96c7157f8_8d5977af883f_a74ddc14ae2e.fbx",
+        "source_hash": "sha256:3f952711b1518339885f61f406b7a37e8c7800b1787ba0249f52427f37cae432",
+        "hash": "sha256:3f952711b1518339885f61f406b7a37e8c7800b1787ba0249f52427f37cae432"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/victory-idle-e16241769311f171c132-8d5977af883f-a74ddc14ae2e",
+    "source_path": "mixamo-library/animations/victory-idle__e16241769311f171c132_8d5977af883f_a74ddc14ae2e.fbx",
+    "hash": "sha256:594fca8ab7321bdef06a6f2b4db3b7c17a1b0e4d93ab1760ad9bd9ca6a2b147b",
+    "license": "Adobe/Mixamo terms",
+    "provider": {
+      "product_id": "c9cd9927-b96c-11e4-a802-0aaa78deedf9",
+      "character_id": "4f5d21e1-4ccc-41f1-b35b-fb2547bd8493",
+      "variant": "default",
+      "export_settings_hash": "a74ddc14ae2e133f2264eb8c4af80d851a00664a34de4ba9712a683384520d27",
+      "relative_path": "mixamo-library/animations/victory-idle__e16241769311f171c132_8d5977af883f_a74ddc14ae2e.fbx",
+      "hash": "594fca8ab7321bdef06a6f2b4db3b7c17a1b0e4d93ab1760ad9bd9ca6a2b147b",
+      "bytes": 432144,
+      "export_settings": {
+        "format": "fbx7",
+        "fps": 30,
+        "skin": false
+      },
+      "downloaded_at": "2026-11-24T15:02:07.942Z",
+      "product_url": "https://www.mixamo.com/#/?page=1&query=Victory%20Idle",
+      "terms": "Adobe/Mixamo terms",
+      "terms_url": "https://helpx.adobe.com/creative-cloud/faq/mixamo-faq.html",
+      "asset_id": "mixamo-library/animations/victory-idle-e16241769311f171c132-8d5977af883f-a74ddc14ae2e"
+    },
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.629Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/victory-idle__e16241769311f171c132_8d5977af883f_a74ddc14ae2e.fbx",
+        "path": "mixamo-library/animations/victory-idle__e16241769311f171c132_8d5977af883f_a74ddc14ae2e.fbx",
+        "source_hash": "sha256:594fca8ab7321bdef06a6f2b4db3b7c17a1b0e4d93ab1760ad9bd9ca6a2b147b",
+        "hash": "sha256:594fca8ab7321bdef06a6f2b4db3b7c17a1b0e4d93ab1760ad9bd9ca6a2b147b"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/walking-093f5f83cd0da297fbbb-8d5977af883f-a74ddc14ae2e-inplace",
+    "source_path": "mixamo-library/animations/walking__093f5f83cd0da297fbbb_8d5977af883f_a74ddc14ae2e_inplace.fbx",
+    "hash": "sha256:b11608e39dec318accdb0f2c6cd0ef060a45385491b5d412c61539d9e4d97476",
+    "license": "Adobe/Mixamo terms",
+    "provider": {
+      "product_id": "c9c719fe-b96c-11e4-a802-0aaa78deedf9",
+      "character_id": "4f5d21e1-4ccc-41f1-b35b-fb2547bd8493",
+      "variant": "inplace",
+      "export_settings_hash": "a74ddc14ae2e133f2264eb8c4af80d851a00664a34de4ba9712a683384520d27",
+      "relative_path": "mixamo-library/animations/walking__093f5f83cd0da297fbbb_8d5977af883f_a74ddc14ae2e_inplace.fbx",
+      "hash": "b11608e39dec318accdb0f2c6cd0ef060a45385491b5d412c61539d9e4d97476",
+      "bytes": 344832,
+      "export_settings": {
+        "format": "fbx7",
+        "fps": 30,
+        "skin": false
+      },
+      "downloaded_at": "2026-11-24T13:09:33.561Z",
+      "product_url": "https://www.mixamo.com/#/?page=1&query=Walking",
+      "terms": "Adobe/Mixamo terms",
+      "terms_url": "https://helpx.adobe.com/creative-cloud/faq/mixamo-faq.html",
+      "asset_id": "mixamo-library/animations/walking-093f5f83cd0da297fbbb-8d5977af883f-a74ddc14ae2e-inplace"
+    },
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.637Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/walking__093f5f83cd0da297fbbb_8d5977af883f_a74ddc14ae2e_inplace.fbx",
+        "path": "mixamo-library/animations/walking__093f5f83cd0da297fbbb_8d5977af883f_a74ddc14ae2e_inplace.fbx",
+        "source_hash": "sha256:b11608e39dec318accdb0f2c6cd0ef060a45385491b5d412c61539d9e4d97476",
+        "hash": "sha256:b11608e39dec318accdb0f2c6cd0ef060a45385491b5d412c61539d9e4d97476"
+      }
+    ]
+  },
+  {
+    "id": "mixamo-library/animations/walking-backwards-44b511a8b55be67b0e92-8d5977af883f-a74ddc14ae2e-inplace",
+    "source_path": "mixamo-library/animations/walking-backwards__44b511a8b55be67b0e92_8d5977af883f_a74ddc14ae2e_inplace.fbx",
+    "hash": "sha256:821155cc08c32985c8d3695b55257305b48c8b337bf93497edbaffeae5c3041b",
+    "license": "Adobe/Mixamo terms",
+    "provider": {
+      "product_id": "c9c72478-b96c-11e4-a802-0aaa78deedf9",
+      "character_id": "4f5d21e1-4ccc-41f1-b35b-fb2547bd8493",
+      "variant": "inplace",
+      "export_settings_hash": "a74ddc14ae2e133f2264eb8c4af80d851a00664a34de4ba9712a683384520d27",
+      "relative_path": "mixamo-library/animations/walking-backwards__44b511a8b55be67b0e92_8d5977af883f_a74ddc14ae2e_inplace.fbx",
+      "hash": "821155cc08c32985c8d3695b55257305b48c8b337bf93497edbaffeae5c3041b",
+      "bytes": 331344,
+      "export_settings": {
+        "format": "fbx7",
+        "fps": 30,
+        "skin": false
+      },
+      "downloaded_at": "2026-11-24T13:09:13.095Z",
+      "product_url": "https://www.mixamo.com/#/?page=1&query=Walking%20Backwards",
+      "terms": "Adobe/Mixamo terms",
+      "terms_url": "https://helpx.adobe.com/creative-cloud/faq/mixamo-faq.html",
+      "asset_id": "mixamo-library/animations/walking-backwards-44b511a8b55be67b0e92-8d5977af883f-a74ddc14ae2e-inplace"
+    },
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "copied_at": "2026-11-25T13:59:09.641Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "mixamo-library/animations/walking-backwards__44b511a8b55be67b0e92_8d5977af883f_a74ddc14ae2e_inplace.fbx",
+        "path": "mixamo-library/animations/walking-backwards__44b511a8b55be67b0e92_8d5977af883f_a74ddc14ae2e_inplace.fbx",
+        "source_hash": "sha256:821155cc08c32985c8d3695b55257305b48c8b337bf93497edbaffeae5c3041b",
+        "hash": "sha256:821155cc08c32985c8d3695b55257305b48c8b337bf93497edbaffeae5c3041b"
+      }
+    ]
+  },
+  {
+    "id": "rapa-motion/animefanpackfreebies01/mixamo--as-anime-chidori-attack-02-ybot",
+    "source_path": "Rapa Motion/AnimeFanPackFreebies01/Mixamo/AS_Anime_Chidori_Attack_02_Ybot.fbx",
+    "hash": "sha256:4f003ce84948f5b3414adaf22314ab52902eca80f05de2a6724a693d64944b0f",
+    "license": "Free for personal and commercial use",
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "provenance": {
+      "creator": "Rapa Motion",
+      "name": "AnimeFanPackFreebies01",
+      "title": "FREE Mudra Samples - Motion Capture",
+      "source_url": "https://rapamotion.itch.io/mudra-samples",
+      "license": "Free for personal and commercial use",
+      "download_bytes": 40529800,
+      "archive_sha256": "93ff6a966590975d8fe3a225778a2dad5bb39c8bc9c84ba78478821bc235d7e7",
+      "archive_path": "/Users/marlon/game_assets/_archives/Rapa Motion/AnimeFanPackFreebies01.zip",
+      "status": "downloaded",
+      "model_files": 0,
+      "animation_files": 70,
+      "files": 70,
+      "local_path": "/Users/marlon/game_assets/Rapa Motion/AnimeFanPackFreebies01",
+      "extracted_bytes": 270438800,
+      "formats": [
+        "fbx"
+      ],
+      "rigs": {
+        "CC": 10,
+        "Manny": 10,
+        "Metahuman": 10,
+        "Mixamo": 10,
+        "Quin": 10,
+        "UEFN": 10,
+        "Ue4_Mannequin": 10
+      }
+    },
+    "copied_at": "2026-11-25T13:59:09.659Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "Rapa Motion/AnimeFanPackFreebies01/Mixamo/AS_Anime_Chidori_Attack_02_Ybot.fbx",
+        "path": "rapa-motion/animefanpackfreebies01/Mixamo/AS_Anime_Chidori_Attack_02_Ybot.fbx",
+        "source_hash": "sha256:4f003ce84948f5b3414adaf22314ab52902eca80f05de2a6724a693d64944b0f",
+        "hash": "sha256:4f003ce84948f5b3414adaf22314ab52902eca80f05de2a6724a693d64944b0f"
+      },
+      {
+        "source_path": "Rapa Motion/AnimeFanPackFreebies01/SOURCE.json",
+        "path": "rapa-motion/animefanpackfreebies01/SOURCE.json",
+        "source_hash": "sha256:39349b01d18359383317f733bc907852511071366bff5b18d71210e651b5cf2e",
+        "hash": "sha256:39349b01d18359383317f733bc907852511071366bff5b18d71210e651b5cf2e"
+      }
+    ]
+  },
+  {
+    "id": "rapa-motion/animefanpackfreebies01/mixamo--as-anime-mudra-pose-01-ox-ybot",
+    "source_path": "Rapa Motion/AnimeFanPackFreebies01/Mixamo/AS_Anime_Mudra_Pose_01_Ox_Ybot.fbx",
+    "hash": "sha256:07739a2857170258ffca77f31b273cf4433b908d4b26d49100d2863afad7bac6",
+    "license": "Free for personal and commercial use",
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "provenance": {
+      "creator": "Rapa Motion",
+      "name": "AnimeFanPackFreebies01",
+      "title": "FREE Mudra Samples - Motion Capture",
+      "source_url": "https://rapamotion.itch.io/mudra-samples",
+      "license": "Free for personal and commercial use",
+      "download_bytes": 40529800,
+      "archive_sha256": "93ff6a966590975d8fe3a225778a2dad5bb39c8bc9c84ba78478821bc235d7e7",
+      "archive_path": "/Users/marlon/game_assets/_archives/Rapa Motion/AnimeFanPackFreebies01.zip",
+      "status": "downloaded",
+      "model_files": 0,
+      "animation_files": 70,
+      "files": 70,
+      "local_path": "/Users/marlon/game_assets/Rapa Motion/AnimeFanPackFreebies01",
+      "extracted_bytes": 270438800,
+      "formats": [
+        "fbx"
+      ],
+      "rigs": {
+        "CC": 10,
+        "Manny": 10,
+        "Metahuman": 10,
+        "Mixamo": 10,
+        "Quin": 10,
+        "UEFN": 10,
+        "Ue4_Mannequin": 10
+      }
+    },
+    "copied_at": "2026-11-25T13:59:09.677Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "Rapa Motion/AnimeFanPackFreebies01/Mixamo/AS_Anime_Mudra_Pose_01_Ox_Ybot.fbx",
+        "path": "rapa-motion/animefanpackfreebies01/Mixamo/AS_Anime_Mudra_Pose_01_Ox_Ybot.fbx",
+        "source_hash": "sha256:07739a2857170258ffca77f31b273cf4433b908d4b26d49100d2863afad7bac6",
+        "hash": "sha256:07739a2857170258ffca77f31b273cf4433b908d4b26d49100d2863afad7bac6"
+      },
+      {
+        "source_path": "Rapa Motion/AnimeFanPackFreebies01/SOURCE.json",
+        "path": "rapa-motion/animefanpackfreebies01/SOURCE.json",
+        "source_hash": "sha256:39349b01d18359383317f733bc907852511071366bff5b18d71210e651b5cf2e",
+        "hash": "sha256:39349b01d18359383317f733bc907852511071366bff5b18d71210e651b5cf2e"
+      }
+    ]
+  },
+  {
+    "id": "rapa-motion/animefanpackfreebies01/mixamo--as-anime-mudra-pose-02-rabbit-ybot",
+    "source_path": "Rapa Motion/AnimeFanPackFreebies01/Mixamo/AS_Anime_Mudra_Pose_02_Rabbit_Ybot.fbx",
+    "hash": "sha256:7b7c35fa2a9eae74761ab7c635716bfbcde59686bd4b4969b10a6edaf26fecee",
+    "license": "Free for personal and commercial use",
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "provenance": {
+      "creator": "Rapa Motion",
+      "name": "AnimeFanPackFreebies01",
+      "title": "FREE Mudra Samples - Motion Capture",
+      "source_url": "https://rapamotion.itch.io/mudra-samples",
+      "license": "Free for personal and commercial use",
+      "download_bytes": 40529800,
+      "archive_sha256": "93ff6a966590975d8fe3a225778a2dad5bb39c8bc9c84ba78478821bc235d7e7",
+      "archive_path": "/Users/marlon/game_assets/_archives/Rapa Motion/AnimeFanPackFreebies01.zip",
+      "status": "downloaded",
+      "model_files": 0,
+      "animation_files": 70,
+      "files": 70,
+      "local_path": "/Users/marlon/game_assets/Rapa Motion/AnimeFanPackFreebies01",
+      "extracted_bytes": 270438800,
+      "formats": [
+        "fbx"
+      ],
+      "rigs": {
+        "CC": 10,
+        "Manny": 10,
+        "Metahuman": 10,
+        "Mixamo": 10,
+        "Quin": 10,
+        "UEFN": 10,
+        "Ue4_Mannequin": 10
+      }
+    },
+    "copied_at": "2026-11-25T13:59:09.692Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "Rapa Motion/AnimeFanPackFreebies01/Mixamo/AS_Anime_Mudra_Pose_02_Rabbit_Ybot.fbx",
+        "path": "rapa-motion/animefanpackfreebies01/Mixamo/AS_Anime_Mudra_Pose_02_Rabbit_Ybot.fbx",
+        "source_hash": "sha256:7b7c35fa2a9eae74761ab7c635716bfbcde59686bd4b4969b10a6edaf26fecee",
+        "hash": "sha256:7b7c35fa2a9eae74761ab7c635716bfbcde59686bd4b4969b10a6edaf26fecee"
+      },
+      {
+        "source_path": "Rapa Motion/AnimeFanPackFreebies01/SOURCE.json",
+        "path": "rapa-motion/animefanpackfreebies01/SOURCE.json",
+        "source_hash": "sha256:39349b01d18359383317f733bc907852511071366bff5b18d71210e651b5cf2e",
+        "hash": "sha256:39349b01d18359383317f733bc907852511071366bff5b18d71210e651b5cf2e"
+      }
+    ]
+  },
+  {
+    "id": "rapa-motion/animefanpackfreebies01/mixamo--as-anime-rasengan-attack-ybot",
+    "source_path": "Rapa Motion/AnimeFanPackFreebies01/Mixamo/AS_Anime_Rasengan_Attack_Ybot.fbx",
+    "hash": "sha256:3b5c1060d0bf42fcd537dd707494564d20763eb967d1851fedb903abca7386e9",
+    "license": "Free for personal and commercial use",
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "provenance": {
+      "creator": "Rapa Motion",
+      "name": "AnimeFanPackFreebies01",
+      "title": "FREE Mudra Samples - Motion Capture",
+      "source_url": "https://rapamotion.itch.io/mudra-samples",
+      "license": "Free for personal and commercial use",
+      "download_bytes": 40529800,
+      "archive_sha256": "93ff6a966590975d8fe3a225778a2dad5bb39c8bc9c84ba78478821bc235d7e7",
+      "archive_path": "/Users/marlon/game_assets/_archives/Rapa Motion/AnimeFanPackFreebies01.zip",
+      "status": "downloaded",
+      "model_files": 0,
+      "animation_files": 70,
+      "files": 70,
+      "local_path": "/Users/marlon/game_assets/Rapa Motion/AnimeFanPackFreebies01",
+      "extracted_bytes": 270438800,
+      "formats": [
+        "fbx"
+      ],
+      "rigs": {
+        "CC": 10,
+        "Manny": 10,
+        "Metahuman": 10,
+        "Mixamo": 10,
+        "Quin": 10,
+        "UEFN": 10,
+        "Ue4_Mannequin": 10
+      }
+    },
+    "copied_at": "2026-11-25T13:59:09.714Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "Rapa Motion/AnimeFanPackFreebies01/Mixamo/AS_Anime_Rasengan_Attack_Ybot.fbx",
+        "path": "rapa-motion/animefanpackfreebies01/Mixamo/AS_Anime_Rasengan_Attack_Ybot.fbx",
+        "source_hash": "sha256:3b5c1060d0bf42fcd537dd707494564d20763eb967d1851fedb903abca7386e9",
+        "hash": "sha256:3b5c1060d0bf42fcd537dd707494564d20763eb967d1851fedb903abca7386e9"
+      },
+      {
+        "source_path": "Rapa Motion/AnimeFanPackFreebies01/SOURCE.json",
+        "path": "rapa-motion/animefanpackfreebies01/SOURCE.json",
+        "source_hash": "sha256:39349b01d18359383317f733bc907852511071366bff5b18d71210e651b5cf2e",
+        "hash": "sha256:39349b01d18359383317f733bc907852511071366bff5b18d71210e651b5cf2e"
+      }
+    ]
+  },
+  {
+    "id": "rapa-motion/animefanpackfreebies01/mixamo--as-anime-rasengan-hit-ybot",
+    "source_path": "Rapa Motion/AnimeFanPackFreebies01/Mixamo/AS_Anime_Rasengan_Hit_Ybot.fbx",
+    "hash": "sha256:97d8a8ac23586c892407e1886abd3fa2224a8ef46a2abf4cadc2e3cbe73859f4",
+    "license": "Free for personal and commercial use",
+    "license_evidence": {
+      "status": "unknown",
+      "identifier": null,
+      "commercial_use": null,
+      "evidence": []
+    },
+    "provenance": {
+      "creator": "Rapa Motion",
+      "name": "AnimeFanPackFreebies01",
+      "title": "FREE Mudra Samples - Motion Capture",
+      "source_url": "https://rapamotion.itch.io/mudra-samples",
+      "license": "Free for personal and commercial use",
+      "download_bytes": 40529800,
+      "archive_sha256": "93ff6a966590975d8fe3a225778a2dad5bb39c8bc9c84ba78478821bc235d7e7",
+      "archive_path": "/Users/marlon/game_assets/_archives/Rapa Motion/AnimeFanPackFreebies01.zip",
+      "status": "downloaded",
+      "model_files": 0,
+      "animation_files": 70,
+      "files": 70,
+      "local_path": "/Users/marlon/game_assets/Rapa Motion/AnimeFanPackFreebies01",
+      "extracted_bytes": 270438800,
+      "formats": [
+        "fbx"
+      ],
+      "rigs": {
+        "CC": 10,
+        "Manny": 10,
+        "Metahuman": 10,
+        "Mixamo": 10,
+        "Quin": 10,
+        "UEFN": 10,
+        "Ue4_Mannequin": 10
+      }
+    },
+    "copied_at": "2026-11-25T13:59:09.742Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "Rapa Motion/AnimeFanPackFreebies01/Mixamo/AS_Anime_Rasengan_Hit_Ybot.fbx",
+        "path": "rapa-motion/animefanpackfreebies01/Mixamo/AS_Anime_Rasengan_Hit_Ybot.fbx",
+        "source_hash": "sha256:97d8a8ac23586c892407e1886abd3fa2224a8ef46a2abf4cadc2e3cbe73859f4",
+        "hash": "sha256:97d8a8ac23586c892407e1886abd3fa2224a8ef46a2abf4cadc2e3cbe73859f4"
+      },
+      {
+        "source_path": "Rapa Motion/AnimeFanPackFreebies01/SOURCE.json",
+        "path": "rapa-motion/animefanpackfreebies01/SOURCE.json",
+        "source_hash": "sha256:39349b01d18359383317f733bc907852511071366bff5b18d71210e651b5cf2e",
+        "hash": "sha256:39349b01d18359383317f733bc907852511071366bff5b18d71210e651b5cf2e"
+      }
+    ]
+  },
+  {
+    "id": "mixamo/x-bot/x-bot",
+    "source_path": "Mixamo/x-bot/X Bot.fbx",
+    "hash": "sha256:86c34b0e940326fbb9035f15d250cbda2ab4961caf6b4dfe76f56613d50938be",
+    "license": "Adobe Mixamo terms",
+    "license_evidence": {
+      "status": "verified",
+      "identifier": "CC0",
+      "commercial_use": true,
+      "evidence": [
+        {
+          "location": "Mixamo/x-bot/LICENSE-NOTICE.txt",
+          "text": "Adobe Mixamo asset. Royalty-free use in personal, commercial and nonprofit projects is described in Adobe’s FAQ. This is not a CC0 asset. Keep use subject to Adobe/Mixamo terms.\n\nOfficial FAQ: https://helpx.adobe.com/creative-cloud/faq/mixamo-faq.html\nLicensing guidance: https://community.adobe.com/questions-696/mixamo-faq-licensing-royalties-ownership-eula-and-tos-589400\n\nDo not redistribute the raw models as a standalone asset collection.\n",
+          "observed_at": "2026-11-15T15:35:39.141Z",
+          "sha256": "9b0a6a83492e2c778ee5fbc530a929198ad1ffc22a704097e0fecd839825b854"
+        }
+      ]
+    },
+    "provenance": {
+      "creator": "Mixamo",
+      "name": "x-bot",
+      "title": "X Bot",
+      "source_url": "https://www.mixamo.com/",
+      "license": "Adobe Mixamo terms",
+      "license_url": "https://helpx.adobe.com/creative-cloud/faq/mixamo-faq.html",
+      "status": "downloaded",
+      "local_path": "/Users/marlon/game_assets/Mixamo/x-bot",
+      "model_files": 1,
+      "formats": [
+        "fbx"
+      ],
+      "files": 3,
+      "extracted_bytes": 1753238,
+      "sha256": "86c34b0e940326fbb9035f15d250cbda2ab4961caf6b4dfe76f56613d50938be",
+      "original_filename": "X Bot (1).fbx",
+      "skeleton": {
+        "type": "Mixamo humanoid",
+        "bone_count": 65,
+        "root": "mixamorig:Hips"
+      },
+      "animation_note": "Contains a two-frame action. Compatible humanoid animations can be applied; other skeletons require retargeting.",
+      "provided_by": "user",
+      "organized_at": "2026-10-31T17:29:24.933113+00:00"
+    },
+    "copied_at": "2026-11-25T13:59:09.759Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "Mixamo/x-bot/X Bot.fbx",
+        "path": "mixamo/x-bot/X Bot.fbx",
+        "source_hash": "sha256:86c34b0e940326fbb9035f15d250cbda2ab4961caf6b4dfe76f56613d50938be",
+        "hash": "sha256:86c34b0e940326fbb9035f15d250cbda2ab4961caf6b4dfe76f56613d50938be"
+      },
+      {
+        "source_path": "Mixamo/x-bot/LICENSE-NOTICE.txt",
+        "path": "mixamo/x-bot/LICENSE-NOTICE.txt",
+        "source_hash": "sha256:9b0a6a83492e2c778ee5fbc530a929198ad1ffc22a704097e0fecd839825b854",
+        "hash": "sha256:9b0a6a83492e2c778ee5fbc530a929198ad1ffc22a704097e0fecd839825b854"
+      },
+      {
+        "source_path": "Mixamo/x-bot/SOURCE.json",
+        "path": "mixamo/x-bot/SOURCE.json",
+        "source_hash": "sha256:e0ad5ae89b2da3e1303493c41cff8634ed3aa996394f1ece14614b1d1454100b",
+        "hash": "sha256:e0ad5ae89b2da3e1303493c41cff8634ed3aa996394f1ece14614b1d1454100b"
+      }
+    ]
+  },
+  {
+    "id": "mixamo/y-bot/y-bot",
+    "source_path": "Mixamo/y-bot/Y Bot.fbx",
+    "hash": "sha256:b1f838dea1c7095a20dd5b29603abf026f6031330228a559154fe35c04b1ff9f",
+    "license": "Adobe Mixamo terms",
+    "license_evidence": {
+      "status": "verified",
+      "identifier": "CC0",
+      "commercial_use": true,
+      "evidence": [
+        {
+          "location": "Mixamo/y-bot/LICENSE-NOTICE.txt",
+          "text": "Adobe Mixamo asset. Royalty-free use in personal, commercial and nonprofit projects is described in Adobe’s FAQ. This is not a CC0 asset. Keep use subject to Adobe/Mixamo terms.\n\nOfficial FAQ: https://helpx.adobe.com/creative-cloud/faq/mixamo-faq.html\nLicensing guidance: https://community.adobe.com/questions-696/mixamo-faq-licensing-royalties-ownership-eula-and-tos-589400\n\nDo not redistribute the raw models as a standalone asset collection.\n",
+          "observed_at": "2026-11-15T15:35:39.157Z",
+          "sha256": "9b0a6a83492e2c778ee5fbc530a929198ad1ffc22a704097e0fecd839825b854"
+        }
+      ]
+    },
+    "provenance": {
+      "creator": "Mixamo",
+      "name": "y-bot",
+      "title": "Y Bot",
+      "source_url": "https://www.mixamo.com/",
+      "license": "Adobe Mixamo terms",
+      "license_url": "https://helpx.adobe.com/creative-cloud/faq/mixamo-faq.html",
+      "status": "downloaded",
+      "local_path": "/Users/marlon/game_assets/Mixamo/y-bot",
+      "model_files": 1,
+      "formats": [
+        "fbx"
+      ],
+      "files": 3,
+      "extracted_bytes": 1985572,
+      "sha256": "b1f838dea1c7095a20dd5b29603abf026f6031330228a559154fe35c04b1ff9f",
+      "original_filename": "Y Bot.fbx",
+      "skeleton": {
+        "type": "Mixamo humanoid",
+        "bone_count": 65,
+        "root": "mixamorig:Hips"
+      },
+      "animation_note": "Contains a two-frame action. Compatible humanoid animations can be applied; other skeletons require retargeting.",
+      "provided_by": "user",
+      "organized_at": "2026-10-31T17:29:24.936948+00:00"
+    },
+    "copied_at": "2026-11-25T13:59:09.784Z",
+    "format": "fbx",
+    "files": [
+      {
+        "source_path": "Mixamo/y-bot/Y Bot.fbx",
+        "path": "mixamo/y-bot/Y Bot.fbx",
+        "source_hash": "sha256:b1f838dea1c7095a20dd5b29603abf026f6031330228a559154fe35c04b1ff9f",
+        "hash": "sha256:b1f838dea1c7095a20dd5b29603abf026f6031330228a559154fe35c04b1ff9f"
+      },
+      {
+        "source_path": "Mixamo/y-bot/LICENSE-NOTICE.txt",
+        "path": "mixamo/y-bot/LICENSE-NOTICE.txt",
+        "source_hash": "sha256:9b0a6a83492e2c778ee5fbc530a929198ad1ffc22a704097e0fecd839825b854",
+        "hash": "sha256:9b0a6a83492e2c778ee5fbc530a929198ad1ffc22a704097e0fecd839825b854"
+      },
+      {
+        "source_path": "Mixamo/y-bot/SOURCE.json",
+        "path": "mixamo/y-bot/SOURCE.json",
+        "source_hash": "sha256:9f50d5798ad2acf609d79efdfc324ef154f79692e1fa476a1bdba81f9a36432a",
+        "hash": "sha256:9f50d5798ad2acf609d79efdfc324ef154f79692e1fa476a1bdba81f9a36432a"
+      }
+    ]
+  },
+  {
+    "id": "vefects/easy-shockwaves-vfx-godot/vefects--easy-shockwaves-vfx--audio--wav--sfx-vefects-shockwave-01-500ms-audio",
+    "source_path": "Vefects/Easy Shockwaves VFX Godot/Vefects/Easy Shockwaves VFX/Audio/WAV/SFX_Vefects_Shockwave_01_500ms.wav",
+    "hash": "sha256:53f91302d6f443b2b03282daf7ffc47b3ef9a52627ba15c0fc38288437c78df9",
+    "license": "Vefects Free EULA (commercial and noncommercial project use; no standalone sharing or redistribution)",
+    "license_evidence": {
+      "status": "verified",
+      "identifier": "restricted",
+      "commercial_use": false,
+      "evidence": [
+        {
+          "location": "Vefects/Easy Shockwaves VFX Godot/LICENSE.txt",
+          "text": "VEFECTS - EASY SHOCKWAVES VFX for GODOT\nEND USER LICENSE AGREEMENT\n\nCopyright (c) 2026 Vefects. All rights reserved.\n\nThis pack is free. By downloading it you receive a non-exclusive, worldwide, perpetual, royalty-free license to use\nit under the following terms.\n\nYOU MAY\n- Use the assets (effects, textures, meshes, sounds, shaders, materials and scenes) in an unlimited number of\n  commercial and non-commercial projects, such as games, apps, films, videos and other interactive or linear media.\n- Modify the assets and combine them with your own work for use inside those projects.\n- Distribute the assets only as an integrated part of your final product (for example, inside a compiled or exported\n  game), in a form that does not allow them to be extracted and used as standalone assets.\n\nYOU MAY NOT\n- Sell, resell, redistribute, share or sublicense the assets, whether as they are, modified, or as transformative or\n  derivative works based on them, on their own or as part of another asset pack, template, tool or library, whether\n  free or paid.\n- Upload the assets, or any part of them or any work derived from them, to marketplaces, asset stores or public\n  repositories.\n- Claim the assets as your own creation.\n\nThe assets are provided \"as is\", without warranty of any kind. In no event shall Vefects be liable for any claim,\ndamages or other liability arising from the use of the assets.\n\nQuestions about licensing: info@vefects.com\n",
+          "observed_at": "2026-11-17T02:32:09.990Z",
+          "sha256": "1950b76c09f7ddd3908aee65e146edba833df002a8c8fc3f6664320412f37a7c"
+        },
+        {
+          "location": "Vefects/Easy Shockwaves VFX Godot/Vefects/Easy Shockwaves VFX/LICENSE.txt",
+          "text": "VEFECTS - EASY SHOCKWAVES VFX for GODOT\nEND USER LICENSE AGREEMENT\n\nCopyright (c) 2026 Vefects. All rights reserved.\n\nThis pack is free. By downloading it you receive a non-exclusive, worldwide, perpetual, royalty-free license to use\nit under the following terms.\n\nYOU MAY\n- Use the assets (effects, textures, meshes, sounds, shaders, materials and scenes) in an unlimited number of\n  commercial and non-commercial projects, such as games, apps, films, videos and other interactive or linear media.\n- Modify the assets and combine them with your own work for use inside those projects.\n- Distribute the assets only as an integrated part of your final product (for example, inside a compiled or exported\n  game), in a form that does not allow them to be extracted and used as standalone assets.\n\nYOU MAY NOT\n- Sell, resell, redistribute, share or sublicense the assets, whether as they are, modified, or as transformative or\n  derivative works based on them, on their own or as part of another asset pack, template, tool or library, whether\n  free or paid.\n- Upload the assets, or any part of them or any work derived from them, to marketplaces, asset stores or public\n  repositories.\n- Claim the assets as your own creation.\n\nThe assets are provided \"as is\", without warranty of any kind. In no event shall Vefects be liable for any claim,\ndamages or other liability arising from the use of the assets.\n\nQuestions about licensing: info@vefects.com\n",
+          "observed_at": "2026-11-17T02:32:09.990Z",
+          "sha256": "1950b76c09f7ddd3908aee65e146edba833df002a8c8fc3f6664320412f37a7c"
+        }
+      ]
+    },
+    "provenance": {
+      "creator": "Vefects",
+      "name": "Easy Shockwaves VFX Godot",
+      "source_url": "https://store.godotengine.org/asset/vefects/easy-shockwaves-vfx/",
+      "license": "Vefects Free EULA (commercial and noncommercial project use; no standalone sharing or redistribution)",
+      "license_evidence": {
+        "status": "verified",
+        "identifier": "restricted",
+        "commercial_use": false,
+        "evidence": [
+          {
+            "location": "LICENSE.txt",
+            "text": "VEFECTS - EASY SHOCKWAVES VFX for GODOT\nEND USER LICENSE AGREEMENT\n\nCopyright (c) 2026 Vefects. All rights reserved.\n\nThis pack is free. By downloading it you receive a non-exclusive, worldwide, perpetual, royalty-free license to use\nit under the following terms.\n\nYOU MAY\n- Use the assets (effects, textures, meshes, sounds, shaders, materials and scenes) in an unlimited number of\n  commercial and non-commercial projects, such as games, apps, films, videos and other interactive or linear media.\n- Modify the assets and combine them with your own work for use inside those projects.\n- Distribute the assets only as an integrated part of your final product (for example, inside a compiled or exported\n  game), in a form that does not allow them to be extracted and used as standalone assets.\n\nYOU MAY NOT\n- Sell, resell, redistribute, share or sublicense the assets, whether as they are, modified, or as transformative or\n  derivative works based on them, on their own or as part of another asset pack, template, tool or library, whether\n  free or paid.\n- Upload the assets, or any part of them or any work derived from them, to marketplaces, asset stores or public\n  repositories.\n- Claim the assets as your own creation.\n\nThe assets are provided \"as is\", without warranty of any kind. In no event shall Vefects be liable for any claim,\ndamages or other liability arising from the use of the assets.\n\nQuestions about licensing: info@vefects.com\n",
+            "observed_at": "2026-11-17T02:31:58.595Z",
+            "sha256": "1950b76c09f7ddd3908aee65e146edba833df002a8c8fc3f6664320412f37a7c"
+          },
+          {
+            "location": "Vefects/Easy Shockwaves VFX/LICENSE.txt",
+            "text": "VEFECTS - EASY SHOCKWAVES VFX for GODOT\nEND USER LICENSE AGREEMENT\n\nCopyright (c) 2026 Vefects. All rights reserved.\n\nThis pack is free. By downloading it you receive a non-exclusive, worldwide, perpetual, royalty-free license to use\nit under the following terms.\n\nYOU MAY\n- Use the assets (effects, textures, meshes, sounds, shaders, materials and scenes) in an unlimited number of\n  commercial and non-commercial projects, such as games, apps, films, videos and other interactive or linear media.\n- Modify the assets and combine them with your own work for use inside those projects.\n- Distribute the assets only as an integrated part of your final product (for example, inside a compiled or exported\n  game), in a form that does not allow them to be extracted and used as standalone assets.\n\nYOU MAY NOT\n- Sell, resell, redistribute, share or sublicense the assets, whether as they are, modified, or as transformative or\n  derivative works based on them, on their own or as part of another asset pack, template, tool or library, whether\n  free or paid.\n- Upload the assets, or any part of them or any work derived from them, to marketplaces, asset stores or public\n  repositories.\n- Claim the assets as your own creation.\n\nThe assets are provided \"as is\", without warranty of any kind. In no event shall Vefects be liable for any claim,\ndamages or other liability arising from the use of the assets.\n\nQuestions about licensing: info@vefects.com\n",
+            "observed_at": "2026-11-17T02:31:58.595Z",
+            "sha256": "1950b76c09f7ddd3908aee65e146edba833df002a8c8fc3f6664320412f37a7c"
+          }
+        ]
+      },
+      "license_override": {
+        "value": "Vefects Free EULA (commercial and noncommercial project use; no standalone sharing or redistribution)",
+        "provided_by": "user"
+      },
+      "source_metadata": null,
+      "archive_sha256": "a5e4de8645d122bf694beb19c50d29fdcbbdbe0fc1aaf608a154d008168508f6",
+      "archive_path": "/Users/marlon/game_assets/_archives/Vefects/a5e4de8645d122bf694beb19c50d29fdcbbdbe0fc1aaf608a154d008168508f6.zip",
+      "status": "imported",
+      "files": 310,
+      "extracted_bytes": 73484478,
+      "formats": [
+        "svg",
+        "wav"
+      ],
+      "local_path": "/Users/marlon/game_assets/Vefects/Easy Shockwaves VFX Godot",
+      "provided_by": "user",
+      "importer_version": "1",
+      "imported_on": "2026-11-17T02:31:58.595Z"
+    },
+    "copied_at": "2026-11-25T13:59:26.187Z",
+    "format": "wav",
+    "files": [
+      {
+        "source_path": "Vefects/Easy Shockwaves VFX Godot/Vefects/Easy Shockwaves VFX/Audio/WAV/SFX_Vefects_Shockwave_01_500ms.wav",
+        "path": "vefects/easy-shockwaves-vfx-godot/Vefects/Easy Shockwaves VFX/Audio/WAV/SFX_Vefects_Shockwave_01_500ms.wav",
+        "source_hash": "sha256:53f91302d6f443b2b03282daf7ffc47b3ef9a52627ba15c0fc38288437c78df9",
+        "hash": "sha256:53f91302d6f443b2b03282daf7ffc47b3ef9a52627ba15c0fc38288437c78df9"
+      },
+      {
+        "source_path": "Vefects/Easy Shockwaves VFX Godot/LICENSE.txt",
+        "path": "vefects/easy-shockwaves-vfx-godot/LICENSE.txt",
+        "source_hash": "sha256:1950b76c09f7ddd3908aee65e146edba833df002a8c8fc3f6664320412f37a7c",
+        "hash": "sha256:1950b76c09f7ddd3908aee65e146edba833df002a8c8fc3f6664320412f37a7c"
+      },
+      {
+        "source_path": "Vefects/Easy Shockwaves VFX Godot/SOURCE.json",
+        "path": "vefects/easy-shockwaves-vfx-godot/SOURCE.json",
+        "source_hash": "sha256:8c28b5fd72493b216d706f6c4416c383911e39694ab222013050d0061a009c21",
+        "hash": "sha256:8c28b5fd72493b216d706f6c4416c383911e39694ab222013050d0061a009c21"
+      },
+      {
+        "source_path": "Vefects/Easy Shockwaves VFX Godot/Vefects/Easy Shockwaves VFX/LICENSE.txt",
+        "path": "vefects/easy-shockwaves-vfx-godot/Vefects/Easy Shockwaves VFX/LICENSE.txt",
+        "source_hash": "sha256:1950b76c09f7ddd3908aee65e146edba833df002a8c8fc3f6664320412f37a7c",
+        "hash": "sha256:1950b76c09f7ddd3908aee65e146edba833df002a8c8fc3f6664320412f37a7c"
+      },
+      {
+        "source_path": "Vefects/Easy Shockwaves VFX Godot/Vefects/Easy Shockwaves VFX/README.txt",
+        "path": "vefects/easy-shockwaves-vfx-godot/Vefects/Easy Shockwaves VFX/README.txt",
+        "source_hash": "sha256:59b55e917102c729613473df4730392b8ed2ee552b16ae30868c9f380449ef78",
+        "hash": "sha256:59b55e917102c729613473df4730392b8ed2ee552b16ae30868c9f380449ef78"
+      }
+    ]
+  },
+  {
+    "id": "vefects/easy-shockwaves-vfx-godot/vefects--easy-shockwaves-vfx--audio--wav--sfx-vefects-shockwave-03-500ms-audio",
+    "source_path": "Vefects/Easy Shockwaves VFX Godot/Vefects/Easy Shockwaves VFX/Audio/WAV/SFX_Vefects_Shockwave_03_500ms.wav",
+    "hash": "sha256:390360bd359224d5747bacb2629634b6893f398b8a9e30cd7f6fc79c142d7c16",
+    "license": "Vefects Free EULA (commercial and noncommercial project use; no standalone sharing or redistribution)",
+    "license_evidence": {
+      "status": "verified",
+      "identifier": "restricted",
+      "commercial_use": false,
+      "evidence": [
+        {
+          "location": "Vefects/Easy Shockwaves VFX Godot/LICENSE.txt",
+          "text": "VEFECTS - EASY SHOCKWAVES VFX for GODOT\nEND USER LICENSE AGREEMENT\n\nCopyright (c) 2026 Vefects. All rights reserved.\n\nThis pack is free. By downloading it you receive a non-exclusive, worldwide, perpetual, royalty-free license to use\nit under the following terms.\n\nYOU MAY\n- Use the assets (effects, textures, meshes, sounds, shaders, materials and scenes) in an unlimited number of\n  commercial and non-commercial projects, such as games, apps, films, videos and other interactive or linear media.\n- Modify the assets and combine them with your own work for use inside those projects.\n- Distribute the assets only as an integrated part of your final product (for example, inside a compiled or exported\n  game), in a form that does not allow them to be extracted and used as standalone assets.\n\nYOU MAY NOT\n- Sell, resell, redistribute, share or sublicense the assets, whether as they are, modified, or as transformative or\n  derivative works based on them, on their own or as part of another asset pack, template, tool or library, whether\n  free or paid.\n- Upload the assets, or any part of them or any work derived from them, to marketplaces, asset stores or public\n  repositories.\n- Claim the assets as your own creation.\n\nThe assets are provided \"as is\", without warranty of any kind. In no event shall Vefects be liable for any claim,\ndamages or other liability arising from the use of the assets.\n\nQuestions about licensing: info@vefects.com\n",
+          "observed_at": "2026-11-17T02:32:09.990Z",
+          "sha256": "1950b76c09f7ddd3908aee65e146edba833df002a8c8fc3f6664320412f37a7c"
+        },
+        {
+          "location": "Vefects/Easy Shockwaves VFX Godot/Vefects/Easy Shockwaves VFX/LICENSE.txt",
+          "text": "VEFECTS - EASY SHOCKWAVES VFX for GODOT\nEND USER LICENSE AGREEMENT\n\nCopyright (c) 2026 Vefects. All rights reserved.\n\nThis pack is free. By downloading it you receive a non-exclusive, worldwide, perpetual, royalty-free license to use\nit under the following terms.\n\nYOU MAY\n- Use the assets (effects, textures, meshes, sounds, shaders, materials and scenes) in an unlimited number of\n  commercial and non-commercial projects, such as games, apps, films, videos and other interactive or linear media.\n- Modify the assets and combine them with your own work for use inside those projects.\n- Distribute the assets only as an integrated part of your final product (for example, inside a compiled or exported\n  game), in a form that does not allow them to be extracted and used as standalone assets.\n\nYOU MAY NOT\n- Sell, resell, redistribute, share or sublicense the assets, whether as they are, modified, or as transformative or\n  derivative works based on them, on their own or as part of another asset pack, template, tool or library, whether\n  free or paid.\n- Upload the assets, or any part of them or any work derived from them, to marketplaces, asset stores or public\n  repositories.\n- Claim the assets as your own creation.\n\nThe assets are provided \"as is\", without warranty of any kind. In no event shall Vefects be liable for any claim,\ndamages or other liability arising from the use of the assets.\n\nQuestions about licensing: info@vefects.com\n",
+          "observed_at": "2026-11-17T02:32:09.990Z",
+          "sha256": "1950b76c09f7ddd3908aee65e146edba833df002a8c8fc3f6664320412f37a7c"
+        }
+      ]
+    },
+    "provenance": {
+      "creator": "Vefects",
+      "name": "Easy Shockwaves VFX Godot",
+      "source_url": "https://store.godotengine.org/asset/vefects/easy-shockwaves-vfx/",
+      "license": "Vefects Free EULA (commercial and noncommercial project use; no standalone sharing or redistribution)",
+      "license_evidence": {
+        "status": "verified",
+        "identifier": "restricted",
+        "commercial_use": false,
+        "evidence": [
+          {
+            "location": "LICENSE.txt",
+            "text": "VEFECTS - EASY SHOCKWAVES VFX for GODOT\nEND USER LICENSE AGREEMENT\n\nCopyright (c) 2026 Vefects. All rights reserved.\n\nThis pack is free. By downloading it you receive a non-exclusive, worldwide, perpetual, royalty-free license to use\nit under the following terms.\n\nYOU MAY\n- Use the assets (effects, textures, meshes, sounds, shaders, materials and scenes) in an unlimited number of\n  commercial and non-commercial projects, such as games, apps, films, videos and other interactive or linear media.\n- Modify the assets and combine them with your own work for use inside those projects.\n- Distribute the assets only as an integrated part of your final product (for example, inside a compiled or exported\n  game), in a form that does not allow them to be extracted and used as standalone assets.\n\nYOU MAY NOT\n- Sell, resell, redistribute, share or sublicense the assets, whether as they are, modified, or as transformative or\n  derivative works based on them, on their own or as part of another asset pack, template, tool or library, whether\n  free or paid.\n- Upload the assets, or any part of them or any work derived from them, to marketplaces, asset stores or public\n  repositories.\n- Claim the assets as your own creation.\n\nThe assets are provided \"as is\", without warranty of any kind. In no event shall Vefects be liable for any claim,\ndamages or other liability arising from the use of the assets.\n\nQuestions about licensing: info@vefects.com\n",
+            "observed_at": "2026-11-17T02:31:58.595Z",
+            "sha256": "1950b76c09f7ddd3908aee65e146edba833df002a8c8fc3f6664320412f37a7c"
+          },
+          {
+            "location": "Vefects/Easy Shockwaves VFX/LICENSE.txt",
+            "text": "VEFECTS - EASY SHOCKWAVES VFX for GODOT\nEND USER LICENSE AGREEMENT\n\nCopyright (c) 2026 Vefects. All rights reserved.\n\nThis pack is free. By downloading it you receive a non-exclusive, worldwide, perpetual, royalty-free license to use\nit under the following terms.\n\nYOU MAY\n- Use the assets (effects, textures, meshes, sounds, shaders, materials and scenes) in an unlimited number of\n  commercial and non-commercial projects, such as games, apps, films, videos and other interactive or linear media.\n- Modify the assets and combine them with your own work for use inside those projects.\n- Distribute the assets only as an integrated part of your final product (for example, inside a compiled or exported\n  game), in a form that does not allow them to be extracted and used as standalone assets.\n\nYOU MAY NOT\n- Sell, resell, redistribute, share or sublicense the assets, whether as they are, modified, or as transformative or\n  derivative works based on them, on their own or as part of another asset pack, template, tool or library, whether\n  free or paid.\n- Upload the assets, or any part of them or any work derived from them, to marketplaces, asset stores or public\n  repositories.\n- Claim the assets as your own creation.\n\nThe assets are provided \"as is\", without warranty of any kind. In no event shall Vefects be liable for any claim,\ndamages or other liability arising from the use of the assets.\n\nQuestions about licensing: info@vefects.com\n",
+            "observed_at": "2026-11-17T02:31:58.595Z",
+            "sha256": "1950b76c09f7ddd3908aee65e146edba833df002a8c8fc3f6664320412f37a7c"
+          }
+        ]
+      },
+      "license_override": {
+        "value": "Vefects Free EULA (commercial and noncommercial project use; no standalone sharing or redistribution)",
+        "provided_by": "user"
+      },
+      "source_metadata": null,
+      "archive_sha256": "a5e4de8645d122bf694beb19c50d29fdcbbdbe0fc1aaf608a154d008168508f6",
+      "archive_path": "/Users/marlon/game_assets/_archives/Vefects/a5e4de8645d122bf694beb19c50d29fdcbbdbe0fc1aaf608a154d008168508f6.zip",
+      "status": "imported",
+      "files": 310,
+      "extracted_bytes": 73484478,
+      "formats": [
+        "svg",
+        "wav"
+      ],
+      "local_path": "/Users/marlon/game_assets/Vefects/Easy Shockwaves VFX Godot",
+      "provided_by": "user",
+      "importer_version": "1",
+      "imported_on": "2026-11-17T02:31:58.595Z"
+    },
+    "copied_at": "2026-11-25T13:59:26.199Z",
+    "format": "wav",
+    "files": [
+      {
+        "source_path": "Vefects/Easy Shockwaves VFX Godot/Vefects/Easy Shockwaves VFX/Audio/WAV/SFX_Vefects_Shockwave_03_500ms.wav",
+        "path": "vefects/easy-shockwaves-vfx-godot/Vefects/Easy Shockwaves VFX/Audio/WAV/SFX_Vefects_Shockwave_03_500ms.wav",
+        "source_hash": "sha256:390360bd359224d5747bacb2629634b6893f398b8a9e30cd7f6fc79c142d7c16",
+        "hash": "sha256:390360bd359224d5747bacb2629634b6893f398b8a9e30cd7f6fc79c142d7c16"
+      },
+      {
+        "source_path": "Vefects/Easy Shockwaves VFX Godot/LICENSE.txt",
+        "path": "vefects/easy-shockwaves-vfx-godot/LICENSE.txt",
+        "source_hash": "sha256:1950b76c09f7ddd3908aee65e146edba833df002a8c8fc3f6664320412f37a7c",
+        "hash": "sha256:1950b76c09f7ddd3908aee65e146edba833df002a8c8fc3f6664320412f37a7c"
+      },
+      {
+        "source_path": "Vefects/Easy Shockwaves VFX Godot/SOURCE.json",
+        "path": "vefects/easy-shockwaves-vfx-godot/SOURCE.json",
+        "source_hash": "sha256:8c28b5fd72493b216d706f6c4416c383911e39694ab222013050d0061a009c21",
+        "hash": "sha256:8c28b5fd72493b216d706f6c4416c383911e39694ab222013050d0061a009c21"
+      },
+      {
+        "source_path": "Vefects/Easy Shockwaves VFX Godot/Vefects/Easy Shockwaves VFX/LICENSE.txt",
+        "path": "vefects/easy-shockwaves-vfx-godot/Vefects/Easy Shockwaves VFX/LICENSE.txt",
+        "source_hash": "sha256:1950b76c09f7ddd3908aee65e146edba833df002a8c8fc3f6664320412f37a7c",
+        "hash": "sha256:1950b76c09f7ddd3908aee65e146edba833df002a8c8fc3f6664320412f37a7c"
+      },
+      {
+        "source_path": "Vefects/Easy Shockwaves VFX Godot/Vefects/Easy Shockwaves VFX/README.txt",
+        "path": "vefects/easy-shockwaves-vfx-godot/Vefects/Easy Shockwaves VFX/README.txt",
+        "source_hash": "sha256:59b55e917102c729613473df4730392b8ed2ee552b16ae30868c9f380449ef78",
+        "hash": "sha256:59b55e917102c729613473df4730392b8ed2ee552b16ae30868c9f380449ef78"
+      }
+    ]
+  },
+  {
+    "id": "vefects/easy-shockwaves-vfx-godot/vefects--easy-shockwaves-vfx--audio--wav--sfx-vefects-shockwave-05-1s-audio",
+    "source_path": "Vefects/Easy Shockwaves VFX Godot/Vefects/Easy Shockwaves VFX/Audio/WAV/SFX_Vefects_Shockwave_05_1s.wav",
+    "hash": "sha256:d2e13cf35d1d62a5992a05f012444be5ebf182d551e7a6c4cf4a894635b784c0",
+    "license": "Vefects Free EULA (commercial and noncommercial project use; no standalone sharing or redistribution)",
+    "license_evidence": {
+      "status": "verified",
+      "identifier": "restricted",
+      "commercial_use": false,
+      "evidence": [
+        {
+          "location": "Vefects/Easy Shockwaves VFX Godot/LICENSE.txt",
+          "text": "VEFECTS - EASY SHOCKWAVES VFX for GODOT\nEND USER LICENSE AGREEMENT\n\nCopyright (c) 2026 Vefects. All rights reserved.\n\nThis pack is free. By downloading it you receive a non-exclusive, worldwide, perpetual, royalty-free license to use\nit under the following terms.\n\nYOU MAY\n- Use the assets (effects, textures, meshes, sounds, shaders, materials and scenes) in an unlimited number of\n  commercial and non-commercial projects, such as games, apps, films, videos and other interactive or linear media.\n- Modify the assets and combine them with your own work for use inside those projects.\n- Distribute the assets only as an integrated part of your final product (for example, inside a compiled or exported\n  game), in a form that does not allow them to be extracted and used as standalone assets.\n\nYOU MAY NOT\n- Sell, resell, redistribute, share or sublicense the assets, whether as they are, modified, or as transformative or\n  derivative works based on them, on their own or as part of another asset pack, template, tool or library, whether\n  free or paid.\n- Upload the assets, or any part of them or any work derived from them, to marketplaces, asset stores or public\n  repositories.\n- Claim the assets as your own creation.\n\nThe assets are provided \"as is\", without warranty of any kind. In no event shall Vefects be liable for any claim,\ndamages or other liability arising from the use of the assets.\n\nQuestions about licensing: info@vefects.com\n",
+          "observed_at": "2026-11-17T02:32:09.990Z",
+          "sha256": "1950b76c09f7ddd3908aee65e146edba833df002a8c8fc3f6664320412f37a7c"
+        },
+        {
+          "location": "Vefects/Easy Shockwaves VFX Godot/Vefects/Easy Shockwaves VFX/LICENSE.txt",
+          "text": "VEFECTS - EASY SHOCKWAVES VFX for GODOT\nEND USER LICENSE AGREEMENT\n\nCopyright (c) 2026 Vefects. All rights reserved.\n\nThis pack is free. By downloading it you receive a non-exclusive, worldwide, perpetual, royalty-free license to use\nit under the following terms.\n\nYOU MAY\n- Use the assets (effects, textures, meshes, sounds, shaders, materials and scenes) in an unlimited number of\n  commercial and non-commercial projects, such as games, apps, films, videos and other interactive or linear media.\n- Modify the assets and combine them with your own work for use inside those projects.\n- Distribute the assets only as an integrated part of your final product (for example, inside a compiled or exported\n  game), in a form that does not allow them to be extracted and used as standalone assets.\n\nYOU MAY NOT\n- Sell, resell, redistribute, share or sublicense the assets, whether as they are, modified, or as transformative or\n  derivative works based on them, on their own or as part of another asset pack, template, tool or library, whether\n  free or paid.\n- Upload the assets, or any part of them or any work derived from them, to marketplaces, asset stores or public\n  repositories.\n- Claim the assets as your own creation.\n\nThe assets are provided \"as is\", without warranty of any kind. In no event shall Vefects be liable for any claim,\ndamages or other liability arising from the use of the assets.\n\nQuestions about licensing: info@vefects.com\n",
+          "observed_at": "2026-11-17T02:32:09.990Z",
+          "sha256": "1950b76c09f7ddd3908aee65e146edba833df002a8c8fc3f6664320412f37a7c"
+        }
+      ]
+    },
+    "provenance": {
+      "creator": "Vefects",
+      "name": "Easy Shockwaves VFX Godot",
+      "source_url": "https://store.godotengine.org/asset/vefects/easy-shockwaves-vfx/",
+      "license": "Vefects Free EULA (commercial and noncommercial project use; no standalone sharing or redistribution)",
+      "license_evidence": {
+        "status": "verified",
+        "identifier": "restricted",
+        "commercial_use": false,
+        "evidence": [
+          {
+            "location": "LICENSE.txt",
+            "text": "VEFECTS - EASY SHOCKWAVES VFX for GODOT\nEND USER LICENSE AGREEMENT\n\nCopyright (c) 2026 Vefects. All rights reserved.\n\nThis pack is free. By downloading it you receive a non-exclusive, worldwide, perpetual, royalty-free license to use\nit under the following terms.\n\nYOU MAY\n- Use the assets (effects, textures, meshes, sounds, shaders, materials and scenes) in an unlimited number of\n  commercial and non-commercial projects, such as games, apps, films, videos and other interactive or linear media.\n- Modify the assets and combine them with your own work for use inside those projects.\n- Distribute the assets only as an integrated part of your final product (for example, inside a compiled or exported\n  game), in a form that does not allow them to be extracted and used as standalone assets.\n\nYOU MAY NOT\n- Sell, resell, redistribute, share or sublicense the assets, whether as they are, modified, or as transformative or\n  derivative works based on them, on their own or as part of another asset pack, template, tool or library, whether\n  free or paid.\n- Upload the assets, or any part of them or any work derived from them, to marketplaces, asset stores or public\n  repositories.\n- Claim the assets as your own creation.\n\nThe assets are provided \"as is\", without warranty of any kind. In no event shall Vefects be liable for any claim,\ndamages or other liability arising from the use of the assets.\n\nQuestions about licensing: info@vefects.com\n",
+            "observed_at": "2026-11-17T02:31:58.595Z",
+            "sha256": "1950b76c09f7ddd3908aee65e146edba833df002a8c8fc3f6664320412f37a7c"
+          },
+          {
+            "location": "Vefects/Easy Shockwaves VFX/LICENSE.txt",
+            "text": "VEFECTS - EASY SHOCKWAVES VFX for GODOT\nEND USER LICENSE AGREEMENT\n\nCopyright (c) 2026 Vefects. All rights reserved.\n\nThis pack is free. By downloading it you receive a non-exclusive, worldwide, perpetual, royalty-free license to use\nit under the following terms.\n\nYOU MAY\n- Use the assets (effects, textures, meshes, sounds, shaders, materials and scenes) in an unlimited number of\n  commercial and non-commercial projects, such as games, apps, films, videos and other interactive or linear media.\n- Modify the assets and combine them with your own work for use inside those projects.\n- Distribute the assets only as an integrated part of your final product (for example, inside a compiled or exported\n  game), in a form that does not allow them to be extracted and used as standalone assets.\n\nYOU MAY NOT\n- Sell, resell, redistribute, share or sublicense the assets, whether as they are, modified, or as transformative or\n  derivative works based on them, on their own or as part of another asset pack, template, tool or library, whether\n  free or paid.\n- Upload the assets, or any part of them or any work derived from them, to marketplaces, asset stores or public\n  repositories.\n- Claim the assets as your own creation.\n\nThe assets are provided \"as is\", without warranty of any kind. In no event shall Vefects be liable for any claim,\ndamages or other liability arising from the use of the assets.\n\nQuestions about licensing: info@vefects.com\n",
+            "observed_at": "2026-11-17T02:31:58.595Z",
+            "sha256": "1950b76c09f7ddd3908aee65e146edba833df002a8c8fc3f6664320412f37a7c"
+          }
+        ]
+      },
+      "license_override": {
+        "value": "Vefects Free EULA (commercial and noncommercial project use; no standalone sharing or redistribution)",
+        "provided_by": "user"
+      },
+      "source_metadata": null,
+      "archive_sha256": "a5e4de8645d122bf694beb19c50d29fdcbbdbe0fc1aaf608a154d008168508f6",
+      "archive_path": "/Users/marlon/game_assets/_archives/Vefects/a5e4de8645d122bf694beb19c50d29fdcbbdbe0fc1aaf608a154d008168508f6.zip",
+      "status": "imported",
+      "files": 310,
+      "extracted_bytes": 73484478,
+      "formats": [
+        "svg",
+        "wav"
+      ],
+      "local_path": "/Users/marlon/game_assets/Vefects/Easy Shockwaves VFX Godot",
+      "provided_by": "user",
+      "importer_version": "1",
+      "imported_on": "2026-11-17T02:31:58.595Z"
+    },
+    "copied_at": "2026-11-25T13:59:26.214Z",
+    "format": "wav",
+    "files": [
+      {
+        "source_path": "Vefects/Easy Shockwaves VFX Godot/Vefects/Easy Shockwaves VFX/Audio/WAV/SFX_Vefects_Shockwave_05_1s.wav",
+        "path": "vefects/easy-shockwaves-vfx-godot/Vefects/Easy Shockwaves VFX/Audio/WAV/SFX_Vefects_Shockwave_05_1s.wav",
+        "source_hash": "sha256:d2e13cf35d1d62a5992a05f012444be5ebf182d551e7a6c4cf4a894635b784c0",
+        "hash": "sha256:d2e13cf35d1d62a5992a05f012444be5ebf182d551e7a6c4cf4a894635b784c0"
+      },
+      {
+        "source_path": "Vefects/Easy Shockwaves VFX Godot/LICENSE.txt",
+        "path": "vefects/easy-shockwaves-vfx-godot/LICENSE.txt",
+        "source_hash": "sha256:1950b76c09f7ddd3908aee65e146edba833df002a8c8fc3f6664320412f37a7c",
+        "hash": "sha256:1950b76c09f7ddd3908aee65e146edba833df002a8c8fc3f6664320412f37a7c"
+      },
+      {
+        "source_path": "Vefects/Easy Shockwaves VFX Godot/SOURCE.json",
+        "path": "vefects/easy-shockwaves-vfx-godot/SOURCE.json",
+        "source_hash": "sha256:8c28b5fd72493b216d706f6c4416c383911e39694ab222013050d0061a009c21",
+        "hash": "sha256:8c28b5fd72493b216d706f6c4416c383911e39694ab222013050d0061a009c21"
+      },
+      {
+        "source_path": "Vefects/Easy Shockwaves VFX Godot/Vefects/Easy Shockwaves VFX/LICENSE.txt",
+        "path": "vefects/easy-shockwaves-vfx-godot/Vefects/Easy Shockwaves VFX/LICENSE.txt",
+        "source_hash": "sha256:1950b76c09f7ddd3908aee65e146edba833df002a8c8fc3f6664320412f37a7c",
+        "hash": "sha256:1950b76c09f7ddd3908aee65e146edba833df002a8c8fc3f6664320412f37a7c"
+      },
+      {
+        "source_path": "Vefects/Easy Shockwaves VFX Godot/Vefects/Easy Shockwaves VFX/README.txt",
+        "path": "vefects/easy-shockwaves-vfx-godot/Vefects/Easy Shockwaves VFX/README.txt",
+        "source_hash": "sha256:59b55e917102c729613473df4730392b8ed2ee552b16ae30868c9f380449ef78",
+        "hash": "sha256:59b55e917102c729613473df4730392b8ed2ee552b16ae30868c9f380449ef78"
+      }
+    ]
+  },
+  {
+    "id": "vefects/easy-shockwaves-vfx-godot/vefects--easy-shockwaves-vfx--audio--wav--sfx-vefects-shockwave-02-1s-audio",
+    "source_path": "Vefects/Easy Shockwaves VFX Godot/Vefects/Easy Shockwaves VFX/Audio/WAV/SFX_Vefects_Shockwave_02_1s.wav",
+    "hash": "sha256:5cceec8a0eb039b225655a46db121c52fcd66c757f792a7b198a13bd92b4d382",
+    "license": "Vefects Free EULA (commercial and noncommercial project use; no standalone sharing or redistribution)",
+    "license_evidence": {
+      "status": "verified",
+      "identifier": "restricted",
+      "commercial_use": false,
+      "evidence": [
+        {
+          "location": "Vefects/Easy Shockwaves VFX Godot/LICENSE.txt",
+          "text": "VEFECTS - EASY SHOCKWAVES VFX for GODOT\nEND USER LICENSE AGREEMENT\n\nCopyright (c) 2026 Vefects. All rights reserved.\n\nThis pack is free. By downloading it you receive a non-exclusive, worldwide, perpetual, royalty-free license to use\nit under the following terms.\n\nYOU MAY\n- Use the assets (effects, textures, meshes, sounds, shaders, materials and scenes) in an unlimited number of\n  commercial and non-commercial projects, such as games, apps, films, videos and other interactive or linear media.\n- Modify the assets and combine them with your own work for use inside those projects.\n- Distribute the assets only as an integrated part of your final product (for example, inside a compiled or exported\n  game), in a form that does not allow them to be extracted and used as standalone assets.\n\nYOU MAY NOT\n- Sell, resell, redistribute, share or sublicense the assets, whether as they are, modified, or as transformative or\n  derivative works based on them, on their own or as part of another asset pack, template, tool or library, whether\n  free or paid.\n- Upload the assets, or any part of them or any work derived from them, to marketplaces, asset stores or public\n  repositories.\n- Claim the assets as your own creation.\n\nThe assets are provided \"as is\", without warranty of any kind. In no event shall Vefects be liable for any claim,\ndamages or other liability arising from the use of the assets.\n\nQuestions about licensing: info@vefects.com\n",
+          "observed_at": "2026-11-17T02:32:09.990Z",
+          "sha256": "1950b76c09f7ddd3908aee65e146edba833df002a8c8fc3f6664320412f37a7c"
+        },
+        {
+          "location": "Vefects/Easy Shockwaves VFX Godot/Vefects/Easy Shockwaves VFX/LICENSE.txt",
+          "text": "VEFECTS - EASY SHOCKWAVES VFX for GODOT\nEND USER LICENSE AGREEMENT\n\nCopyright (c) 2026 Vefects. All rights reserved.\n\nThis pack is free. By downloading it you receive a non-exclusive, worldwide, perpetual, royalty-free license to use\nit under the following terms.\n\nYOU MAY\n- Use the assets (effects, textures, meshes, sounds, shaders, materials and scenes) in an unlimited number of\n  commercial and non-commercial projects, such as games, apps, films, videos and other interactive or linear media.\n- Modify the assets and combine them with your own work for use inside those projects.\n- Distribute the assets only as an integrated part of your final product (for example, inside a compiled or exported\n  game), in a form that does not allow them to be extracted and used as standalone assets.\n\nYOU MAY NOT\n- Sell, resell, redistribute, share or sublicense the assets, whether as they are, modified, or as transformative or\n  derivative works based on them, on their own or as part of another asset pack, template, tool or library, whether\n  free or paid.\n- Upload the assets, or any part of them or any work derived from them, to marketplaces, asset stores or public\n  repositories.\n- Claim the assets as your own creation.\n\nThe assets are provided \"as is\", without warranty of any kind. In no event shall Vefects be liable for any claim,\ndamages or other liability arising from the use of the assets.\n\nQuestions about licensing: info@vefects.com\n",
+          "observed_at": "2026-11-17T02:32:09.990Z",
+          "sha256": "1950b76c09f7ddd3908aee65e146edba833df002a8c8fc3f6664320412f37a7c"
+        }
+      ]
+    },
+    "provenance": {
+      "creator": "Vefects",
+      "name": "Easy Shockwaves VFX Godot",
+      "source_url": "https://store.godotengine.org/asset/vefects/easy-shockwaves-vfx/",
+      "license": "Vefects Free EULA (commercial and noncommercial project use; no standalone sharing or redistribution)",
+      "license_evidence": {
+        "status": "verified",
+        "identifier": "restricted",
+        "commercial_use": false,
+        "evidence": [
+          {
+            "location": "LICENSE.txt",
+            "text": "VEFECTS - EASY SHOCKWAVES VFX for GODOT\nEND USER LICENSE AGREEMENT\n\nCopyright (c) 2026 Vefects. All rights reserved.\n\nThis pack is free. By downloading it you receive a non-exclusive, worldwide, perpetual, royalty-free license to use\nit under the following terms.\n\nYOU MAY\n- Use the assets (effects, textures, meshes, sounds, shaders, materials and scenes) in an unlimited number of\n  commercial and non-commercial projects, such as games, apps, films, videos and other interactive or linear media.\n- Modify the assets and combine them with your own work for use inside those projects.\n- Distribute the assets only as an integrated part of your final product (for example, inside a compiled or exported\n  game), in a form that does not allow them to be extracted and used as standalone assets.\n\nYOU MAY NOT\n- Sell, resell, redistribute, share or sublicense the assets, whether as they are, modified, or as transformative or\n  derivative works based on them, on their own or as part of another asset pack, template, tool or library, whether\n  free or paid.\n- Upload the assets, or any part of them or any work derived from them, to marketplaces, asset stores or public\n  repositories.\n- Claim the assets as your own creation.\n\nThe assets are provided \"as is\", without warranty of any kind. In no event shall Vefects be liable for any claim,\ndamages or other liability arising from the use of the assets.\n\nQuestions about licensing: info@vefects.com\n",
+            "observed_at": "2026-11-17T02:31:58.595Z",
+            "sha256": "1950b76c09f7ddd3908aee65e146edba833df002a8c8fc3f6664320412f37a7c"
+          },
+          {
+            "location": "Vefects/Easy Shockwaves VFX/LICENSE.txt",
+            "text": "VEFECTS - EASY SHOCKWAVES VFX for GODOT\nEND USER LICENSE AGREEMENT\n\nCopyright (c) 2026 Vefects. All rights reserved.\n\nThis pack is free. By downloading it you receive a non-exclusive, worldwide, perpetual, royalty-free license to use\nit under the following terms.\n\nYOU MAY\n- Use the assets (effects, textures, meshes, sounds, shaders, materials and scenes) in an unlimited number of\n  commercial and non-commercial projects, such as games, apps, films, videos and other interactive or linear media.\n- Modify the assets and combine them with your own work for use inside those projects.\n- Distribute the assets only as an integrated part of your final product (for example, inside a compiled or exported\n  game), in a form that does not allow them to be extracted and used as standalone assets.\n\nYOU MAY NOT\n- Sell, resell, redistribute, share or sublicense the assets, whether as they are, modified, or as transformative or\n  derivative works based on them, on their own or as part of another asset pack, template, tool or library, whether\n  free or paid.\n- Upload the assets, or any part of them or any work derived from them, to marketplaces, asset stores or public\n  repositories.\n- Claim the assets as your own creation.\n\nThe assets are provided \"as is\", without warranty of any kind. In no event shall Vefects be liable for any claim,\ndamages or other liability arising from the use of the assets.\n\nQuestions about licensing: info@vefects.com\n",
+            "observed_at": "2026-11-17T02:31:58.595Z",
+            "sha256": "1950b76c09f7ddd3908aee65e146edba833df002a8c8fc3f6664320412f37a7c"
+          }
+        ]
+      },
+      "license_override": {
+        "value": "Vefects Free EULA (commercial and noncommercial project use; no standalone sharing or redistribution)",
+        "provided_by": "user"
+      },
+      "source_metadata": null,
+      "archive_sha256": "a5e4de8645d122bf694beb19c50d29fdcbbdbe0fc1aaf608a154d008168508f6",
+      "archive_path": "/Users/marlon/game_assets/_archives/Vefects/a5e4de8645d122bf694beb19c50d29fdcbbdbe0fc1aaf608a154d008168508f6.zip",
+      "status": "imported",
+      "files": 310,
+      "extracted_bytes": 73484478,
+      "formats": [
+        "svg",
+        "wav"
+      ],
+      "local_path": "/Users/marlon/game_assets/Vefects/Easy Shockwaves VFX Godot",
+      "provided_by": "user",
+      "importer_version": "1",
+      "imported_on": "2026-11-17T02:31:58.595Z"
+    },
+    "copied_at": "2026-11-25T13:59:26.225Z",
+    "format": "wav",
+    "files": [
+      {
+        "source_path": "Vefects/Easy Shockwaves VFX Godot/Vefects/Easy Shockwaves VFX/Audio/WAV/SFX_Vefects_Shockwave_02_1s.wav",
+        "path": "vefects/easy-shockwaves-vfx-godot/Vefects/Easy Shockwaves VFX/Audio/WAV/SFX_Vefects_Shockwave_02_1s.wav",
+        "source_hash": "sha256:5cceec8a0eb039b225655a46db121c52fcd66c757f792a7b198a13bd92b4d382",
+        "hash": "sha256:5cceec8a0eb039b225655a46db121c52fcd66c757f792a7b198a13bd92b4d382"
+      },
+      {
+        "source_path": "Vefects/Easy Shockwaves VFX Godot/LICENSE.txt",
+        "path": "vefects/easy-shockwaves-vfx-godot/LICENSE.txt",
+        "source_hash": "sha256:1950b76c09f7ddd3908aee65e146edba833df002a8c8fc3f6664320412f37a7c",
+        "hash": "sha256:1950b76c09f7ddd3908aee65e146edba833df002a8c8fc3f6664320412f37a7c"
+      },
+      {
+        "source_path": "Vefects/Easy Shockwaves VFX Godot/SOURCE.json",
+        "path": "vefects/easy-shockwaves-vfx-godot/SOURCE.json",
+        "source_hash": "sha256:8c28b5fd72493b216d706f6c4416c383911e39694ab222013050d0061a009c21",
+        "hash": "sha256:8c28b5fd72493b216d706f6c4416c383911e39694ab222013050d0061a009c21"
+      },
+      {
+        "source_path": "Vefects/Easy Shockwaves VFX Godot/Vefects/Easy Shockwaves VFX/LICENSE.txt",
+        "path": "vefects/easy-shockwaves-vfx-godot/Vefects/Easy Shockwaves VFX/LICENSE.txt",
+        "source_hash": "sha256:1950b76c09f7ddd3908aee65e146edba833df002a8c8fc3f6664320412f37a7c",
+        "hash": "sha256:1950b76c09f7ddd3908aee65e146edba833df002a8c8fc3f6664320412f37a7c"
+      },
+      {
+        "source_path": "Vefects/Easy Shockwaves VFX Godot/Vefects/Easy Shockwaves VFX/README.txt",
+        "path": "vefects/easy-shockwaves-vfx-godot/Vefects/Easy Shockwaves VFX/README.txt",
+        "source_hash": "sha256:59b55e917102c729613473df4730392b8ed2ee552b16ae30868c9f380449ef78",
+        "hash": "sha256:59b55e917102c729613473df4730392b8ed2ee552b16ae30868c9f380449ef78"
+      }
+    ]
+  }
+]
