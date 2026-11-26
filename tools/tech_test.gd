@@ -7,6 +7,8 @@ const T0 := 30
 const CASES := [
 	# [loadout, tech, distance, enemy action, expect]
 	["turtle", "tech2", 6.0, "", "hit"],
+	["turtle", "tech2", 6.0, "", "charged"],
+	["crane", "tech2", 8.0, "", "charged"],
 	["crane", "tech1", 3.0, "", "daze"],
 	["crane", "tech1", 3.0, "block", "daze"],
 	["crane", "tech2", 8.0, "", "hit"],
@@ -72,6 +74,8 @@ func _process(_delta: float) -> bool:
 			if _frame == T0 + 8:
 				inp["light"] = true
 	_e.set_ai_input(inp)
+	# "charged" holds the blast button past full charge (60 frames after the windup freeze).
+	_p.set_ai_input({"tech2_held": c[4] == "charged" and _frame < T0 + 90})
 	if _frame == T0:
 		_p.ki = 100.0
 		_p.confirm_ready = true
@@ -90,9 +94,12 @@ func _process(_delta: float) -> bool:
 		_seen["hit"] = true
 	if c[1] == "tech3" and _e.hp < _e_hp0 - 15.0 and _e.state == 9:
 		_seen["rush"] = true
+	var base: float = (_p.moves[StringName(c[1])] as MoveData).damage * _p.power
+	if c[1] == "tech2" and _e.hp <= _e_hp0 - base * 1.5 and _e.state == 9:
+		_seen["charged"] = true
 	if _frame >= T0 + 150:
 		var got := "miss"
-		for k in ["counter", "armor", "daze", "rush", "hit"]:
+		for k in ["counter", "armor", "daze", "rush", "charged", "hit"]:
 			if _seen.has(k):
 				got = k
 				break

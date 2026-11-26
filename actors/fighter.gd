@@ -37,6 +37,10 @@ const JUGGLE_LAND_STUN := 10
 const SPIKE_VELOCITY := 18.0
 const BOUNCE_VELOCITY := 8.0
 const AIR_LAND_LAG := 6
+## Holding the blast button freezes the windup this many frames before release, up to BEAM_CHARGE_MAX.
+const BEAM_HOLD_LEAD := 3
+const BEAM_CHARGE_MAX := 60
+const BEAM_CHARGE_DAMAGE := 0.8
 const BUFFERED := ["light", "heavy", "dash", "hop", "tech1", "tech2", "tech3"]
 const HIT_COLOR := Color(1.0, 0.85, 0.45)
 const BLOCK_COLOR := Color(0.45, 0.7, 1.0)
@@ -66,7 +70,10 @@ var power: float = 1.0
 var _state_frames: int = 0
 var _attack_frame: int = 0
 var _move: MoveData
+var _speed_before_impact: float = 1.0
 var _speed_after_impact: float = 1.0
+var _beam_charge: int = 0
+var _beam_charging: bool = false
 var _connected: bool = false
 var _landed_hit: bool = false
 var _hit_active: bool = false
@@ -182,6 +189,8 @@ func _tick_state(delta: float) -> void:
 
 
 func _enter(s: State) -> void:
+	if _beam_charging:
+		_end_beam_charge()
 	state = s
 	_state_frames = 0
 	_spiked = false
@@ -413,9 +422,9 @@ func _start_move(m: MoveData, state_override: State = State.ATTACK) -> void:
 func _play_timed(clip: StringName, startup_frames: int, after_frames: int) -> void:
 	var impact := model.clip_impact(clip)
 	var length := model.clip_length(clip)
-	var pre := clampf(impact / maxf(startup_frames / 60.0, 0.016), 0.6, 3.2)
+	_speed_before_impact = clampf(impact / maxf(startup_frames / 60.0, 0.016), 0.6, 3.2)
 	_speed_after_impact = clampf((length - impact) / maxf(after_frames / 60.0, 0.05), 0.9, 2.0)
-	model.play(clip, 0.05, pre)
+	model.play(clip, 0.05, _speed_before_impact)
 
 
 func _tick_attack() -> void:
@@ -577,6 +586,7 @@ func try_technique(id: StringName) -> bool:
 			Sfx.play(&"teleport")
 			Fx.flash_sphere(global_position + Vector3.UP, aura_color, 1.6, 0.2)
 		&"blast":
+			_beam_charge = 0
 			_play_timed(t.clip, t.startup, t.active + t.recovery)
 			model.flash(t.proj_color, 0.25, 1.2)
 			Sfx.play(&"kiai", -4.0)
@@ -610,7 +620,7 @@ func try_technique(id: StringName) -> bool:
 
 
 func _end_aura_burst() -> void:
-	if state != State.CHARGE:
+	if state != State.CHARGE and not _beam_charging:
 		_aura.emitting = false
 
 
@@ -630,11 +640,17 @@ func _tick_tech() -> void:
 			_attack_frame -= 1
 			_tick_attack()
 		&"blast":
-			_attack_frame += 1
 			_stop_xz(100.0)
+			if _attack_frame == t.startup - BEAM_HOLD_LEAD and _beam_charge < BEAM_CHARGE_MAX and _held(String(t.id)):
+				_charge_beam(t)
+				return
+			if _beam_charging:
+				_end_beam_charge()
+				model.set_speed(_speed_before_impact)
+			_attack_frame += 1
 			if _attack_frame == t.startup:
 				model.set_speed(_speed_after_impact)
-				_spawn_ki_blast(t)
+				_spawn_ki_blast(t, float(_beam_charge) / BEAM_CHARGE_MAX)
 			if _attack_frame >= t.startup + t.active + t.recovery:
 				_end_action()
 		&"rush":
@@ -779,14 +795,55 @@ func _blink_behind_opponent() -> void:
 	Sfx.play(&"teleport", -3.0)
 
 
-func _spawn_ki_blast(t: MoveData) -> void:
+## Windup frozen while the blast button is held; hittable the whole time.
+func _charge_beam(t: MoveData) -> void:
+	if not _beam_charging:
+		_beam_charging = true
+		model.set_speed(0.0)
+		_aura.emitting = true
+		if is_player:
+			Sfx.set_charging(true)
+	_beam_charge += 1
+	var k := float(_beam_charge) / BEAM_CHARGE_MAX
+	var hands := global_position + Vector3(0, 1.25, 0) + facing * 0.7
+	if _beam_charge % 6 == 0:
+		Fx.flash_sphere(hands, t.proj_color, (0.4 + 1.1 * k) * maxf(t.proj_scale, 0.6), 0.12)
+	if _beam_charge % 20 == 0:
+		Fx.shockwave(global_position + Vector3.UP * 0.05, t.proj_color, 1.2 + 1.4 * k, 0.4)
+	if _beam_charge == BEAM_CHARGE_MAX:
+		model.flash(t.proj_color, 0.2, 2.5)
+		Fx.flash_sphere(hands, Color.WHITE, 1.6 * maxf(t.proj_scale, 0.6), 0.15)
+		Sfx.play(&"shock_small", -4.0)
+
+
+func _end_beam_charge() -> void:
+	_beam_charging = false
+	_end_aura_burst()
+	if is_player:
+		Sfx.set_charging(false)
+
+
+## `charge` 0..1; a full charge also knocks down (unless the blast already has an effect).
+func _spawn_ki_blast(t: MoveData, charge: float = 0.0) -> void:
+	var shot := t
+	if charge > 0.0:
+		shot = t.duplicate() as MoveData
+		shot.damage = t.damage * (1.0 + BEAM_CHARGE_DAMAGE * charge)
+		shot.knockback = t.knockback * (1.0 + charge)
+		shot.hitstun = t.hitstun + int(12.0 * charge)
+		shot.proj_scale = t.proj_scale * (1.0 + 0.7 * charge)
+		shot.proj_speed = t.proj_speed * (1.0 + 0.3 * charge)
+		if charge >= 1.0:
+			shot.tier = t.tier + 1
+			if shot.effect == &"":
+				shot.effect = &"knockdown"
 	var blast := preload("res://projectiles/ki_blast.tscn").instantiate() as KiBlast
 	get_parent().add_child(blast)
 	blast.global_position = global_position + Vector3(0, 1.25, 0) + facing * 0.9
-	blast.setup(self, facing, t)
-	Sfx.play(&"blast", 0.0 if t.proj_scale >= 1.0 else -3.0)
-	Fx.flash_sphere(blast.global_position, t.proj_color, 1.4 * maxf(t.proj_scale, 0.6), 0.15)
-	Feedback.pulse(1)
+	blast.setup(self, facing, shot)
+	Sfx.play(&"blast", 0.0 if shot.proj_scale >= 1.0 else -3.0)
+	Fx.flash_sphere(blast.global_position, shot.proj_color, 1.4 * maxf(shot.proj_scale, 0.6), 0.15)
+	Feedback.pulse(2 if charge >= 1.0 else 1)
 
 
 func _tick_rush() -> void:

@@ -13,6 +13,7 @@ var _press_cd: int = 0
 var _think: float = 0.0
 var _block_left: float = 0.0
 var _charge_left: float = 0.0
+var _beam_hold: float = 0.0
 var _strafe: float = 0.0
 var _strafe_t: float = 0.0
 
@@ -33,6 +34,7 @@ func _physics_process(delta: float) -> void:
 	_think -= delta
 	_block_left = maxf(_block_left - delta, 0.0)
 	_charge_left = maxf(_charge_left - delta, 0.0)
+	_beam_hold = maxf(_beam_hold - delta, 0.0)
 	_strafe_t -= delta
 	if _strafe_t <= 0.0:
 		_strafe = [-1.0, 0.0, 0.0, 1.0].pick_random()
@@ -44,6 +46,13 @@ func _physics_process(delta: float) -> void:
 	if st in [Fighter.State.HITSTUN, Fighter.State.BLOCKSTUN, Fighter.State.KNOCKDOWN]:
 		_plan.clear()
 		_charge_left = 0.0
+		_beam_hold = 0.0
+
+	if _beam_hold > 0.0:
+		inp["tech2_held"] = true
+		if st == Fighter.State.TECH:
+			fighter.set_ai_input(inp)
+			return
 
 	if not _plan.is_empty():
 		_press_cd -= 1
@@ -89,6 +98,8 @@ func _physics_process(delta: float) -> void:
 				_charge_left = randf_range(0.8, 1.5)
 			elif profile.get("uses_tech2", false) and fighter.ki >= 25.0 and randf() < float(profile.get("tech_chance", 0.2)):
 				inp["tech2"] = true
+				if randf() < float(profile.get("beam_charge", 0.5)):
+					_beam_hold = randf_range(0.4, 1.3)
 			elif randf() < aggression * 0.5:
 				inp["dash"] = true
 	elif dist > 2.0:

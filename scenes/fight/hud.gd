@@ -7,7 +7,7 @@ const CONTROLS := "[b]Move[/b] WASD (toward / around foe)   [b]Hop[/b] Space   [
 	+ "[b]J[/b] light string ×4   [b]K[/b] heavy — branches: J›K pop · J J›K knee crush · J J J›K tornado heel   [b]Dash+J[/b] flying kick\n"
 const KIND_HINT := {
 	&"afterimage": "blink behind",
-	&"blast": "ki blast",
+	&"blast": "ki blast, hold to charge",
 	&"flare": "blinds if they face you",
 	&"counter": "parry, auto-counter",
 	&"armor": "3 s super armor",

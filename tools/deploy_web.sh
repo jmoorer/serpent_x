@@ -3,7 +3,7 @@
 set -euo pipefail
 
 root="$(git rev-parse --show-toplevel)"
-pages="$(git -C "$root" rev-parse --git-common-dir)/../.worktrees/gh-pages"
+pages="$(dirname "$(git -C "$root" rev-parse --path-format=absolute --git-common-dir)")/.worktrees/gh-pages"
 cd "$root"
 
 if [ ! -d "$pages" ]; then
