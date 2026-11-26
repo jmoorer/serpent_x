@@ -1,8 +1,9 @@
 # Serpent X
 
 Godot 4.7 vertical slice — 3D third-person martial arts fighter (OG Dragon Ball ground combat, no flight).
-Fighters are rigged Mixamo X Bot / Y Bot dummies driven by a baked library of Mixamo + Rapa Motion clips
-(boxing, kickboxing, capoeira, ki casts).
+Each school and tournament opponent is a Meshy-generated, rigged anime fighter (`assets/characters/`,
+provenance in `assets/characters/SOURCE.json`) driven by a baked library of Mixamo + Rapa Motion clips
+(boxing, kickboxing, capoeira, ki casts), retargeted from the Y Bot rig. The Training Dummy stays a Y Bot.
 
 ## Run
 
@@ -86,6 +87,8 @@ Same J/K strings and branches for every school; the animation style, stats and U
 ```bash
 # Rebuild the animation library (bone remap, root-motion strip, impact-frame detection)
 godot --headless --path . --script res://tools/build_anim_library.gd
+# Retarget that library onto every Meshy character (rerun after rebuilding it); optional ids limit the set
+godot --headless --path . --script res://tools/retarget_anims.gd -- turtle riku
 # AI-vs-AI smoke test for a round (0..2) and school; extra args = frames to screenshot (windowed)
 godot --headless --path . --fixed-fps 60 --script res://tools/autoplay.gd -- 2:crane
 # Forces every school technique in set-up situations and checks it connects (12 cases)
@@ -94,8 +97,8 @@ godot --headless --path . --fixed-fps 60 --script res://tools/tech_test.gd
 godot --headless --path . --fixed-fps 60 --script res://tools/air_test.gd
 # Training mode: dummy modes, immortality, HP refill, CPU handoff, reset, move list (exits 1 on failure)
 godot --headless --path . --fixed-fps 60 --script res://tools/training_test.gd
-# Pose contact sheet of clips at their impact frame
-godot --path . --script res://tools/contact_sheet.gd -- /tmp/sheet.png jab roundhouse armada@0.5
+# Pose contact sheet of clips at their impact frame (body=<id> renders a character instead of the Y Bot)
+godot --path . --script res://tools/contact_sheet.gd -- /tmp/sheet.png body=goro jab roundhouse armada@0.5
 ```
 
 ## Design / plan

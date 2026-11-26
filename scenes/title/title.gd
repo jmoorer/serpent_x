@@ -17,7 +17,7 @@ func _ready() -> void:
 	var look := GameState.loadout()
 	hero.build(look["body"], look["main"], look["accent"])
 	hero.play(&"idle_turtle", 0.0)
-	rival.build(&"y", Color(0.45, 0.32, 0.75), Color(0.9, 0.9, 0.95))
+	rival.build(&"riku", Color(0.45, 0.32, 0.75), Color(0.9, 0.9, 0.95))
 	rival.play(&"idle_ginga", 0.0)
 	$Menu/VBox/Play.pressed.connect(_on_play)
 	$Menu/VBox/Training.pressed.connect(_on_training)

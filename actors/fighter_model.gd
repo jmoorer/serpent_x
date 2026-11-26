@@ -1,7 +1,9 @@
 class_name FighterModel
 extends Node3D
 
-## Mixamo X/Y Bot mannequin with the shared fighter AnimationLibrary.
+## Fighter body: a Mixamo X/Y Bot mannequin tinted with the look colors, or a textured Meshy
+## character (res://assets/characters/<id>/<id>.glb) driven by its retargeted library
+## (tools/retarget_anims.gd). Clip timing and impact metadata always come from LIB.
 
 const LIB := preload("res://assets/anims/fighter_anims.res")
 const BODIES := {
@@ -10,6 +12,9 @@ const BODIES := {
 }
 ## X Bot's hips rest higher than the Y Bot the clips were authored on.
 const BODY_LIFT := {&"x": 0.045, &"y": 0.0}
+const CHARACTERS: Array[StringName] = [&"turtle", &"crane", &"wolf", &"mountain", &"tinto", &"goro", &"riku"]
+const CHARACTER_SCENE := "res://assets/characters/%s/%s.glb"
+const CHARACTER_LIB := "res://assets/anims/fighter_anims_%s.res"
 
 var anim: AnimationPlayer
 var skeleton: Skeleton3D
@@ -24,17 +29,22 @@ func build(body_id: StringName, main: Color, accent: Color) -> void:
 	if body:
 		body.free()
 	_mats.clear()
-	body = (BODIES[body_id] as PackedScene).instantiate() as Node3D
+	var character := CHARACTERS.has(body_id)
+	var scene: PackedScene = load(CHARACTER_SCENE % [body_id, body_id]) if character else BODIES[body_id]
+	body = scene.instantiate() as Node3D
 	var imported := body.get_node_or_null("AnimationPlayer")
 	if imported:
 		imported.free()
 	add_child(body)
 	body.rotation.y = PI
-	body.position.y = BODY_LIFT[body_id]
-	skeleton = body.get_node("Skeleton3D") as Skeleton3D
+	body.position.y = BODY_LIFT.get(body_id, 0.0)
+	skeleton = body.find_children("*", "Skeleton3D", true, false)[0] as Skeleton3D
 	for child in skeleton.get_children():
 		var mi := child as MeshInstance3D
 		if mi == null:
+			continue
+		if character:
+			_apply_toon(mi)
 			continue
 		var joints := String(mi.name).contains("Joints")
 		var m := StandardMaterial3D.new()
@@ -49,7 +59,23 @@ func build(body_id: StringName, main: Color, accent: Color) -> void:
 	anim = AnimationPlayer.new()
 	anim.name = &"Anim"
 	body.add_child(anim)
-	anim.add_animation_library(&"", LIB)
+	anim.add_animation_library(&"", load(CHARACTER_LIB % body_id) if character else LIB)
+
+
+## Keeps the Meshy texture, banded like a cel shade.
+func _apply_toon(mi: MeshInstance3D) -> void:
+	for s in mi.mesh.get_surface_count():
+		var src := mi.get_active_material(s) as StandardMaterial3D
+		var m := (src.duplicate() if src else StandardMaterial3D.new()) as StandardMaterial3D
+		m.diffuse_mode = BaseMaterial3D.DIFFUSE_TOON
+		m.specular_mode = BaseMaterial3D.SPECULAR_TOON
+		m.metallic = 0.0
+		m.roughness = 0.8
+		m.rim_enabled = true
+		m.rim = 0.5
+		m.rim_tint = 0.3
+		mi.set_surface_override_material(s, m)
+		_mats.append(m)
 
 
 func clip_length(clip: StringName) -> float:
@@ -121,9 +147,8 @@ func spawn_ghost(color: Color, life: float = 0.5) -> void:
 	m.transparency = BaseMaterial3D.TRANSPARENCY_ALPHA
 	m.blend_mode = BaseMaterial3D.BLEND_MODE_ADD
 	m.albedo_color = Color(color, 0.55)
-	for child in ghost.get_node("Skeleton3D").get_children():
-		if child is MeshInstance3D:
-			(child as MeshInstance3D).material_override = m
+	for mi in ghost.find_children("*", "MeshInstance3D", true, false):
+		(mi as MeshInstance3D).material_override = m
 	get_tree().current_scene.add_child(ghost)
 	ghost.global_transform = body.global_transform
 	var tw := get_tree().create_tween()

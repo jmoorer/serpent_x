@@ -1,0 +1,16 @@
+{
+  "id": "01a21591-d568-7436-9291-f08ff091a026",
+  "type": "text-to-image",
+  "ai_model": "nano-banana-pro",
+  "prompt": "GORO the Iron Bull: massive muscular brawler, black mohawk, bull nose ring, forest-green sleeveless gi, dark green pants, gold belt, gold studded wristbands, gold ankle guards, sandals. Stylized 3D anime fighting-game character render, 1990s Dragon Ball Budokai look, bold clean shapes, flat saturated colors, crisp readable silhouette, full body head to toe, front view, symmetrical T-pose with arms straight out horizontally, open flat hands with fingers together, feet shoulder-width apart, plain light grey background, single character, no weapons, no text, no cape, no long flowing cloth, hair no longer than the neck.",
+  "status": "SUCCEEDED",
+  "progress": 100,
+  "created_at": 1795658209381,
+  "started_at": 1795658209391,
+  "finished_at": 1795658227198,
+  "expires_at": 1795917427198,
+  "image_urls": [
+    "https://assets.meshy.ai/8d7ad14d-ebae-4054-bb19-ce7a8e681fa0/uploads/image_01a21591-d568-7436-9291-f08ff091a026_0.png?Expires=1795917427&Signature=PjC4usNsDnYuMcAfEZ9Utd1BMwTwIAFGgelqfzINZj4bUAFuWGSF7-wbf5YGRowHnGqV4O-VZX7OpcMbEetZHuA0mYOzFUr5VRmeR1FyaNMtcbYqK6iP4ZCADARPuhfUZ4-vSi~noeB0JU~x3EvMapkNrAI56eJu2bm~C4HV~C0BcPB93x5lnJiiKjCiUSTXwxQ4h-LnXErRh~YolY3~13hMcXBlU33s0Ut17ZOcB8qlVEY6g41adKf~YZs5vOyj2d0lw-XulwEFVlqr4l2FTsiBcYxsA6EtjSKqrZvGtbvu7Kogr7EyXbHiJwXny8wl4KSYedUYvACjE~4azPUntQ__&Key-Pair-Id=K1VGYTHIYLM9UM"
+  ],
+  "consumed_credits": 9
+}

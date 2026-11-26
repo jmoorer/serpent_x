@@ -1,0 +1,74 @@
+{
+  "generator": "Meshy AI (meshy-cli 0.7.0)",
+  "generated_at": "2026-11-25",
+  "ai_generated": true,
+  "steam_disclosure": "pre-generated content: character meshes, textures and rigs; concept art (not shipped)",
+  "license": "Meshy paid plan output, owned by the account holder (see https://www.meshy.ai/terms)",
+  "pipeline": "text-to-image nano-banana-pro t-pose -> image-to-3d smart-topology meshy-t2.5 25k tris + meshy-n1 2K texture -> rigging -> tools/retarget_anims.gd",
+  "characters": {
+    "turtle": {
+      "file": "turtle/turtle.glb",
+      "sha256": "74fa38ddac078aec85a324c304ba14c4b106b51df1f0ad04f4d8036deb7f6060",
+      "height_m": 1.72,
+      "concept_task": "01a21591-be78-72b3-8e59-0dd34a8b3e0c",
+      "mesh_task": "01a21592-c9bf-7674-9b4d-0abc3efeb29b",
+      "rig_task": "01a21594-2293-7585-a59f-c80d5bbe998a",
+      "credits": 29
+    },
+    "crane": {
+      "file": "crane/crane.glb",
+      "sha256": "2835b0cfc7ba55a850fe26b3672c59b7a5f62a999b39f4c50527e11f11c16df9",
+      "height_m": 1.8,
+      "concept_task": "01a21591-c3f0-76d7-bc47-aa3c0eb7b0ee",
+      "mesh_task": "01a21592-d245-733d-92ed-4b4ad925a998",
+      "rig_task": "01a21594-37be-74ab-ba31-f7e34c27b17d",
+      "credits": 29
+    },
+    "wolf": {
+      "file": "wolf/wolf.glb",
+      "sha256": "1ec5951ee53130ba6a20b2e713d98fa7fc69b82d2ec9dd86c89da76925472685",
+      "height_m": 1.76,
+      "concept_task": "01a21591-c7e2-7345-8d36-6e32b12ceac0",
+      "mesh_task": "01a21592-db5a-76bd-8e45-842e137483b3",
+      "rig_task": "01a21594-4619-728a-9f55-91a47d8f1649",
+      "credits": 29
+    },
+    "mountain": {
+      "file": "mountain/mountain.glb",
+      "sha256": "29ec7250d0c4bcd4771bc1a7861b9125a6036e4d3e4f3853f0069e2c9a096714",
+      "height_m": 1.92,
+      "concept_task": "01a21591-cc5a-7218-bc72-a1d1fe7f2d1f",
+      "mesh_task": "01a21592-e55f-7248-a506-c72d8529a6c9",
+      "rig_task": "01a21594-5b3c-7136-b240-cb54a6aa2276",
+      "credits": 29
+    },
+    "tinto": {
+      "file": "tinto/tinto.glb",
+      "sha256": "e45a1163349da27de8e89de0bb6f9c045bd23714038f52df53310be002ae02b9",
+      "height_m": 1.75,
+      "concept_task": "01a21591-d095-72f9-84a6-942a493b7f7d",
+      "mesh_task": "01a21592-ec9f-7273-b864-57178cd72781",
+      "rig_task": "01a21594-69fb-7044-8870-efffa9d4022f",
+      "credits": 29
+    },
+    "goro": {
+      "file": "goro/goro.glb",
+      "sha256": "46c81c052413a45087326b69fc4abd25a9cddea494594f9a51a9551113579b28",
+      "height_m": 1.95,
+      "concept_task": "01a21591-d568-7436-9291-f08ff091a026",
+      "mesh_task": "01a21592-f961-7035-b5bc-807c0afb5209",
+      "rig_task": "01a21594-76e9-772a-8d40-b745a79a5a59",
+      "credits": 29
+    },
+    "riku": {
+      "file": "riku/riku.glb",
+      "sha256": "93a03a88b4a4c5cd63df3b31a88a567af5745e43e979decfa8f9816337dce1cc",
+      "height_m": 1.8,
+      "concept_task": "01a21591-da26-710a-bdff-9770a52cce8f",
+      "mesh_task": "01a21593-023c-76b4-b487-2e8dbbbf2444",
+      "rig_task": "01a21594-8606-7255-8371-bcbca28882e3",
+      "credits": 29
+    }
+  },
+  "total_credits": 203
+}

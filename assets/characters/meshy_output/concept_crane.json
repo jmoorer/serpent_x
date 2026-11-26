@@ -1,0 +1,16 @@
+{
+  "id": "01a21591-c3f0-76d7-bc47-aa3c0eb7b0ee",
+  "type": "text-to-image",
+  "ai_model": "nano-banana-pro",
+  "prompt": "SORA of the Crane School: lean tall capoeira fighter, warm brown skin, short tight braids tied back, off-white sleeveless fitted top, off-white abada pants, emerald-green cord belt, emerald-green arm bands, green cloth wraps on bare feet. Stylized 3D anime fighting-game character render, 1990s Dragon Ball Budokai look, bold clean shapes, flat saturated colors, crisp readable silhouette, full body head to toe, front view, symmetrical T-pose with arms straight out horizontally, open flat hands with fingers together, feet shoulder-width apart, plain light grey background, single character, no weapons, no text, no cape, no long flowing cloth, hair no longer than the neck.",
+  "status": "SUCCEEDED",
+  "progress": 100,
+  "created_at": 1795658204753,
+  "started_at": 1795658204761,
+  "finished_at": 1795658220866,
+  "expires_at": 1795917420866,
+  "image_urls": [
+    "https://assets.meshy.ai/8d7ad14d-ebae-4054-bb19-ce7a8e681fa0/uploads/image_01a21591-c3f0-76d7-bc47-aa3c0eb7b0ee_0.png?Expires=1795917420&Signature=hF-B54s07xzR2AXCOF5WGxDIq0Snnns4IQm4tvgnMfHXdQ9G8Tv1-ECYpIs79xFgNfV3XMSi7SvOmX8sGB~6LnjP5mHj6lQEQhB5n75m7EmwUj9ISvQJYMxRMoiWpKP3y02gT9hmHqK~imB0oWE8sQsKt28xkdcpIiDNxkNCDMbwJnRfW8TRljX9rAXhdvQoF5yUFQIvMwovBQ6D2WqIGqViijI-skPel9dWQlrbTBg0PqoCM5CrTrfcRIHHFkcq-CbErYPyuwY1tjKh5c2dwttvVVeyYr6z62LSxciYwOFIERJRJOK65m8U~HcEZAEizpuae~aSxfuono21EjuulA__&Key-Pair-Id=K1VGYTHIYLM9UM"
+  ],
+  "consumed_credits": 9
+}

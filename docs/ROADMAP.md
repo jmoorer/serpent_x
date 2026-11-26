@@ -156,7 +156,10 @@ Dragon Ball tone.
   ties into item 7 crowd audio.
 - **Done when:** crowd reacts to `Feedback.pulse` tier 3; draw calls stay bounded (MultiMesh).
 
-### [ ] 12. Real character models
+### [x] 12. Real character models
+2026-11-25: 7 Meshy fighters (4 schools + Tinto, Goro, Riku; 203 credits) via concept → smart topology
+→ rig, all 62 clips retargeted by `tools/retarget_anims.gd`, toon-banded materials in `fighter_model.gd`.
+Cut: costume variants; Riku's tunic hem stretches on high kicks (skin weights); Training Dummy stays Y Bot.
 - **Scope:** a distinct rigged fighter per school and per tournament opponent, replacing X Bot / Y Bot.
   Pipeline: Meshy (smart topology, T-pose, rigged) or sourced models → retarget onto the existing anim
   library. Costume variants per fighter.

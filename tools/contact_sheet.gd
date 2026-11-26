@@ -1,7 +1,8 @@
 extends SceneTree
 
 ## Renders bots posed at a clip's impact (or a given fraction) into a PNG grid.
-## Run windowed: godot --path . --script res://tools/contact_sheet.gd -- <out.png> [clip ...]
+## Run windowed: godot --path . --script res://tools/contact_sheet.gd -- <out.png> [body=<id>] [clip ...]
+## body=<id> poses that FighterModel body (e.g. body=turtle) instead of the raw Y Bot rig.
 
 const LIB := "res://assets/anims/fighter_anims.res"
 const RIG := "res://assets/third_party/mixamo/y-bot/Y Bot.fbx"
@@ -18,6 +19,10 @@ func _init() -> void:
 		_out = args[0]
 	var lib := load(LIB) as AnimationLibrary
 	var names: Array = []
+	var body_id := ""
+	if args.size() > 1 and args[1].begins_with("body="):
+		body_id = args[1].trim_prefix("body=")
+		args = args.slice(1)
 	if args.size() > 1:
 		names = args.slice(1)
 	else:
@@ -46,16 +51,25 @@ func _init() -> void:
 			forced_t = clip.get_slice("@", 1).to_float()
 			clip = clip.get_slice("@", 0)
 		var a := lib.get_animation(StringName(clip))
-		var bot := (load(RIG) as PackedScene).instantiate() as Node3D
-		world.add_child(bot)
+		var bot: Node3D
+		var ap: AnimationPlayer
+		if body_id.is_empty():
+			bot = (load(RIG) as PackedScene).instantiate() as Node3D
+			world.add_child(bot)
+			var old := bot.get_node_or_null("AnimationPlayer")
+			if old:
+				old.free()
+			ap = AnimationPlayer.new()
+			bot.add_child(ap)
+			ap.add_animation_library(&"", lib)
+		else:
+			var model := FighterModel.new()
+			world.add_child(model)
+			model.build(StringName(body_id), Color.GRAY, Color.DIM_GRAY)
+			bot = model
+			ap = model.anim
 		bot.position = Vector3((i % COLS) * SPACING, -(i / COLS) * 2.6, 0)
-		bot.rotation_degrees.y = 90.0
-		var old := bot.get_node_or_null("AnimationPlayer")
-		if old:
-			old.free()
-		var ap := AnimationPlayer.new()
-		bot.add_child(ap)
-		ap.add_animation_library(&"", lib)
+		bot.rotation_degrees.y = 90.0 if body_id.is_empty() else -90.0
 		var t: float = forced_t if forced_t >= 0.0 else a.get_meta(&"impact", a.length * 0.5)
 		ap.play(StringName(clip))
 		ap.seek(t, true)
