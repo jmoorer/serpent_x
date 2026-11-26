@@ -11,3 +11,4 @@ var ki_gain: float = 0.0
 var hit_tier: int = 1
 var effect: StringName = &""
 var unblockable: bool = false
+var lift: float = 0.0

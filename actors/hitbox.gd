@@ -13,6 +13,7 @@ var ki_gain: float = 0.0
 var hit_tier: int = 1
 var effect: StringName = &""
 var unblockable: bool = false
+var lift: float = 0.0
 var active: bool = false
 var _hit_this_move: Dictionary = {}
 
@@ -28,6 +29,7 @@ func _ready() -> void:
 func arm(fighter: Fighter, move: MoveData) -> void:
 	arm_custom(fighter, move.id, move.damage, move.hitstun, move.blockstun, move.knockback, move.ki_gain,
 		move.hitbox_size, move.hitbox_offset, move.tier, move.effect)
+	lift = move.lift
 
 
 func arm_custom(fighter: Fighter, id: StringName, dmg: float, hs: int, bs: int, kb: float, ki: float,
@@ -41,6 +43,7 @@ func arm_custom(fighter: Fighter, id: StringName, dmg: float, hs: int, bs: int, 
 	ki_gain = ki
 	hit_tier = tier
 	effect = fx
+	lift = 0.0
 	_hit_this_move.clear()
 	var box := BoxShape3D.new()
 	box.size = size

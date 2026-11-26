@@ -5,27 +5,32 @@ extends RefCounted
 ## opponent plays fair but looks and reads differently.
 ##
 ## String: L1 > L2 > L3 > L4. Heavy branches: neutral H0, L1>H1 pop, L2>H2 crumple, L3>H3 knockdown.
+## Air (after a hop or the H1 chase jump): AL1 > AL2 > AL3 blowback; K from neutral air, AL1 or AL2 is the AH spike.
 
 const STYLES := {
 	&"turtle": {
 		"idle": &"idle_turtle", "L1": &"jab", "L2": &"cross", "L3": &"hook2", "L4": &"roundhouse2",
 		"H0": &"mma_kick", "H1": &"uppercut", "H2": &"knee", "H3": &"spin_flip", "DL": &"flying_kick",
 		"T1": &"elbow_back", "T2": &"palm_blast",
+		"AL1": &"jab2", "AL2": &"knee", "AL3": &"roundhouse2", "AH": &"spin_flip",
 	},
 	&"boxer": {
 		"idle": &"idle_fighting", "L1": &"jab2", "L2": &"cross", "L3": &"right_hook", "L4": &"uppercut_jab",
 		"H0": &"mma_kick2", "H1": &"uppercut", "H2": &"knee_lead", "H3": &"roundhouse", "DL": &"flying_kick",
 		"T1": &"elbow", "T2": &"palm_blast3",
+		"AL1": &"jab", "AL2": &"right_hook", "AL3": &"uppercut_jab", "AH": &"spin_flip2",
 	},
 	&"brawler": {
 		"idle": &"idle_fight", "L1": &"hook", "L2": &"elbow", "L3": &"jab_elbow", "L4": &"crescent",
 		"H0": &"roundhouse", "H1": &"uppercut", "H2": &"knee", "H3": &"spin_flip2", "DL": &"flying_kick",
 		"T1": &"elbow_back", "T2": &"palm_blast3",
+		"AL1": &"elbow", "AL2": &"knee_lead", "AL3": &"crescent", "AH": &"spin_flip2",
 	},
 	&"capoeira": {
 		"idle": &"idle_ginga", "L1": &"chapa", "L2": &"bencao", "L3": &"martelo", "L4": &"armada",
 		"H0": &"meia_lua", "H1": &"compasso", "H2": &"chapa_gira", "H3": &"spin_flip", "DL": &"flying_kick",
 		"T1": &"elbow_back", "T2": &"magic_1h",
+		"AL1": &"chapa", "AL2": &"martelo", "AL3": &"armada", "AH": &"spin_flip",
 	},
 }
 
@@ -117,6 +122,22 @@ static func build(style: StringName, techs: StringName = &"turtle") -> Dictionar
 	m[&"DL"].chain_light = &"L2"
 	m[&"DL"].cancel_tech = PackedStringArray(["tech1", "tech2"])
 	m[&"DL"].callout = "Flying Kick"
+
+	m[&"AL1"] = _air(&"AL1", c["AL1"], 5, 3, 12, 5.0, 20, 8, 0.6, 5.0, 1)
+	m[&"AL1"].chain_light = &"AL2"
+	m[&"AL1"].chain_heavy = &"AH"
+
+	m[&"AL2"] = _air(&"AL2", c["AL2"], 6, 3, 13, 6.0, 20, 9, 0.6, 5.0, 1)
+	m[&"AL2"].chain_light = &"AL3"
+	m[&"AL2"].chain_heavy = &"AH"
+
+	m[&"AL3"] = _air(&"AL3", c["AL3"], 8, 4, 16, 9.0, 30, 10, 9.0, 4.0, 2, KICK_BOX)
+	m[&"AL3"].effect = &"knockdown"
+	m[&"AL3"].callout = "Heaven Kick"
+
+	m[&"AH"] = _air(&"AH", c["AH"], 10, 4, 18, 12.0, 24, 12, 1.5, 4.0, 3, Vector3(1.2, 1.4, 1.3), Vector3(0, 0.85, -1.0))
+	m[&"AH"].effect = &"spike"
+	m[&"AH"].callout = "Meteor Smash"
 
 	match techs:
 		&"crane":
@@ -231,6 +252,13 @@ static func _mountain_techs(m: Dictionary) -> void:
 	m[&"tech2"] = t2
 
 	m[&"tech3"] = _rush("Volcano Crush", MOUNTAIN_RUSH, 50.0)
+
+
+static func _air(id: StringName, clip: StringName, su: int, act: int, rec: int, dmg: float, hs: int, bs: int,
+		kb: float, lunge: float, tier: int, box: Vector3 = PUNCH_BOX, offset: Vector3 = Vector3(0, 1.2, -0.95)) -> MoveData:
+	var d := _move(id, clip, su, act, rec, dmg, hs, bs, kb, lunge, tier, box, offset)
+	d.air = true
+	return d
 
 
 static func _move(id: StringName, clip: StringName, su: int, act: int, rec: int, dmg: float, hs: int, bs: int,

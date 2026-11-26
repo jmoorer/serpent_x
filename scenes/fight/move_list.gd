@@ -6,7 +6,8 @@ extends PanelContainer
 const GOLD_HEX := "#ffd24d"
 const DIM_HEX := "#bdb6a8"
 const TECH_KEYS := {"tech1": "U", "tech2": "I", "tech3": "O"}
-const EFFECT_NAMES := {&"pop": "launch", &"crumple": "crumple", &"knockdown": "knockdown"}
+const EFFECT_NAMES := {&"pop": "launch", &"crumple": "crumple", &"knockdown": "knockdown",
+	&"spike": "spike, bounces once"}
 const NORMALS := [
 	["J", &"L1", "Light 1"],
 	["J J", &"L2", "Light 2"],
@@ -18,6 +19,10 @@ const NORMALS := [
 	["J J J › K", &"H3", ""],
 	["Shift+J", &"DL", ""],
 	["Shift+K", &"H0", "Dash Heavy"],
+	["air J", &"AL1", "Air Light 1"],
+	["air J J", &"AL2", "Air Light 2"],
+	["air J J J", &"AL3", ""],
+	["air K", &"AH", ""],
 ]
 
 var _text: RichTextLabel
@@ -60,7 +65,7 @@ func build(moves: Dictionary, school: String, power: float) -> void:
 	if moves.has(&"counter_hit"):
 		t += _row("(auto)", "Counter Hit", moves[&"counter_hit"], power)
 	t += "[/table]\n[color=%s]%s[/color]" % [DIM_HEX,
-		"Hold L block · hold C charge ki · Space hop · O rush needs a confirm (3-hit string, Knee Crush, U hit). Damage scales down per combo hit."]
+		"Hold L block · hold C charge ki · Space hop · air attacks: one string per jump · O rush needs a confirm (3-hit string, Knee Crush, U hit). Damage scales down per combo hit."]
 	_text.text = t
 
 
@@ -96,6 +101,8 @@ func _notes(m: MoveData) -> String:
 		parts.append(FightHUD.KIND_HINT.get(m.kind, ""))
 	if EFFECT_NAMES.has(m.effect):
 		parts.append(EFFECT_NAMES[m.effect])
+	if m.effect == &"pop" and m.kind == &"":
+		parts.append("› Space chase")
 	if m.unblockable:
 		parts.append("unblockable")
 	if not String(m.id).begins_with("L"):

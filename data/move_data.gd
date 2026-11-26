@@ -15,8 +15,12 @@ extends Resource
 @export var hitbox_size: Vector3 = Vector3(0.9, 0.9, 1.0)
 @export var hitbox_offset: Vector3 = Vector3(0.0, 1.2, -0.95)
 @export var tier: int = 1
-## "" | pop | crumple | knockdown
+## "" | pop | crumple | knockdown | spike (airborne target slams down and bounces once per combo)
 @export var effect: StringName = &""
+## Upward velocity given to an airborne target on hit; 0 = Fighter.JUGGLE_LIFT.
+@export var lift: float = 0.0
+## Air attack: started while airborne, tracks a juggled target's height, landing cuts it short.
+@export var air: bool = false
 ## Forward speed (m/s) during startup + active; stops when touching the opponent.
 @export var lunge: float = 0.0
 @export var chain_light: StringName = &""

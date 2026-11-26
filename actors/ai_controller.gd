@@ -117,6 +117,9 @@ func _make_string() -> Array[String]:
 	var plan: Array[String] = []
 	var tech_chance: float = profile.get("tech_chance", 0.2)
 	var can_blast: bool = profile.get("uses_tech2", false) and fighter.ki >= 25.0
+	if randf() < float(profile.get("air_chance", 0.0)):
+		plan.assign(["light", "heavy", "hop", "light", "light", ["light", "heavy"].pick_random()])
+		return plan
 	if randf() < 0.18:
 		plan.append("heavy")
 		if can_blast and randf() < tech_chance * 2.0:

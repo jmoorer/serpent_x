@@ -28,6 +28,15 @@ const KD_LIE_FRAMES := 48
 const KD_GETUP_FRAMES := 66
 const AFTERIMAGE_BLINK := 6
 const RUSH_DASH_MAX := 18
+const POP_VELOCITY := 9.0
+const CHASE_VELOCITY := 11.0
+const CHASE_MAX_SPEED := 14.0
+const JUGGLE_LIFT := 4.0
+const JUGGLE_DECAY := 0.08
+const JUGGLE_LAND_STUN := 10
+const SPIKE_VELOCITY := 18.0
+const BOUNCE_VELOCITY := 8.0
+const AIR_LAND_LAG := 6
 const BUFFERED := ["light", "heavy", "dash", "hop", "tech1", "tech2", "tech3"]
 const HIT_COLOR := Color(1.0, 0.85, 0.45)
 const BLOCK_COLOR := Color(0.45, 0.7, 1.0)
@@ -76,6 +85,13 @@ var _ai_input: Dictionary = {}
 var _buffer: Dictionary = {}
 var _aura: CPUParticles3D
 var _idle_clip: StringName = &"idle_turtle"
+## One air string per jump; refilled on the floor.
+var _air_moves_left: int = 1
+var _juggle_hits: int = 0
+var _spiked: bool = false
+var _bounced: bool = false
+## Spike bounce in progress: hittable while it lasts.
+var _bouncing: bool = false
 
 @onready var model: FighterModel = $Model
 @onready var hitbox: Hitbox = $Hitbox
@@ -112,6 +128,8 @@ func _physics_process(delta: float) -> void:
 	_tick_buffer()
 	_tick_armor()
 	_daze_left = maxi(_daze_left - 1, 0)
+	if is_on_floor() and velocity.y <= 0.0:
+		_air_moves_left = 1
 	if state != State.DEAD and state != State.KNOCKDOWN:
 		_face_opponent()
 	_apply_gravity(delta)
@@ -166,6 +184,8 @@ func _tick_state(delta: float) -> void:
 func _enter(s: State) -> void:
 	state = s
 	_state_frames = 0
+	_spiked = false
+	_bouncing = false
 
 
 # --- input -----------------------------------------------------------------
@@ -258,10 +278,18 @@ func _handle_actionable() -> void:
 			_take(t)
 			if try_technique(StringName(t)):
 				return
-	if _take("heavy"):
+	if _is_airborne():
+		if _air_moves_left > 0:
+			if _take("heavy"):
+				_start_air_move(moves[&"AH"])
+				return
+			if _take("light"):
+				_start_air_move(moves[&"AL1"])
+				return
+	elif _take("heavy"):
 		_start_move(moves[&"H0"])
 		return
-	if _take("light"):
+	elif _take("light"):
 		_start_move(moves[&"L1"])
 		return
 
@@ -393,6 +421,12 @@ func _play_timed(clip: StringName, startup_frames: int, after_frames: int) -> vo
 func _tick_attack() -> void:
 	_attack_frame += 1
 	var m := _move
+	if m.air:
+		if is_on_floor() and velocity.y <= 0.0 and _attack_frame > 3:
+			_enter_recovery(AIR_LAND_LAG)
+			model.play(_idle_clip, 0.1)
+			return
+		_air_track(m)
 	_apply_lunge(m)
 	if _attack_frame == m.startup:
 		model.set_speed(_speed_after_impact)
@@ -421,6 +455,9 @@ func _try_cancels() -> bool:
 	var chain_ok := (_connected and _attack_frame >= m.startup) or _attack_frame >= m.startup + m.active + 3
 	if not chain_ok:
 		return false
+	if m.effect == &"pop" and _landed_hit and _take("hop"):
+		_chase_jump()
+		return true
 	if m.chain_light != &"" and _take("light"):
 		_start_move(moves[m.chain_light])
 		return true
@@ -443,6 +480,68 @@ func _end_action() -> void:
 	_stop_xz(100.0)
 	_enter(State.IDLE)
 	model.play(_idle_clip, 0.15)
+
+
+## Recovery-only move handled by the generic attack tick (rush tail, air landing lag).
+func _enter_recovery(frames: int) -> void:
+	hitbox.disarm()
+	_hit_active = false
+	var rec := MoveData.new()
+	rec.startup = 0
+	rec.active = 0
+	rec.recovery = frames
+	_move = rec
+	_attack_frame = 0
+	_connected = false
+	_enter(State.ATTACK)
+
+
+# --- air -------------------------------------------------------------------
+
+func _is_airborne() -> bool:
+	return not is_on_floor() or velocity.y > 0.5
+
+
+## Can be chased in the air: airborne hitstun or a spike bounce.
+func is_juggled() -> bool:
+	return (state == State.HITSTUN and _airborne_stun) or _bouncing
+
+
+func _start_air_move(m: MoveData) -> void:
+	_air_moves_left -= 1
+	_start_move(m)
+
+
+## Holds the attacker level with a juggled target through the swing, and keeps floating with
+## them after a connect (except off a spike, so the attacker drops for the bounce).
+func _air_track(m: MoveData) -> void:
+	if opponent == null or not opponent.is_juggled():
+		return
+	var swinging := _attack_frame <= m.startup + m.active
+	if not swinging and not (_connected and m.effect != &"spike"):
+		return
+	var dy := opponent.global_position.y - 0.15 - global_position.y
+	velocity.y = clampf(opponent.velocity.y + dy * 10.0, -10.0, 12.0)
+
+
+## Hop-cancel off a landed launcher: leap toward the target with one air string ready.
+func _chase_jump() -> void:
+	hitbox.disarm()
+	_hit_active = false
+	_enter(State.IDLE)
+	_air_moves_left = 1
+	var to := facing
+	if opponent:
+		to = opponent.global_position - global_position
+		to.y = 0.0
+	var gap := maxf(to.length() - 1.1, 0.0)
+	var dir := to.normalized() if to.length() > 0.01 else facing
+	var speed := minf(gap / 0.3, CHASE_MAX_SPEED)
+	velocity = Vector3(dir.x * speed, CHASE_VELOCITY, dir.z * speed)
+	model.play(&"air", 0.08)
+	model.spawn_ghost(aura_color, 0.35)
+	Fx.shockwave(global_position + Vector3.UP * 0.05, aura_color, 1.8, 0.3)
+	Sfx.play(&"whoosh_big", -6.0)
 
 
 # --- techniques ------------------------------------------------------------
@@ -735,17 +834,9 @@ func _next_rush_segment() -> void:
 	Sfx.play(&"whoosh", -8.0)
 
 
-## Hands the tail of the rush to the generic attack tick as a recovery-only move.
 func _finish_rush() -> void:
 	_rush_seg = -1
-	var rec := MoveData.new()
-	rec.startup = 0
-	rec.active = 0
-	rec.recovery = moves[&"tech3"].recovery
-	_move = rec
-	_attack_frame = 0
-	_connected = false
-	_enter(State.ATTACK)
+	_enter_recovery(moves[&"tech3"].recovery)
 
 
 # --- getting hit -----------------------------------------------------------
@@ -828,6 +919,12 @@ func take_hit(src: Object) -> void:
 		_die()
 		return
 
+	var airborne := not is_on_floor() or _bouncing
+	if effect == &"spike":
+		if airborne:
+			_enter_spike(away * knockback)
+			return
+		effect = &""
 	match effect:
 		&"knockdown":
 			_enter_knockdown(away * knockback)
@@ -836,10 +933,16 @@ func take_hit(src: Object) -> void:
 				Sfx.play(&"shock_big", -2.0)
 			return
 		&"pop":
-			velocity.y = 6.5
+			velocity.y = POP_VELOCITY * _juggle_decay()
 			_airborne_stun = true
+			_juggle_hits += 1
 		&"crumple":
 			_airborne_stun = false
+	if airborne and effect != &"pop":
+		var lift := float(src.get("lift"))
+		velocity.y = maxf(velocity.y, (lift if lift > 0.0 else JUGGLE_LIFT) * _juggle_decay())
+		_airborne_stun = true
+		_juggle_hits += 1
 
 	_stun_total = hitstun
 	_knock_vel = away * knockback
@@ -924,14 +1027,20 @@ func _tick_hitstun() -> void:
 	if _airborne_stun:
 		if is_on_floor() and _state_frames > 8:
 			_airborne_stun = false
-			if _state_frames >= _stun_total:
-				_recover()
+			_juggle_hits = 0
+			_stun_total = maxi(_stun_total, _state_frames + JUGGLE_LAND_STUN)
 		return
 	if _state_frames >= _stun_total:
 		_recover()
 
 
+func _juggle_decay() -> float:
+	return maxf(0.35, 1.0 - JUGGLE_DECAY * _juggle_hits)
+
+
 func _recover() -> void:
+	_juggle_hits = 0
+	_bounced = false
 	_enter(State.IDLE)
 	model.play(_idle_clip, 0.2)
 	if opponent:
@@ -950,16 +1059,52 @@ func _enter_knockdown(push: Vector3) -> void:
 	model.play(&"fall", 0.05, 1.5)
 
 
+## Meteor Smash: driven into the floor, bouncing back up once per combo for a follow-up.
+func _enter_spike(push: Vector3) -> void:
+	_enter_knockdown(push)
+	velocity.y = -SPIKE_VELOCITY
+	_spiked = true
+	model.play(&"fall", 0.04, 2.0)
+
+
 func _tick_knockdown() -> void:
 	_decay_knock(10.0)
+	if _spiked and is_on_floor():
+		_spiked = false
+		_spike_impact()
+		return
+	if _bouncing and is_on_floor() and velocity.y <= 0.0 and _state_frames > 4:
+		_bouncing = false
+		invuln = true
+		_state_frames = 0
+	if _bouncing:
+		return
 	if not _getting_up and _state_frames >= KD_LIE_FRAMES and is_on_floor():
 		_getting_up = true
+		_juggle_hits = 0
+		_bounced = false
 		model.play(&"getup", 0.25, model.clip_length(&"getup") / (KD_GETUP_FRAMES / 60.0))
 		if opponent:
 			opponent._reset_combo()
 	if _getting_up and _state_frames >= KD_LIE_FRAMES + KD_GETUP_FRAMES:
 		invuln = false
 		_recover()
+
+
+func _spike_impact() -> void:
+	var ground := global_position + Vector3.UP * 0.05
+	Fx.shockwave(ground, HIT_COLOR, 4.0, 0.4)
+	Fx.spark(ground + Vector3.UP * 0.3, HIT_COLOR, 3)
+	Sfx.play(&"shock_big", -3.0)
+	Feedback.pulse(3)
+	_state_frames = 0
+	if _bounced:
+		return
+	_bounced = true
+	_bouncing = true
+	invuln = false
+	velocity.y = BOUNCE_VELOCITY
+	_knock_vel *= 0.4
 
 
 func _decay_knock(rate: float) -> void:
@@ -1012,6 +1157,8 @@ func refill() -> void:
 	invuln = false
 	_armor_left = 0
 	_daze_left = 0
+	_juggle_hits = 0
+	_bounced = false
 	_enter(State.IDLE)
 	hp_changed.emit(hp)
 	ki_changed.emit(ki)

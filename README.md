@@ -51,7 +51,7 @@ Same J/K strings and branches for every school; the animation style, stats and U
 | Action | Key |
 |--------|-----|
 | Move (relative to opponent) | WASD |
-| Hop | Space |
+| Hop / air attacks | Space, then J / K in the air |
 | Dash | Shift (no i-frames) — Dash+J Flying Kick, Dash+K heavy |
 | Light / Heavy | J / K |
 | Block | L (hold) |
@@ -62,13 +62,24 @@ Same J/K strings and branches for every school; the animation style, stats and U
 ## Combo routes
 
 - Light string: `J J J J` (4th hit knocks down). Any light can branch into a heavy:
-  - `J K` Rising Dragon (launcher) → `J` or `I`
+  - `J K` Rising Dragon (launcher) → `J` or `I`, or `Space` to chase them into the air
   - `J J K` Knee Crush (crumple, long stun) → `U` or `O`
   - `J J J K` Tornado Heel (knockdown)
 - Lights cancel into `U`; Turtle's Afterimage → `J`/`K`/`O` from behind the opponent.
 - The `O` rush only fires after a confirm (3-hit string, Afterimage hit, Knee Crush, Solar Flare blind, or a
   Wolf counter hit) — the HUD shows **<RUSH NAME> READY**.
 - Damage scales down per hit; combos cap at 12 hits.
+
+## Air combos
+
+- In the air (after a hop or the launcher chase): `J J J` ends in Heaven Kick (blows them away), `K` from
+  neutral air, air `J` or air `J J` is Meteor Smash (spikes them into the floor).
+- Air attacks hold you level with a juggled opponent, so strings connect while you both float.
+- Meteor Smash bounces the opponent off the floor once per combo; they can be hit during the bounce.
+- Any hit on an airborne opponent lifts them; the lift shrinks with each juggle hit.
+- One air string per jump. Landing mid-attack costs 6 frames of landing lag. Air `K` on a standing
+  opponent is a plain jump-in hit.
+- Full route: `J K` › `Space` › `J J K` › (bounce) `J K` › `Space` › `J J J` (10 hits).
 
 ## Tools
 
@@ -79,6 +90,8 @@ godot --headless --path . --script res://tools/build_anim_library.gd
 godot --headless --path . --fixed-fps 60 --script res://tools/autoplay.gd -- 2:crane
 # Forces every school technique in set-up situations and checks it connects (12 cases)
 godot --headless --path . --fixed-fps 60 --script res://tools/tech_test.gd
+# Air combos on every school: launcher chase, spike bounce relaunch, jump-in, one string per jump
+godot --headless --path . --fixed-fps 60 --script res://tools/air_test.gd
 # Training mode: dummy modes, immortality, HP refill, CPU handoff, reset, move list (exits 1 on failure)
 godot --headless --path . --fixed-fps 60 --script res://tools/training_test.gd
 # Pose contact sheet of clips at their impact frame
