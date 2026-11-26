@@ -101,3 +101,4 @@ godot --path . --script res://tools/contact_sheet.gd -- /tmp/sheet.png jab round
 ## Design / plan
 
 - Plan: `docs/superpowers/plans/2026-11-25-budokai-lite-vertical-slice.md`
+- Roadmap (post-slice features, one per session): `docs/ROADMAP.md`
