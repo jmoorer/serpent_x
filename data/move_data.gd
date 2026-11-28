@@ -32,7 +32,7 @@ extends Resource
 @export_group("Technique")
 @export var ki_cost: float = 0.0
 @export var requires_confirm: bool = false
-## "" (normal) | afterimage | blast | rush | flare | counter | armor | quake
+## "" (normal) | afterimage | blast | rush | flare | counter | armor | quake | vanish
 @export var kind: StringName = &""
 ## flare / quake radius in metres.
 @export var reach: float = 0.0

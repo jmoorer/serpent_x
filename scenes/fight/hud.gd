@@ -4,8 +4,12 @@ extends CanvasLayer
 const GOLD := Color(1.0, 0.82, 0.3)
 const KI := Color(0.45, 0.8, 1.0)
 const CONTROLS := "[b]Move[/b] WASD (toward / around foe)   [b]Hop[/b] Space   [b]Dash[/b] Shift   [b]Block[/b] L (hold)   [b]Charge ki[/b] C (hold)\n" \
-	+ "[b]J[/b] light string ×4   [b]K[/b] heavy — branches: J›K pop · J J›K knee crush · J J J›K tornado heel   [b]Dash+J[/b] flying kick\n"
+	+ "[b]J[/b] light string ×4   [b]K[/b] heavy — branches: J›K pop · J J›K knee crush · J J J›K tornado heel   [b]Dash+J[/b] flying kick\n" \
+	+ "[b]J+L[/b] throw (J to tech)   [b]Shift[/b] while hit: Vanish (50 ki)   [b]Knocked down:[/b] hold A/D/S to roll, L to stay down\n"
+const GUARD := Color(0.75, 0.88, 1.0)
+const GUARD_LOW := Color(1.0, 0.35, 0.25)
 const KIND_HINT := {
+	&"vanish": "while hit: blink behind, once per combo",
 	&"afterimage": "blink behind",
 	&"blast": "ki blast, hold to charge",
 	&"flare": "blinds if they face you",
@@ -21,6 +25,8 @@ var _e_hp: ProgressBar
 var _e_trail: ProgressBar
 var _p_ki: ProgressBar
 var _e_ki: ProgressBar
+var _p_guard: ProgressBar
+var _e_guard: ProgressBar
 var _p_name: Label
 var _e_name: Label
 var _timer: Label
@@ -52,6 +58,12 @@ func _ready() -> void:
 	_e_ki.max_value = Fighter.MAX_KI
 	_set_ticks(_p_ki, [20.0, 25.0, 45.0])
 	_set_ticks(_e_ki, [20.0, 25.0, 45.0])
+	_p_guard = _bar(root, Vector2(40, 94), Vector2(200, 7), GUARD, false)
+	_e_guard = _bar(root, Vector2(-240, 94), Vector2(200, 7), GUARD, true)
+	for g: ProgressBar in [_p_guard, _e_guard]:
+		g.max_value = Fighter.MAX_GUARD
+		g.value = Fighter.MAX_GUARD
+		g.pivot_offset = Vector2(100, 3)
 
 	_timer = _label(root, "75", 44, Vector2(-60, 10), Color.WHITE, false, true)
 	_timer.custom_minimum_size = Vector2(120, 0)
@@ -93,7 +105,7 @@ func _ready() -> void:
 	_controls.anchor_right = 1.0
 	_controls.anchor_top = 1.0
 	_controls.anchor_bottom = 1.0
-	_controls.offset_top = -92
+	_controls.offset_top = -112
 	_controls.offset_bottom = -12
 	_controls.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	var panel := StyleBoxFlat.new()
@@ -184,6 +196,7 @@ func setup_player_kit(moves: Dictionary) -> void:
 		var t: MoveData = moves[pair[1]]
 		marks.append(t.ki_cost)
 		line += "[b]%s[/b] %s (%d ki, %s)   " % [pair[0], t.display_name, int(t.ki_cost), KIND_HINT.get(t.kind, "")]
+	marks.append(Fighter.VANISH_COST)
 	_set_ticks(_p_ki, marks)
 	_controls.text = "[center]" + CONTROLS + line + "[b]Esc[/b] title[/center]"
 	_confirm.text = "%s READY — press O" % (moves[&"tech3"] as MoveData).display_name.to_upper()
@@ -235,6 +248,30 @@ func set_player_ki(v: float) -> void:
 
 func set_enemy_ki(v: float) -> void:
 	_e_ki.value = v
+
+
+func set_player_guard(v: float) -> void:
+	_set_guard(_p_guard, v)
+
+
+func set_enemy_guard(v: float) -> void:
+	_set_guard(_e_guard, v)
+
+
+func _set_guard(bar: ProgressBar, v: float) -> void:
+	bar.value = v
+	var fill := bar.get_theme_stylebox("fill") as StyleBoxFlat
+	fill.bg_color = GUARD if v / Fighter.MAX_GUARD > 0.3 else GUARD_LOW
+
+
+## Guard bar pops and flashes when it breaks.
+func guard_crush(side: int) -> void:
+	var bar := _p_guard if side == 0 else _e_guard
+	bar.scale = Vector2(1.25, 2.2)
+	bar.modulate = Color(3.0, 3.0, 3.0)
+	var tw := create_tween().set_parallel(true)
+	tw.tween_property(bar, "scale", Vector2.ONE, 0.35).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
+	tw.tween_property(bar, "modulate", Color.WHITE, 0.5)
 
 
 func show_combo(side: int, hits: int) -> void:

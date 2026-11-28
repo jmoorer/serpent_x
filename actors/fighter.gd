@@ -10,8 +10,13 @@ signal ki_changed(value: float)
 signal hp_changed(value: float)
 signal combo_changed(hits: int)
 signal technique_used(display_name: String)
+signal guard_changed(value: float)
+signal guard_crushed
+signal throw_teched
 
-enum State { IDLE, MOVE, ATTACK, BLOCK, HITSTUN, BLOCKSTUN, DASH, TECH, DEAD, KNOCKDOWN, CHARGE }
+## New states are appended so existing indices (tests compare raw ints) stay stable.
+enum State { IDLE, MOVE, ATTACK, BLOCK, HITSTUN, BLOCKSTUN, DASH, TECH, DEAD, KNOCKDOWN, CHARGE,
+	THROW, THROWN, GUARD_CRUSH, ROLL }
 
 const WALK_SPEED := 5.5
 const STRAFE_SPEED := 5.0
@@ -41,6 +46,28 @@ const AIR_LAND_LAG := 6
 const BEAM_HOLD_LEAD := 3
 const BEAM_CHARGE_MAX := 60
 const BEAM_CHARGE_DAMAGE := 0.8
+## Throw (J while holding L): grabs a grounded foe in neutral, block or charge; attacks beat it.
+const THROW_RANGE := 1.7
+const THROW_TECH_WINDOW := 10
+const THROW_HOLD := 22
+const THROW_RECOVERY := 14
+const THROW_HOLD_DIST := 0.95
+## Guard meter: blocked hits drain it, it refills after a pause off guard; empty = guard crush.
+const MAX_GUARD := 100.0
+const GUARD_BASE_COST := 6.0
+const GUARD_DAMAGE_COST := 1.6
+const GUARD_REGEN := 30.0
+const GUARD_REGEN_DELAY := 45
+const GUARD_CRUSH_FRAMES := 70
+## Wakeup: hold a direction while down to roll (left / right / back), hold block to stay down longer.
+const ROLL_FRAMES := 26
+const ROLL_MOVE_FRAMES := 20
+const ROLL_INVULN := 18
+const ROLL_SPEED := 9.0
+const WAKEUP_DELAY := 36
+## Vanish: Shift in hitstun, 50 ki, blink behind the attacker. Rearms after VANISH_LOCKOUT frames in neutral.
+const VANISH_COST := 50.0
+const VANISH_LOCKOUT := 45
 const BUFFERED := ["light", "heavy", "dash", "hop", "tech1", "tech2", "tech3"]
 const HIT_COLOR := Color(1.0, 0.85, 0.45)
 const BLOCK_COLOR := Color(0.45, 0.7, 1.0)
@@ -66,6 +93,7 @@ var aura_color: Color = Color(1.0, 0.85, 0.3)
 var moves: Dictionary = {}
 var speed_mult: float = 1.0
 var power: float = 1.0
+var guard: float = MAX_GUARD
 
 var _state_frames: int = 0
 var _attack_frame: int = 0
@@ -99,6 +127,17 @@ var _spiked: bool = false
 var _bounced: bool = false
 ## Spike bounce in progress: hittable while it lasts.
 var _bouncing: bool = false
+var _guard_wait: int = 0
+## Attacker: holding the opponent in a throw.
+var _grabbed: bool = false
+## Victim: who is throwing us.
+var _thrower: Fighter
+## Knockdown wakeup choice: "" (undecided) | getup | delay | roll_left | roll_right | roll_back
+var _wakeup: StringName = &""
+var _getup_start: int = 0
+var _roll_dir: Vector3 = Vector3.ZERO
+var _vanish_used: bool = false
+var _vanish_lock: int = 0
 
 @onready var model: FighterModel = $Model
 @onready var hitbox: Hitbox = $Hitbox
@@ -135,6 +174,8 @@ func _physics_process(delta: float) -> void:
 	_tick_buffer()
 	_tick_armor()
 	_daze_left = maxi(_daze_left - 1, 0)
+	_tick_guard()
+	_tick_vanish_lock()
 	if is_on_floor() and velocity.y <= 0.0:
 		_air_moves_left = 1
 	if state != State.DEAD and state != State.KNOCKDOWN:
@@ -184,6 +225,16 @@ func _tick_state(delta: float) -> void:
 				_enter(State.IDLE)
 		State.KNOCKDOWN:
 			_tick_knockdown()
+		State.THROW:
+			_tick_throw()
+		State.THROWN:
+			_tick_thrown()
+		State.GUARD_CRUSH:
+			_decay_knock(20.0)
+			if _state_frames >= _stun_total:
+				_recover()
+		State.ROLL:
+			_tick_roll()
 		State.DEAD:
 			_decay_knock(14.0)
 
@@ -195,6 +246,13 @@ func _enter(s: State) -> void:
 	_state_frames = 0
 	_spiked = false
 	_bouncing = false
+	if s != State.THROW:
+		_grabbed = false
+	if s != State.THROWN:
+		_thrower = null
+	if s == State.HITSTUN:
+		# A dash pressed just before getting hit must not spend 50 ki on a Vanish.
+		_buffer.erase("dash")
 
 
 # --- input -----------------------------------------------------------------
@@ -234,19 +292,23 @@ func _held(action: String) -> bool:
 	return bool(_ai_input.get(action + "_held", false))
 
 
-## Forward = toward the opponent, right = strafe around them.
-func _move_dir() -> Vector3:
+## Raw stick: x = right, y = toward the opponent.
+func _input_axis() -> Vector2:
 	var v := Vector2.ZERO
 	if not controllable:
-		return Vector3.ZERO
+		return v
 	if is_player:
 		v.x = Input.get_axis("move_left", "move_right")
 		v.y = Input.get_axis("move_back", "move_forward")
 	else:
 		v.x = float(_ai_input.get("x", 0.0))
 		v.y = float(_ai_input.get("y", 0.0))
-	if v.length() > 1.0:
-		v = v.normalized()
+	return v.normalized() if v.length() > 1.0 else v
+
+
+## Forward = toward the opponent, right = strafe around them.
+func _move_dir() -> Vector3:
+	var v := _input_axis()
 	var right := facing.cross(Vector3.UP)
 	return facing * v.y + right * v.x
 
@@ -266,6 +328,9 @@ func _handle_actionable() -> void:
 			Sfx.set_charging(true)
 		return
 	if _held("block") and is_on_floor():
+		if _take("light"):
+			_start_throw()
+			return
 		if state != State.BLOCK:
 			_enter(State.BLOCK)
 			model.play(&"block", 0.08, 1.0, false)
@@ -561,7 +626,8 @@ func try_technique(id: StringName) -> bool:
 		return false
 	if t.requires_confirm and not confirm_ready:
 		return false
-	if state in [State.HITSTUN, State.BLOCKSTUN, State.DEAD, State.KNOCKDOWN]:
+	if state in [State.HITSTUN, State.BLOCKSTUN, State.DEAD, State.KNOCKDOWN, State.THROW, State.THROWN,
+			State.GUARD_CRUSH, State.ROLL]:
 		return false
 	if state == State.CHARGE:
 		_stop_charge()
@@ -655,6 +721,16 @@ func _tick_tech() -> void:
 				_end_action()
 		&"rush":
 			_tick_rush()
+		&"vanish":
+			_attack_frame += 1
+			_stop_xz(100.0)
+			if _attack_frame == AFTERIMAGE_BLINK:
+				_blink_behind_opponent()
+				model.play(_idle_clip, 0.1)
+			if _attack_frame == t.startup:
+				invuln = false
+			if _attack_frame >= t.startup + t.active + t.recovery:
+				_end_action()
 		&"flare", &"counter", &"armor", &"quake":
 			_attack_frame += 1
 			_stop_xz(100.0)
@@ -899,7 +975,7 @@ func _finish_rush() -> void:
 # --- getting hit -----------------------------------------------------------
 
 func take_hit(src: Object) -> void:
-	if state == State.DEAD or invuln:
+	if state == State.DEAD or state == State.THROWN or invuln:
 		return
 	var attacker: Fighter = src.get("owner_fighter") as Fighter
 	var damage: float = float(src.get("damage"))
@@ -1036,6 +1112,11 @@ func _take_blocked(attacker: Fighter, damage: float, blockstun: int, knockback: 
 	_lose_hp(damage * 0.15)
 	ki = minf(ki + 4.0, MAX_KI)
 	ki_changed.emit(ki)
+	_set_guard(guard - (GUARD_BASE_COST + damage * GUARD_DAMAGE_COST))
+	_guard_wait = GUARD_REGEN_DELAY
+	if guard <= 0.0 and hp > 0.0:
+		_guard_crush(attacker, away, hit_pos)
+		return
 	_stun_total = blockstun
 	_knock_vel = away * (knockback * 0.35 + 1.2)
 	_enter(State.BLOCKSTUN)
@@ -1055,6 +1136,212 @@ func _take_blocked(attacker: Fighter, damage: float, blockstun: int, knockback: 
 func _lose_hp(amount: float) -> void:
 	hp = maxf(hp - amount, 1.0 if immortal else 0.0)
 	hp_changed.emit(hp)
+
+
+# --- guard meter ----------------------------------------------------------
+
+func _set_guard(v: float) -> void:
+	v = clampf(v, 0.0, MAX_GUARD)
+	if v == guard:
+		return
+	guard = v
+	guard_changed.emit(guard)
+
+
+## Holding or taking block pauses the refill; it resumes GUARD_REGEN_DELAY frames after.
+func _tick_guard() -> void:
+	if state == State.BLOCK or state == State.BLOCKSTUN:
+		_guard_wait = GUARD_REGEN_DELAY
+		return
+	if _guard_wait > 0:
+		_guard_wait -= 1
+		return
+	if guard < MAX_GUARD:
+		_set_guard(guard + GUARD_REGEN * get_physics_process_delta_time())
+
+
+func _guard_crush(attacker: Fighter, away: Vector3, hit_pos: Vector3) -> void:
+	_stun_total = GUARD_CRUSH_FRAMES
+	_knock_vel = away * 3.0
+	_enter(State.GUARD_CRUSH)
+	model.play(&"dizzy", 0.08, 1.3)
+	model.flash(BLOCK_COLOR, 0.35, 4.0)
+	model.shake(0.09, 0.3)
+	var chest := global_position + Vector3.UP * 1.2
+	Fx.flash_sphere(chest, BLOCK_COLOR, 2.6, 0.25)
+	Fx.flash_sphere(chest, Color.WHITE, 1.4, 0.12)
+	Fx.shockwave(hit_pos, BLOCK_COLOR, 3.5, 0.4, away)
+	Fx.shockwave(global_position + Vector3.UP * 0.05, BLOCK_COLOR, 3.0, 0.45)
+	for k in 8:
+		var a := TAU * k / 8.0
+		Fx.spark(chest + Vector3(cos(a), sin(a) * 0.6, sin(a)) * 0.6, BLOCK_COLOR, 1)
+	Sfx.play(&"shock_big", -2.0)
+	Sfx.play(&"block", 2.0, 0.0)
+	Sfx.play(&"clash", -4.0)
+	Feedback.pulse(3)
+	technique_used.emit("Guard Crush")
+	guard_crushed.emit()
+	if attacker:
+		attacker._connected = true
+		attacker.confirm_ready = true
+
+
+# --- throws ----------------------------------------------------------------
+
+func _start_throw() -> void:
+	_start_move(moves[&"throw"], State.THROW)
+	_stop_xz(100.0)
+
+
+func _tick_throw() -> void:
+	_attack_frame += 1
+	_stop_xz(100.0)
+	var m := _move
+	if _grabbed:
+		if _attack_frame >= THROW_HOLD:
+			_throw_release()
+		return
+	if _attack_frame == m.startup:
+		model.set_speed(_speed_after_impact)
+	if _attack_frame >= m.startup and _attack_frame < m.startup + m.active and _try_grab():
+		return
+	if _attack_frame >= m.startup + m.active + m.recovery:
+		_end_action()
+
+
+## Grounded, in neutral / block / charge / dash, not mid-attack. Attacks beat throws.
+func can_be_thrown() -> bool:
+	return not invuln and is_on_floor() and not _is_airborne() \
+		and state in [State.IDLE, State.MOVE, State.BLOCK, State.CHARGE, State.DASH]
+
+
+func _try_grab() -> bool:
+	var o := opponent
+	if o == null or _distance_to_opponent() > THROW_RANGE:
+		return false
+	# Both throwing at once: automatic tech.
+	if o.state == State.THROW and not o._grabbed and o._attack_frame >= o._move.startup:
+		_throw_tech(o)
+		return true
+	if not o.can_be_thrown():
+		return false
+	_grabbed = true
+	_attack_frame = 0
+	o._get_grabbed(self)
+	_play_timed(&"knee", THROW_HOLD, THROW_RECOVERY)
+	technique_used.emit("Throw")
+	Sfx.play(&"block", -4.0, 0.0)
+	Sfx.play(&"whoosh", -6.0)
+	return true
+
+
+func _get_grabbed(attacker: Fighter) -> void:
+	if state == State.CHARGE:
+		_stop_charge()
+	_armor_left = 0
+	_daze_left = 0
+	hitbox.disarm()
+	_hit_active = false
+	_knock_vel = Vector3.ZERO
+	velocity = Vector3.ZERO
+	_enter(State.THROWN)
+	_thrower = attacker
+	model.play(&"hit_light", 0.05, 0.5)
+	model.flash(Color.WHITE, 0.08, 2.0)
+
+
+func _tick_thrown() -> void:
+	velocity.x = 0.0
+	velocity.z = 0.0
+	var t := _thrower
+	if t == null or not is_instance_valid(t) or t.state != State.THROW or not t._grabbed:
+		_recover()
+		return
+	var p := t.global_position + t.facing * THROW_HOLD_DIST
+	global_position = Vector3(p.x, global_position.y, p.z)
+	if _state_frames <= THROW_TECH_WINDOW and _take("light"):
+		t._throw_tech(self)
+
+
+func _throw_release() -> void:
+	var o := opponent
+	var m := _move
+	model.set_speed(_speed_after_impact)
+	_enter_recovery(THROW_RECOVERY)
+	if o == null or o.state != State.THROWN:
+		return
+	var p := HitPayload.new()
+	p.owner_fighter = self
+	p.move_id = &"throw"
+	p.damage = m.damage
+	p.hitstun = m.hitstun
+	p.knockback = m.knockback
+	p.ki_gain = m.ki_gain
+	p.hit_tier = m.tier
+	p.effect = &"knockdown"
+	p.unblockable = true
+	o._enter(State.HITSTUN)
+	o.take_hit(p)
+
+
+## Both fighters break apart unharmed. Called on the thrower with the one who escaped.
+func _throw_tech(other: Fighter) -> void:
+	for f: Fighter in [self, other]:
+		f.hitbox.disarm()
+		f._hit_active = false
+		f._knock_vel = -f.facing * 5.0
+		f._stun_total = 16
+		f._enter(State.BLOCKSTUN)
+		f.model.play(&"block_hit", 0.04, 1.6)
+		f.model.flash(Color.WHITE, 0.08, 2.0)
+	var mid := (global_position + other.global_position) * 0.5 + Vector3.UP * 1.2
+	Fx.flash_sphere(mid, Color.WHITE, 1.6, 0.15)
+	Fx.shockwave(mid, BLOCK_COLOR, 2.2, 0.3, facing)
+	Sfx.play(&"clash", -2.0)
+	Feedback.pulse(1)
+	other.technique_used.emit("Throw Tech")
+	other.throw_teched.emit()
+
+
+# --- vanish ----------------------------------------------------------------
+
+func can_vanish() -> bool:
+	return state == State.HITSTUN and ki >= VANISH_COST and not _vanish_used and _daze_left == 0 \
+		and opponent != null and moves.has(&"vanish")
+
+
+func _vanish() -> void:
+	_vanish_used = true
+	_vanish_lock = VANISH_LOCKOUT
+	ki = maxf(ki - VANISH_COST, 0.0)
+	ki_changed.emit(ki)
+	_move = moves[&"vanish"]
+	_attack_frame = 0
+	_connected = false
+	_landed_hit = false
+	hitbox.disarm()
+	_hit_active = false
+	_knock_vel = Vector3.ZERO
+	_airborne_stun = false
+	_juggle_hits = 0
+	_enter(State.TECH)
+	invuln = true
+	model.spawn_ghost(aura_color, 0.6)
+	model.set_visible_body(false)
+	Fx.flash_sphere(global_position + Vector3.UP, aura_color, 1.6, 0.2)
+	Sfx.play(&"teleport")
+	technique_used.emit("Vanish")
+	if opponent:
+		opponent._reset_combo()
+
+
+## Once per combo: a used Vanish rearms after VANISH_LOCKOUT frames out of stun.
+func _tick_vanish_lock() -> void:
+	if not _vanish_used or is_stunned() or state == State.TECH:
+		return
+	_vanish_lock -= 1
+	if _vanish_lock <= 0:
+		_vanish_used = false
 
 
 func _register_hit_success(target: Fighter, move_id: StringName, ki_gain: float) -> void:
@@ -1080,6 +1367,10 @@ func _reset_combo() -> void:
 
 
 func _tick_hitstun() -> void:
+	if _peek("dash") and can_vanish():
+		_take("dash")
+		_vanish()
+		return
 	_decay_knock(18.0)
 	if _airborne_stun:
 		if is_on_floor() and _state_frames > 8:
@@ -1110,6 +1401,7 @@ func _enter_knockdown(push: Vector3) -> void:
 	_knock_vel = push
 	velocity.y = 4.0
 	_getting_up = false
+	_wakeup = &""
 	invuln = true
 	hitbox.disarm()
 	_hit_active = false
@@ -1137,13 +1429,76 @@ func _tick_knockdown() -> void:
 	if _bouncing:
 		return
 	if not _getting_up and _state_frames >= KD_LIE_FRAMES and is_on_floor():
-		_getting_up = true
-		_juggle_hits = 0
-		_bounced = false
-		model.play(&"getup", 0.25, model.clip_length(&"getup") / (KD_GETUP_FRAMES / 60.0))
-		if opponent:
-			opponent._reset_combo()
-	if _getting_up and _state_frames >= KD_LIE_FRAMES + KD_GETUP_FRAMES:
+		if _wakeup == &"":
+			_wakeup = _choose_wakeup()
+			if String(_wakeup).begins_with("roll"):
+				_start_roll()
+				return
+		if _state_frames >= KD_LIE_FRAMES + (WAKEUP_DELAY if _wakeup == &"delay" else 0):
+			_getting_up = true
+			_getup_start = _state_frames
+			_juggle_hits = 0
+			_bounced = false
+			model.play(&"getup", 0.25, model.clip_length(&"getup") / (KD_GETUP_FRAMES / 60.0))
+			if opponent:
+				opponent._reset_combo()
+	if _getting_up and _state_frames >= _getup_start + KD_GETUP_FRAMES:
+		invuln = false
+		_recover()
+
+
+## Read when the lie phase ends: held direction rolls, held block stays down, else get up in place.
+func _choose_wakeup() -> StringName:
+	if not controllable:
+		return &"getup"
+	if _held("block"):
+		return &"delay"
+	var v := _input_axis()
+	if v.y < -0.5 and absf(v.y) >= absf(v.x):
+		return &"roll_back"
+	if v.x > 0.5:
+		return &"roll_right"
+	if v.x < -0.5:
+		return &"roll_left"
+	return &"getup"
+
+
+func _start_roll() -> void:
+	_face_opponent()
+	var right := facing.cross(Vector3.UP)
+	var clip := &"dash_b"
+	match _wakeup:
+		&"roll_left":
+			_roll_dir = -right
+			clip = &"dash_l"
+		&"roll_right":
+			_roll_dir = right
+			clip = &"dash_r"
+		_:
+			_roll_dir = -facing
+	_juggle_hits = 0
+	_bounced = false
+	_knock_vel = Vector3.ZERO
+	_enter(State.ROLL)
+	invuln = true
+	model.play(clip, 0.15, model.clip_length(clip) / (ROLL_FRAMES / 60.0))
+	model.spawn_ghost(aura_color, 0.3)
+	Sfx.play(&"whoosh", -6.0)
+	if opponent:
+		opponent._reset_combo()
+
+
+## Invulnerable for ROLL_INVULN frames, then a short vulnerable tail.
+func _tick_roll() -> void:
+	if _state_frames <= ROLL_MOVE_FRAMES:
+		var k := 1.0 - 0.5 * float(_state_frames) / ROLL_MOVE_FRAMES
+		velocity.x = _roll_dir.x * ROLL_SPEED * k
+		velocity.z = _roll_dir.z * ROLL_SPEED * k
+	else:
+		_stop_xz(2.0)
+	if _state_frames == ROLL_INVULN:
+		invuln = false
+	if _state_frames >= ROLL_FRAMES:
 		invuln = false
 		_recover()
 
@@ -1216,13 +1571,20 @@ func refill() -> void:
 	_daze_left = 0
 	_juggle_hits = 0
 	_bounced = false
+	_vanish_used = false
+	_vanish_lock = 0
+	_wakeup = &""
+	_guard_wait = 0
 	_enter(State.IDLE)
+	guard = MAX_GUARD
+	guard_changed.emit(guard)
 	hp_changed.emit(hp)
 	ki_changed.emit(ki)
 
 
 func is_stunned() -> bool:
-	return state in [State.HITSTUN, State.BLOCKSTUN, State.KNOCKDOWN, State.DEAD]
+	return state in [State.HITSTUN, State.BLOCKSTUN, State.KNOCKDOWN, State.DEAD, State.THROWN,
+		State.GUARD_CRUSH, State.ROLL]
 
 
 ## Training reset: snap to a spot in neutral with full HP and no ki.

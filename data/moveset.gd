@@ -139,6 +139,21 @@ static func build(style: StringName, techs: StringName = &"turtle") -> Dictionar
 	m[&"AH"].effect = &"spike"
 	m[&"AH"].callout = "Meteor Smash"
 
+	# Throw: J while holding L. Active frames reach Fighter.THROW_RANGE; the hold and release are
+	# timed by Fighter.THROW_HOLD. Slower than a jab, so attacks beat it.
+	var th := _move(&"throw", &"elbow", 7, 3, 24, 12.0, 30, 0, 7.0, 0.0, 2)
+	th.display_name = "Throw"
+	th.effect = &"knockdown"
+	th.unblockable = true
+	m[&"throw"] = th
+
+	# Vanish: Shift in hitstun. Blinks behind on Fighter.AFTERIMAGE_BLINK, invulnerable until startup.
+	var v := _move(&"vanish", &"dash_f", 14, 0, 6, 0.0, 0, 0, 0.0, 0.0, 1)
+	v.display_name = "Vanish"
+	v.kind = &"vanish"
+	v.ki_cost = 50.0
+	m[&"vanish"] = v
+
 	match techs:
 		&"crane":
 			_crane_techs(m)

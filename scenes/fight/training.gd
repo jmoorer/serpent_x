@@ -7,7 +7,8 @@ extends Node
 const REFILL_DELAY := 0.8
 const GOLD_HEX := "#ffd24d"
 const DIM_HEX := "#bdb6a8"
-const KEY_LABELS := ["Stand", "Block", "After hit", "Random", "Hop", "Jab", "CPU"]
+## Keys 1-9, then 0 for the tenth mode.
+const KEY_LABELS := ["Stand", "Block", "After hit", "Random", "Hop", "Jab", "CPU", "Tech", "Wakeup", "Throw"]
 
 var player: Fighter
 var enemy: Fighter
@@ -103,8 +104,10 @@ func _unhandled_input(event: InputEvent) -> void:
 	if key == null or not key.pressed or key.echo:
 		return
 	var k := key.physical_keycode
-	if k >= KEY_1 and k < KEY_1 + KEY_LABELS.size():
+	if k >= KEY_1 and k <= KEY_9 and k - KEY_1 < KEY_LABELS.size():
 		dummy.set_mode((k - KEY_1) as TrainingDummy.Mode)
+	elif k == KEY_0 and KEY_LABELS.size() >= 10:
+		dummy.set_mode(9 as TrainingDummy.Mode)
 	elif k == KEY_F:
 		infinite_ki = not infinite_ki
 	elif k == KEY_R:
@@ -128,7 +131,7 @@ func _refresh() -> void:
 	var keys := ""
 	for i in KEY_LABELS.size():
 		var on := i == int(dummy.mode)
-		keys += "[color=%s][b]%d[/b] %s[/color]   " % [GOLD_HEX if on else DIM_HEX, i + 1, KEY_LABELS[i]]
+		keys += "[color=%s][b]%d[/b] %s[/color]   " % [GOLD_HEX if on else DIM_HEX, (i + 1) % 10, KEY_LABELS[i]]
 	var t := "[b][color=%s]TRAINING[/color]   Dummy: %s[/b]\n" % [GOLD_HEX, dummy.mode_name()]
 	t += keys + "\n"
 	t += "[color=%s][b]F[/b] infinite ki: %s   [b]R[/b] reset   [b]Tab[/b] move list   [b]Esc[/b] title[/color]\n" % [

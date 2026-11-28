@@ -34,7 +34,7 @@ HP refills 0.8 s after a combo ends).
 
 | Training key | Action |
 |--------------|--------|
-| 1–7 | Dummy mode: Stand, Block, Block after first hit, Random block, Hop, Jab, CPU (full AI) |
+| 1–9, 0 | Dummy mode: Stand, Block, Block after first hit, Random block, Hop, Jab, CPU (full AI), Tech throws, Random wakeup, Throw (walks in and throws you every 1.4 s; practise teching with J) |
 | F | Toggle infinite ki (both fighters, on by default) |
 | R | Reset positions, HP and ki |
 | Tab | Show / hide the move list (inputs, damage, startup frames, effects, cancels) |
@@ -68,6 +68,9 @@ Same J/K strings and branches for every school; the animation style, stats and U
 | Dash | Shift (no i-frames) — Dash+J Flying Kick, Dash+K heavy |
 | Light / Heavy | J / K |
 | Block | L (hold) |
+| Throw | J while holding L (J+L) |
+| Vanish | Shift while being hit (50 ki) |
+| Wakeup | while knocked down: hold A / D / S to roll, hold L to stay down |
 | Charge ki | C (hold, interruptible) |
 | School techniques | U / I / O (see table above) |
 | Back to title | Esc |
@@ -82,6 +85,29 @@ Same J/K strings and branches for every school; the animation style, stats and U
 - The `O` rush only fires after a confirm (3-hit string, Afterimage hit, Knee Crush, Solar Flare blind, or a
   Wolf counter hit) — the HUD shows **<RUSH NAME> READY**.
 - Damage scales down per hit; combos cap at 12 hits.
+
+## Defense: throws, guard, wakeup, Vanish
+
+Holding block isn't safe against everything any more:
+
+- **Throw** (`J+L`, 7f startup, ~1.7 m): grabs a grounded opponent who is idle, walking, blocking,
+  charging ki or dashing, then slams them into a knockdown (12 damage). Attacks beat it: anything already
+  swinging can't be grabbed, and a jab (6f) pressed on the same frame hits first. A whiff has 24 frames of
+  recovery. **Tech** by pressing `J` within 10 frames of being grabbed (a `J` buffered just before the
+  grab counts): both fighters break apart unharmed. Two throws on the same frame tech automatically.
+- **Guard meter** (thin bar under ki): each blocked hit drains `6 + 1.6 × damage` (about 25 for a heavy,
+  so 4 blocked heavies). It refills at 30/s once you've stopped blocking for 0.75 s. Holding block also
+  pauses the refill. Empty = **Guard Crush**: 70 frames of stun the attacker can combo from, and it
+  confirms the `O` rush.
+- **Wakeup** after a knockdown, read when the lie phase ends: nothing = get up in place (invulnerable
+  throughout); hold `A` / `D` / `S` = roll left / right / back (~2 m, invulnerable for 18 of 26 frames,
+  so the last 8 can be punished); hold `L` = stay down 36 frames longer, then get up.
+- **Vanish** (`Shift` while in hitstun, 50 ki): blink behind the attacker, invulnerable for 14 frames,
+  and the combo resets. Once per combo: it rearms after 45 frames out of stun. Not while blinded.
+  A dash pressed just before getting hit is dropped, so it never spends ki by accident.
+
+The CPU throws blockers and ki-chargers, techs throws (more often on higher rounds), varies its wakeup,
+sometimes Vanishes out of a combo of 2+ hits, and blocks less when its guard is low.
 
 ## Air combos
 
@@ -109,6 +135,8 @@ godot --headless --path . --fixed-fps 60 --script res://tools/tech_test.gd
 godot --headless --path . --fixed-fps 60 --script res://tools/air_test.gd
 # Training mode: dummy modes, immortality, HP refill, CPU handoff, reset, move list (exits 1 on failure)
 godot --headless --path . --fixed-fps 60 --script res://tools/training_test.gd
+# Throws, throw tech, guard crush / regen, wakeup options, Vanish (exits 1 on failure)
+godot --headless --path . --fixed-fps 60 --script res://tools/defense_test.gd
 # Pose contact sheet of clips at their impact frame (body=<id> renders a character instead of the Y Bot)
 godot --path . --script res://tools/contact_sheet.gd -- /tmp/sheet.png body=goro jab roundhouse armada@0.5
 ```

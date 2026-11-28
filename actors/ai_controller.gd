@@ -16,6 +16,11 @@ var _charge_left: float = 0.0
 var _beam_hold: float = 0.0
 var _strafe: float = 0.0
 var _strafe_t: float = 0.0
+## Decided once per knockdown / grab / hitstun entry.
+var _wakeup_input: Dictionary = {}
+var _kd_seen: bool = false
+var _tech_at: int = -1
+var _grab_seen: bool = false
 
 
 func setup(f: Fighter, p: Dictionary) -> void:
@@ -43,10 +48,36 @@ func _physics_process(delta: float) -> void:
 	var opp := fighter.opponent
 	var dist := fighter._distance_to_opponent()
 	var st := fighter.state
-	if st in [Fighter.State.HITSTUN, Fighter.State.BLOCKSTUN, Fighter.State.KNOCKDOWN]:
+	if fighter.is_stunned():
 		_plan.clear()
 		_charge_left = 0.0
 		_beam_hold = 0.0
+
+	if st == Fighter.State.KNOCKDOWN:
+		if not _kd_seen:
+			_kd_seen = true
+			_wakeup_input = _pick_wakeup()
+		fighter.set_ai_input(_wakeup_input)
+		return
+	_kd_seen = false
+
+	if st == Fighter.State.THROWN:
+		if not _grab_seen:
+			_grab_seen = true
+			var tech_skill: float = profile.get("tech_skill", float(profile.get("block_skill", 0.3)) * 1.1)
+			_tech_at = randi_range(2, 9) if randf() < tech_skill else -1
+		if fighter._state_frames == _tech_at:
+			inp["light"] = true
+		fighter.set_ai_input(inp)
+		return
+	_grab_seen = false
+
+	if st == Fighter.State.HITSTUN and fighter._state_frames == 2 and fighter.can_vanish() and opp.combo_count >= 2:
+		var vanish_chance: float = profile.get("vanish_chance", float(profile.get("block_skill", 0.3)) * 0.25)
+		if randf() < vanish_chance:
+			inp["dash"] = true
+			fighter.set_ai_input(inp)
+			return
 
 	if _beam_hold > 0.0:
 		inp["tech2_held"] = true
@@ -58,8 +89,15 @@ func _physics_process(delta: float) -> void:
 		_press_cd -= 1
 		if _press_cd <= 0:
 			var a: String = _plan.pop_front()
-			if a == "heavy" and opp.state in [Fighter.State.BLOCK, Fighter.State.BLOCKSTUN] and randf() < 0.6:
-				_plan.clear()
+			if a == "heavy" and opp.state in [Fighter.State.BLOCK, Fighter.State.BLOCKSTUN]:
+				if dist < Fighter.THROW_RANGE - 0.1 and randf() < _throw_chance():
+					_press_throw(inp)
+				elif randf() < 0.6:
+					_plan.clear()
+				else:
+					inp[a] = true
+			elif a == "throw":
+				_press_throw(inp)
 			else:
 				inp[a] = true
 			_press_cd = PRESS_GAP
@@ -67,7 +105,10 @@ func _physics_process(delta: float) -> void:
 		return
 
 	var threat := opp.state in [Fighter.State.ATTACK, Fighter.State.TECH] and dist < 3.6
-	if threat and _block_left <= 0.0 and randf() < float(profile.get("block_skill", 0.3)) * 0.35:
+	var block_odds := float(profile.get("block_skill", 0.3)) * 0.35
+	if fighter.guard < Fighter.MAX_GUARD * 0.35:
+		block_odds *= 0.5
+	if threat and _block_left <= 0.0 and randf() < block_odds:
 		_block_left = randf_range(0.3, 0.55)
 	if _block_left > 0.0:
 		inp["block_held"] = true
@@ -114,9 +155,15 @@ func _physics_process(delta: float) -> void:
 				_press_cd = 0
 	else:
 		inp["x"] = _strafe * 0.5
+		var turtling := opp.state in [Fighter.State.BLOCK, Fighter.State.CHARGE]
+		if turtling and dist > Fighter.THROW_RANGE - 0.2:
+			inp["y"] = 0.8
 		if _think <= 0.0:
 			_think = randf_range(0.2, 0.45)
-			if randf() < aggression:
+			if turtling and dist < Fighter.THROW_RANGE - 0.1 and randf() < _throw_chance():
+				_plan.assign(["throw"])
+				_press_cd = 0
+			elif randf() < aggression:
 				_plan = _make_string()
 				_press_cd = 0
 			elif randf() < 0.3:
@@ -152,6 +199,28 @@ func _make_string() -> Array[String]:
 	elif can_blast and n == 1 and plan.back() == "heavy":
 		plan.append("tech2")
 	return plan
+
+
+func _throw_chance() -> float:
+	return profile.get("throw_chance", float(profile.get("aggression", 0.5)) * 0.6)
+
+
+func _press_throw(inp: Dictionary) -> void:
+	inp["block_held"] = true
+	inp["light"] = true
+
+
+func _pick_wakeup() -> Dictionary:
+	match randi() % 5:
+		0:
+			return {"x": -1.0}
+		1:
+			return {"x": 1.0}
+		2:
+			return {"y": -1.0}
+		3:
+			return {"block_held": true}
+	return {}
 
 
 func _opponent_whiffed() -> bool:

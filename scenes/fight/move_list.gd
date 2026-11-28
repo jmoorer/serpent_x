@@ -23,6 +23,7 @@ const NORMALS := [
 	["air J J", &"AL2", "Air Light 2"],
 	["air J J J", &"AL3", ""],
 	["air K", &"AH", ""],
+	["J+L", &"throw", "Throw"],
 ]
 
 var _text: RichTextLabel
@@ -64,8 +65,11 @@ func build(moves: Dictionary, school: String, power: float) -> void:
 		t += _row(TECH_KEYS[key], m.display_name, m, power)
 	if moves.has(&"counter_hit"):
 		t += _row("(auto)", "Counter Hit", moves[&"counter_hit"], power)
+	if moves.has(&"vanish"):
+		t += _row("Shift (hit)", "Vanish", moves[&"vanish"], power)
 	t += "[/table]\n[color=%s]%s[/color]" % [DIM_HEX,
-		"Hold L block · hold C charge ki · Space hop · air attacks: one string per jump · O rush needs a confirm (3-hit string, Knee Crush, U hit). Damage scales down per combo hit."]
+		"Hold L block · hold C charge ki · Space hop · air attacks: one string per jump · O rush needs a confirm (3-hit string, Knee Crush, U hit). Damage scales down per combo hit.\n"
+		+ "Throw beats block and charge, loses to attacks; press J as you're grabbed to tech. Blocking drains the guard bar; empty = guard crush. Knocked down: hold A / D / S to roll, L to stay down."]
 	_text.text = t
 
 
@@ -103,7 +107,9 @@ func _notes(m: MoveData) -> String:
 		parts.append(EFFECT_NAMES[m.effect])
 	if m.effect == &"pop" and m.kind == &"":
 		parts.append("› Space chase")
-	if m.unblockable:
+	if m.id == &"throw":
+		parts.append("J to tech")
+	elif m.unblockable:
 		parts.append("unblockable")
 	if not String(m.id).begins_with("L"):
 		if m.chain_light != &"":

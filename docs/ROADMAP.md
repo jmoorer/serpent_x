@@ -33,7 +33,12 @@ comeback route.
 - **Done when:** test script forces each knockback finisher at the edge and asserts ring-out; walking or
   dashing into the edge never triggers one; training mode respawns instead of ending the round.
 
-### [ ] 2. Defensive triangle: throws, guard meter, wakeup options, Vanish
+### [x] 2. Defensive triangle: throws, guard meter, wakeup options, Vanish
+2026-11-27: J+L throw (7f, tech with J in 10f, simultaneous auto-tech), guard meter + Guard Crush (4 blocked
+heavies), getup / delay / roll L-R-back (18 of 26f invulnerable), Vanish (Shift in hitstun, 50 ki, once per
+combo); AI throws turtlers, techs, varies wakeup, Vanishes; dummy modes 8 Tech throws / 9 Random wakeup;
+`tools/defense_test.gd` (19 checks). Cut: dedicated grab / roll clips (reuses elbow, knee, dash clips); the
+crush has no unique SFX file yet (layered shock_big + block + clash).
 Holding block is currently safe against everything. This adds an offense/defense rock-paper-scissors and
 gives ki a reason to be saved.
 - **Scope:**
